@@ -8,7 +8,7 @@ description: Wikidata is a large-scale, collaboratively maintained knowledge gra
   operated by the Wikimedia Foundation. It provides structured data about entities
   and their relationships, including labels, descriptions, aliases, statements, qualifiers,
   references, identifiers, and interlanguage links.
-moss-publish: true
+moss-publish: false
 databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://www.wikidata.org/
