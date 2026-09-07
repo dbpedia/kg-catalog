@@ -19,7 +19,7 @@ description: >-
 moss-publish: true
 databus-publish: true
 
-license: https://opendatacommons.org/licenses/by/1-0/
+license: https://opendatacommons.org/licenses/by-1-0/
 homepage: https://makg.org/
 
 domains:
@@ -44,24 +44,22 @@ maintainers:
   github: michaelfaerber
 
 artifacts:
-- artifact: makg
-  title: Microsoft Academic Knowledge Graph
+
+- artifact: affiliations
+  title: MAKG Affiliations
   abstract: >-
-    RDF dump of the Microsoft Academic Knowledge Graph.
+    Affiliations from the Microsoft Academic Knowledge Graph.
   description: >-
-    The MAKG RDF dataset contains scholarly metadata derived from the
-    Microsoft Academic Graph snapshot of June 19, 2020, including
-    publications, authors, affiliations, venues, fields of study,
-    citations, and additional enriched information.
+    RDF data describing institutional affiliations represented in the
+    Microsoft Academic Knowledge Graph.
   versions:
   - version: 2020-06-19
-    title: Microsoft Academic Knowledge Graph 2020-06-19
+    title: MAKG Affiliations 2020-06-19
     abstract: >-
-      Enhanced MAKG release based on the Microsoft Academic Graph
-      snapshot of June 19, 2020.
+      Affiliations from the enhanced MAKG release based on the Microsoft
+      Academic Graph snapshot of June 19, 2020.
     description: >-
-      This release provides the enhanced Microsoft Academic Knowledge
-      Graph as compressed N-Triples files.
+      Compressed N-Triples containing affiliation data.
     license: https://opendatacommons.org/licenses/by-1-0/
     distributions:
     - file: https://zenodo.org/records/4617285/files/01.Affiliations.nt.bz2?download=1
@@ -70,144 +68,552 @@ artifacts:
       status: pending
       sha256: 776fcf40ba98c0bdcea150325e3a82b1878a7313f91594322ca4d89471d263de
       size: 2131832
+
+- artifact: authors
+  title: MAKG Authors
+  abstract: >-
+    Authors from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing authors represented in the Microsoft Academic
+    Knowledge Graph.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Authors 2020-06-19
+    abstract: >-
+      Authors from the enhanced MAKG release based on the Microsoft
+      Academic Graph snapshot of June 19, 2020.
+    description: >-
+      Compressed N-Triples containing author data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/02.Authors.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: a634c0d902bc5014f590dcaf3084f55db198a3ea9ba58e33ae67ab1fdfc03374
       size: 6929711332
+
+- artifact: conference-instances
+  title: MAKG Conference Instances
+  abstract: >-
+    Conference instances from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing individual conference instances.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Conference Instances 2020-06-19
+    abstract: >-
+      Conference instances from the enhanced MAKG release based on the
+      Microsoft Academic Graph snapshot of June 19, 2020.
+    description: >-
+      Compressed N-Triples containing conference instance data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/03.ConferenceInstances.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 6544db7033c278a915d839f2aae47857eec845fbb40efc6c01a3a0ef4913b1ec
       size: 1083228
+
+- artifact: conference-series
+  title: MAKG Conference Series
+  abstract: >-
+    Conference series from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing conference series.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Conference Series 2020-06-19
+    abstract: >-
+      Conference series from the enhanced MAKG release based on the
+      Microsoft Academic Graph snapshot of June 19, 2020.
+    description: >-
+      Compressed N-Triples containing conference series data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/04.ConferenceSeries.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: de005172dd16d7cfbe390485ef0fa2aca82399bd08dddb6831f128880b6ce1ac
       size: 173253
+
+- artifact: journals
+  title: MAKG Journals
+  abstract: >-
+    Journals from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing journals and publication venues.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Journals 2020-06-19
+    abstract: >-
+      Journals from the enhanced MAKG release based on the Microsoft
+      Academic Graph snapshot of June 19, 2020.
+    description: >-
+      Compressed N-Triples containing journal data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/05.Journals.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: b2130fbec06f001600e03a82ae9beb3700ab4042647eef03a65545be15c86972
       size: 2388259
+
+- artifact: paper-author-affiliations
+  title: MAKG Paper Author Affiliations
+  abstract: >-
+    Paper-author-affiliation relationships from the Microsoft Academic
+    Knowledge Graph.
+  description: >-
+    RDF data connecting publications, authors, and affiliations.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Author Affiliations 2020-06-19
+    abstract: >-
+      Paper-author-affiliation relationships from the enhanced MAKG
+      release based on the Microsoft Academic Graph snapshot of June 19, 2020.
+    description: >-
+      Compressed N-Triples containing paper-author-affiliation relationships.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/06.PaperAuthorAffiliations.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: a7fcae65b519f04a49c517c8792ccd8fc2cd619f1ec39b5848a798fa7b042dcb
       size: 4392005047
+
+- artifact: paper-extended-attributes
+  title: MAKG Paper Extended Attributes
+  abstract: >-
+    Extended attributes of papers from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data containing additional attributes associated with publications.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Extended Attributes 2020-06-19
+    abstract: >-
+      Extended paper attributes from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing extended publication attributes.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/07.PaperExtendedAttributes.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 005a7b8e444c4e10384d28d76670d93e6de29bb7a9d47cbb025dc2e5e6adfa5d
       size: 1187759846
+
+- artifact: paper-references
+  title: MAKG Paper References
+  abstract: >-
+    Paper reference relationships from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing references between scientific publications.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper References 2020-06-19
+    abstract: >-
+      Paper references from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing publication reference relationships.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/08.PaperReferences.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 492a5b11fde633307744f3b0095e7141b076ba278861a53ab46a0ca0ce62dd8a
       size: 9795174892
+
+- artifact: paper-resources
+  title: MAKG Paper Resources
+  abstract: >-
+    Resources associated with papers in the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing external and associated resources for publications.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Resources 2020-06-19
+    abstract: >-
+      Paper resources from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing publication resource data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/09.PaperResources.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: e5ff124b15a979791c0c6c897290cc271a521e056f38432929888c662f7fb9f3
       size: 2379409
+
+- artifact: papers
+  title: MAKG Papers
+  abstract: >-
+    Scientific publications from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing scientific publications represented in the MAKG.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Papers 2020-06-19
+    abstract: >-
+      Papers from the enhanced MAKG release based on the Microsoft Academic
+      Graph snapshot of June 19, 2020.
+    description: >-
+      Compressed N-Triples containing scientific publication data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/10.Papers.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 67761ef29781cb160b2d1ea5992affd53a7ee253247b737fab1ba7598414cce0
       size: 21655282874
+
+- artifact: paper-urls
+  title: MAKG Paper URLs
+  abstract: >-
+    URLs associated with papers in the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data containing URLs associated with scientific publications.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper URLs 2020-06-19
+    abstract: >-
+      Paper URLs from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing publication URL data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/11.PaperUrls.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 0904472c0c2b2692a705463625445a5999cafa102d8f8a47f3d89526c1464eed
       size: 5960083222
+
+- artifact: entity-related-entities
+  title: MAKG Entity Related Entities
+  abstract: >-
+    Related-entity relationships from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing relationships between related entities.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Entity Related Entities 2020-06-19
+    abstract: >-
+      Related entities from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing related-entity relationships.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/12.EntityRelatedEntities.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: d69c1d44c36e9e9e62b0e798a6ec2ad7dc2c6d474321fbea45b627407b5609e4
       size: 51537549
+
+- artifact: field-of-study-children
+  title: MAKG Field of Study Children
+  abstract: >-
+    Field-of-study hierarchy relationships from the Microsoft Academic
+    Knowledge Graph.
+  description: >-
+    RDF data describing child relationships between fields of study.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Field of Study Children 2020-06-19
+    abstract: >-
+      Field-of-study child relationships from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing field-of-study hierarchy data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/13.FieldOfStudyChildren.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: fc2c7253c0d09ef375bc4ac9195a92bafdbf4d715f8acefc44947b4a7051c15f
       size: 4810412
+
+- artifact: field-of-study-extended-attributes
+  title: MAKG Field of Study Extended Attributes
+  abstract: >-
+    Extended attributes of fields of study from the Microsoft Academic
+    Knowledge Graph.
+  description: >-
+    RDF data containing additional field-of-study attributes.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Field of Study Extended Attributes 2020-06-19
+    abstract: >-
+      Extended field-of-study attributes from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing extended field-of-study attributes.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/14.FieldOfStudyExtendedAttributes.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: b196b7f1b1899cfe3959a3e90d43d8c6651154c57348eb319e65efb85880d8e7
       size: 9695282
+
+- artifact: fields-of-study
+  title: MAKG Fields of Study
+  abstract: >-
+    Fields of study from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing scientific fields of study.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Fields of Study 2020-06-19
+    abstract: >-
+      Fields of study from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing field-of-study data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/15.FieldsOfStudy.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 8ba88c70327cd301a9f3cdc5dc4c672d34d4b29972858d0461a2fc75af2eefcc
       size: 28272141
+
+- artifact: paper-fields-of-study
+  title: MAKG Paper Fields of Study
+  abstract: >-
+    Paper-to-field-of-study relationships from the Microsoft Academic
+    Knowledge Graph.
+  description: >-
+    RDF data linking scientific publications to fields of study.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Fields of Study 2020-06-19
+    abstract: >-
+      Paper-to-field-of-study relationships from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing paper and field-of-study relationships.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/16.PaperFieldsOfStudy.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 2886a17b096af97762a6a1b494725b4bbd6dc7bfd1d447ff03e962b7aae95603
       size: 7308282829
+
+- artifact: paper-recommendations
+  title: MAKG Paper Recommendations
+  abstract: >-
+    Paper recommendation relationships from the Microsoft Academic
+    Knowledge Graph.
+  description: >-
+    RDF data describing recommended or related scientific publications.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Recommendations 2020-06-19
+    abstract: >-
+      Paper recommendations from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing paper recommendation relationships.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/17.PaperRecommendations.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: aca5802ea89570567791272a742ad0486e4f0551b824c768aa3866eb3090e06d
       size: 16476257183
+
+- artifact: related-field-of-study
+  title: MAKG Related Field of Study
+  abstract: >-
+    Related-field-of-study relationships from the Microsoft Academic
+    Knowledge Graph.
+  description: >-
+    RDF data describing relationships between related fields of study.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Related Field of Study 2020-06-19
+    abstract: >-
+      Related fields of study from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing related field-of-study relationships.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/18.RelatedFieldOfStudy.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 73ba85b60729b002c88a0c3bb6472a3d2c1a4d2e17493089371450f9c6d00b81
       size: 35607815
+
+- artifact: paper-citation-contexts
+  title: MAKG Paper Citation Contexts
+  abstract: >-
+    Citation contexts from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data describing contextual information associated with citations
+    between scientific publications.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Citation Contexts 2020-06-19
+    abstract: >-
+      Paper citation contexts from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing publication citation-context data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/19.PaperCitationContexts.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: ba4c1dd84ad8deeb57bcb2d714f6444933ab35ed02c87374c6314896b4e0ab98
       size: 16104719957
+
+- artifact: paper-tags
+  title: MAKG Paper Tags
+  abstract: >-
+    Tags associated with papers in the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data containing tags associated with scientific publications.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Tags 2020-06-19
+    abstract: >-
+      Paper tags from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing publication tag data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/21.PaperTags.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 0ed7a04136b9c2fb119cf2801e99588a4ad702e14c9fdd4ddbd91a270199e527
       size: 7048528747
+
+- artifact: paper-fields-of-study-new
+  title: MAKG Paper Fields of Study New
+  abstract: >-
+    Extended paper-to-field-of-study relationships from the Microsoft
+    Academic Knowledge Graph.
+  description: >-
+    RDF data containing an additional representation of paper and
+    field-of-study relationships.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Paper Fields of Study New 2020-06-19
+    abstract: >-
+      Additional paper-to-field-of-study relationships from the enhanced
+      MAKG release.
+    description: >-
+      Compressed N-Triples containing the additional paper
+      field-of-study data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/22.PaperFieldsOfStudyNew.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: b833ce34ddc8be7ef4c00cd710ccd782a12a04366b5f539b34e43cbfed3b755c
       size: 463234138
+
+- artifact: authors-disambiguated
+  title: MAKG Disambiguated Authors
+  abstract: >-
+    Disambiguated authors from the Microsoft Academic Knowledge Graph.
+  description: >-
+    RDF data providing author name disambiguation information.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Disambiguated Authors 2020-06-19
+    abstract: >-
+      Disambiguated authors from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing author disambiguation data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/23.Authors_disambiguated.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: bcda498d5fe7ad71074577add175295869ad6e1f940e12ada27be4db4e2cbf73
       size: 4772028601
+
+- artifact: paper-author-affiliations-disambiguated
+  title: MAKG Disambiguated Paper Author Affiliations
+  abstract: >-
+    Disambiguated paper-author-affiliation relationships from the Microsoft
+    Academic Knowledge Graph.
+  description: >-
+    RDF data providing disambiguated links between papers, authors,
+    and affiliations.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Disambiguated Paper Author Affiliations 2020-06-19
+    abstract: >-
+      Disambiguated paper-author-affiliation relationships from the
+      enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing disambiguated paper-author-affiliation
+      relationships.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/24.PaperAuthorAffiliations_disambiguated.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: 0731eba6a041efacf8904894b279fc5495724d0f6e34a629c92b81da7b5c3386
       size: 4424839179
+
+- artifact: author-orcid
+  title: MAKG Author ORCID
+  abstract: >-
+    ORCID identifiers associated with authors in the Microsoft Academic
+    Knowledge Graph.
+  description: >-
+    RDF data linking MAKG authors to their ORCID identifiers.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Author ORCID 2020-06-19
+    abstract: >-
+      Author ORCID links from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing author ORCID data.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/25.AuthorORCID.nt.bz2?download=1
       format: nt
       compression: bz2
       status: pending
       sha256: a94bf18284edd45e115df9aca348da796b96e8b7b102da5afe0306b8ae106662
       size: 339455
+
+- artifact: sameas-makg-wikidata
+  title: MAKG Wikidata Links
+  abstract: >-
+    Links between Microsoft Academic Knowledge Graph entities and Wikidata.
+  description: >-
+    RDF data providing same-as links between MAKG entities and Wikidata.
+  versions:
+  - version: 2020-06-19
+    title: MAKG Wikidata Links 2020-06-19
+    abstract: >-
+      Wikidata links from the enhanced MAKG release.
+    description: >-
+      Compressed N-Triples containing links between MAKG entities
+      and Wikidata entities.
+    license: https://opendatacommons.org/licenses/by-1-0/
+    distributions:
     - file: https://zenodo.org/records/4617285/files/sameAs_makg_wikidata.nt.bz2?download=1
       format: nt
       compression: bz2
