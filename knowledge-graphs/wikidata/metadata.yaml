@@ -1,28 +1,20 @@
 databus-account: knowledge-graph-catalog
 id: wikidata
 title: Wikidata
-
-abstract: >-
-  Wikidata is a free and collaborative knowledge graph containing structured
-  data about entities, including people, places, organizations, works,
-  scientific concepts, and other topics.
-
-description: >-
-  Wikidata is a large-scale, collaboratively maintained knowledge graph
-  operated by the Wikimedia Foundation. It provides structured data about
-  entities and their relationships, including labels, descriptions, aliases,
-  statements, qualifiers, references, identifiers, and interlanguage links.
-
-moss-publish: true
-databus-publish: true
-
+abstract: Wikidata is a free and collaborative knowledge graph containing structured
+  data about entities, including people, places, organizations, works, scientific
+  concepts, and other topics.
+description: Wikidata is a large-scale, collaboratively maintained knowledge graph
+  operated by the Wikimedia Foundation. It provides structured data about entities
+  and their relationships, including labels, descriptions, aliases, statements, qualifiers,
+  references, identifiers, and interlanguage links.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://www.wikidata.org/
-
 domains:
 - Knowledge Graphs
 - General
-
 keywords:
 - Wikidata
 - knowledge graph
@@ -31,24 +23,19 @@ keywords:
 - structured data
 - Wikimedia
 - semantic web
-
 sparql:
 - name: main
   url: https://query.wikidata.org/
-
 maintainers:
 - name: Wikimedia Foundation
   contact: https://www.wikidata.org/wiki/Wikidata:Contacting_the_development_team
-
 artifacts:
 - artifact: truthy-beta
   title: Wikidata Truthy RDF Dump - Beta
-  abstract: >-
-    Beta Wikidata truthy RDF dumps containing the best-rank direct statements.
-  description: >-
-    Beta truthy RDF dumps contain the simplified truthy representation
-    of Wikidata, including direct best-rank statements represented using
-    wdt: and wdtn: properties. Qualifiers and references are omitted.
+  abstract: Beta Wikidata truthy RDF dumps containing the best-rank direct statements.
+  description: 'Beta truthy RDF dumps contain the simplified truthy representation
+    of Wikidata, including direct best-rank statements represented using wdt: and
+    wdtn: properties. Qualifiers and references are omitted.'
   versions:
   - version: 2026-08-26
     title: Wikidata Truthy RDF Dump - Beta
@@ -56,13 +43,13 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260826/wikidata-20260826-truthy-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 43329477419
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260826/wikidata-20260826-truthy-BETA.nt.gz
       format: nt
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 71357606611
   - version: 2026-09-02
@@ -71,23 +58,19 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260902/wikidata-20260902-truthy-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 43371183057
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260902/wikidata-20260902-truthy-BETA.nt.gz
       format: nt
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 71426498934
-
 - artifact: lexemes-beta
   title: Wikidata Lexemes RDF Dump - Beta
-  abstract: >-
-    Beta RDF dumps containing Wikidata lexemes and associated linguistic
-    information.
-  description: >-
-    Beta Wikidata lexeme dumps contain the lexeme namespace and associated
+  abstract: Beta RDF dumps containing Wikidata lexemes and associated linguistic information.
+  description: Beta Wikidata lexeme dumps contain the lexeme namespace and associated
     linguistic information represented in RDF.
   versions:
   - version: 2026-08-28
@@ -96,25 +79,25 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 1107521050
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.nt.gz
       format: nt
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 1452452774
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.ttl.bz2
       format: ttl
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 635665690
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.ttl.gz
       format: ttl
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 796092383
   - version: 2026-09-04
@@ -123,37 +106,34 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 1149418988
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.nt.gz
       format: nt
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 1499634889
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.ttl.bz2
       format: ttl
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 663123869
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.ttl.gz
       format: ttl
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 827442295
-
 - artifact: all-beta
   title: Wikidata Complete RDF Dump - Beta
-  abstract: >-
-    Beta complete Wikidata RDF dumps containing all entity information
-    representable in RDF.
-  description: >-
-    Beta complete Wikidata RDF dumps contain all entity information
-    representable in RDF, including statements, qualifiers, references,
-    labels, descriptions, aliases, and other RDF-representable data.
+  abstract: Beta complete Wikidata RDF dumps containing all entity information representable
+    in RDF.
+  description: Beta complete Wikidata RDF dumps contain all entity information representable
+    in RDF, including statements, qualifiers, references, labels, descriptions, aliases,
+    and other RDF-representable data.
   versions:
   - version: 2026-08-31
     title: Wikidata Complete RDF Dump - Beta
@@ -161,24 +141,24 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 195523019927
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.nt.gz
       format: nt
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 253259789622
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.ttl.bz2
       format: ttl
       compression: bz2
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 125305348476
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.ttl.gz
       format: ttl
       compression: gz
-      status: pending
+      status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 153805109912
