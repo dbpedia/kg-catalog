@@ -41,7 +41,6 @@ maintainers:
   contact: https://www.wikidata.org/wiki/Wikidata:Contacting_the_development_team
 
 artifacts:
-
 - artifact: truthy-beta
   title: Wikidata Truthy RDF Dump - Beta
   abstract: >-
@@ -52,6 +51,7 @@ artifacts:
     wdt: and wdtn: properties. Qualifiers and references are omitted.
   versions:
   - version: 2026-08-26
+    title: Wikidata Truthy RDF Dump - Beta
     distributions:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260826/wikidata-20260826-truthy-BETA.nt.bz2
       format: nt
@@ -66,6 +66,7 @@ artifacts:
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 71357606611
   - version: 2026-09-02
+    title: Wikidata Truthy RDF Dump - Beta
     distributions:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260902/wikidata-20260902-truthy-BETA.nt.bz2
       format: nt
@@ -90,6 +91,7 @@ artifacts:
     linguistic information represented in RDF.
   versions:
   - version: 2026-08-28
+    title: Wikidata Lexemes RDF Dump - Beta
     distributions:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.nt.bz2
       format: nt
@@ -116,6 +118,7 @@ artifacts:
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 796092383
   - version: 2026-09-04
+    title: Wikidata Lexemes RDF Dump - Beta
     distributions:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.nt.bz2
       format: nt
@@ -153,6 +156,7 @@ artifacts:
     labels, descriptions, aliases, and other RDF-representable data.
   versions:
   - version: 2026-08-31
+    title: Wikidata Complete RDF Dump - Beta
     distributions:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.nt.bz2
       format: nt
