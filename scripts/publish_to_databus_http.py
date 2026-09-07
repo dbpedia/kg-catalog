@@ -14,8 +14,13 @@ yaml_file = sys.argv[1]
 # --- Helpers ---
 def calculate_sha256(url):
     """Downloads file in chunks to calculate sha256."""
+
+    headers = {
+        "User-Agent": "KG-Catalog/1.0 (https://github.com/dbpedia/kg-catalog)"
+    }
+
     h = hashlib.sha256()
-    with requests.get(url, stream=True) as r:
+    with requests.get(url, headers=headers, stream=True) as r:
         r.raise_for_status()
         for chunk in r.iter_content(chunk_size=8192):
             if chunk:
