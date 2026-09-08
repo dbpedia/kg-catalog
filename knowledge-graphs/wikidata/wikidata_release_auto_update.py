@@ -22,20 +22,20 @@ FOLDER_PATTERN = re.compile(r'href="(\d{8})/"')
 
 ARTIFACT_PATTERNS = {
     "truthy-beta": [
-        ("nt", "bz2", "latest-truthy.nt.bz2"),
-        ("nt", "gz", "latest-truthy.nt.gz"),
+        ("nt", "bz2", "truthy", "nt.bz2"),
+        ("nt", "gz", "truthy", "nt.gz"),
     ],
     "lexemes-beta": [
-        ("nt", "bz2", "latest-lexemes.nt.bz2"),
-        ("nt", "gz", "latest-lexemes.nt.gz"),
-        ("ttl", "bz2", "latest-lexemes.ttl.bz2"),
-        ("ttl", "gz", "latest-lexemes.ttl.gz"),
+        ("nt", "bz2", "lexemes", "nt.bz2"),
+        ("nt", "gz", "lexemes", "nt.gz"),
+        ("ttl", "bz2", "lexemes", "ttl.bz2"),
+        ("ttl", "gz", "lexemes", "ttl.gz"),
     ],
     "all-beta": [
-        ("nt", "bz2", "latest-all.nt.bz2"),
-        ("nt", "gz", "latest-all.nt.gz"),
-        ("ttl", "bz2", "latest-all.ttl.bz2"),
-        ("ttl", "gz", "latest-all.ttl.gz"),
+        ("nt", "bz2", "all", "nt.bz2"),
+        ("nt", "gz", "all", "nt.gz"),
+        ("ttl", "bz2", "all", "ttl.bz2"),
+        ("ttl", "gz", "all", "ttl.gz"),
     ],
 }
 
@@ -92,7 +92,7 @@ def next_available_version(current_version: date, available_versions: list[date]
 
 
 def distribution_url(version: date, filename: str) -> str:
-    return f"{DUMPS_INDEX_URL}{version.strftime('%Y%m%d')}/{filename.replace('latest', version.strftime('%Y%m%d'))}"
+    return f"{DUMPS_INDEX_URL}{version.strftime('%Y%m%d')}/{filename}"
 
 
 def fetch_file_size(url: str, session=requests) -> int:
@@ -103,7 +103,9 @@ def fetch_file_size(url: str, session=requests) -> int:
 
 def build_version_entry(artifact: dict, version: date, license_url: str) -> dict:
     distributions = []
-    for file_format, compression, filename in ARTIFACT_PATTERNS[artifact["artifact"]]:
+    version_string = version.strftime("%Y%m%d")
+    for file_format, compression, dump_type, suffix in ARTIFACT_PATTERNS[artifact["artifact"]]:
+        filename = f"wikidata-{version_string}-{dump_type}-BETA.{suffix}"
         url = distribution_url(version, filename)
         distributions.append(
             {
