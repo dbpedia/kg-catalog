@@ -28,7 +28,7 @@ sparql:
 - name: main
   url: https://makg.org/sparql
 maintainers:
-- name: "Michael Farber"
+- name: "Michael Faerber"
   contact: michael.faerber@tu-dresden.de
   github: michaelfaerber
 artifacts:
