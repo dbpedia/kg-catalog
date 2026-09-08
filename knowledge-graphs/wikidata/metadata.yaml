@@ -10,7 +10,7 @@ description: Wikidata is a large-scale, collaboratively maintained knowledge gra
   references, identifiers, and interlanguage links.
 check-new-release: wikidata_release_auto_update.py
 moss-publish: false
-databus-publish: true
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://www.wikidata.org/
 domains:
