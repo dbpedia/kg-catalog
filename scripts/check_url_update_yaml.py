@@ -18,6 +18,13 @@ if not data:
 
 changed = False  # Track if any updates were made
 publish_triggered = False  # Track if Databus publish should be set
+REQUEST_HEADERS = {
+    "User-Agent": (
+        "kg-catalog-url-checker/1.0 "
+        "(https://www.dbpedia.org/)"
+    ),
+    "Accept-Encoding": "gzip",
+}
 
 # --- Step 2: Traverse artifacts -> versions -> distributions ---
 for artifact in data.get("artifacts", []):
@@ -35,7 +42,12 @@ for artifact in data.get("artifacts", []):
                 continue
 
             try:
-                resp = requests.head(url, allow_redirects=True, timeout=10)
+                resp = requests.head(
+                    url,
+                    headers=REQUEST_HEADERS,
+                    allow_redirects=True,
+                    timeout=10,
+                )
                 new_status = "active" if resp.status_code == 200 else "error"
             except requests.RequestException:
                 new_status = "error"
