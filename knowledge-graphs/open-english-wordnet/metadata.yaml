@@ -1,0 +1,163 @@
+databus-account: knowledge-graph-catalog
+id: open-english-wordnet
+title: Open English Wordnet
+
+abstract: Open English Wordnet is an open lexical-semantic knowledge graph of the English language, containing words, synsets, definitions, examples, and semantic relations.
+
+description: >-
+  **Open English Wordnet (OEWN)** is an open lexical database and knowledge
+  graph of the English language, derived from Princeton WordNet and developed
+  by the Open English Wordnet Community.
+
+  **Overview**
+
+  Open English Wordnet organizes English lexical items into synsets and
+  represents their lexical and semantic relationships, including synonymy,
+  hypernymy, hyponymy, and other WordNet relations. It covers common nouns,
+  verbs, adjectives, and adverbs.
+
+  The 2025+ edition additionally contains a curated selection of proper nouns
+  from Open English Namenet.
+
+  **RDF**
+
+  The RDF distributions are provided in RDF/Turtle format and contain the
+  lexical and semantic information of each Open English Wordnet release.
+
+databus-publish: true
+moss-publish: true
+
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://en-word.net/
+
+domains:
+- Linguistics, Social & Digital Knowledge Systems
+
+keywords:
+- wordnet
+- lexical-semantic
+- lexicon
+- linguistics
+- english
+- natural-language-processing
+- rdf
+- ontology
+- synsets
+
+maintainers:
+- name: John P. McCrae
+  contact: john@mccr.ae
+  github: jmccrae
+
+artifacts:
+- artifact: english-wordnet
+  title: English Wordnet
+  abstract: RDF representation of Open English Wordnet.
+  description: >-
+    RDF/Turtle distributions of the annual Open English Wordnet releases.
+
+  versions:
+  - version: 2025-12-31
+    title: Open English Wordnet 2025
+    abstract: Open English Wordnet 2025 RDF dump.
+    description: >-
+      The 2025 edition of Open English Wordnet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2025.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
+
+  - version: 2024-11-01
+    title: Open English Wordnet 2024
+    abstract: Open English Wordnet 2024 RDF dump.
+    description: >-
+      The 2024 edition of Open English Wordnet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2024.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
+
+  - version: 2023-10-31
+    title: Open English Wordnet 2023
+    abstract: Open English Wordnet 2023 RDF dump.
+    description: >-
+      The 2023 edition of Open English Wordnet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2023.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
+
+  - version: 2022-12-31
+    title: Open English Wordnet 2022
+    abstract: Open English Wordnet 2022 RDF dump.
+    description: >-
+      The 2022 edition of Open English Wordnet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2022.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
+
+  - version: 2021-11-09
+    title: Open English Wordnet 2021
+    abstract: Open English Wordnet 2021 RDF dump.
+    description: >-
+      The 2021 edition of Open English Wordnet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2021.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
+
+  - version: 2020-04-17
+    title: Open English Wordnet 2020
+    abstract: Open English Wordnet 2020 RDF dump.
+    description: >-
+      The 2020 edition of Open English Wordnet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2020.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
+
+  - version: 2019-04-17
+    title: Open English Wordnet 2019
+    abstract: Open English Wordnet 2019 RDF dump.
+    description: >-
+      The 2019 edition of Open English Wordnet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2019.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
+
+- artifact: english-wordnet-plus
+  title: English Wordnet Plus
+  abstract: RDF representation of the Open English Wordnet Plus edition.
+  description: >-
+    The Open English Wordnet Plus edition extends the core Open English
+    Wordnet with a curated selection of proper nouns from Open English Namenet.
+
+  versions:
+  - version: 2025-12-31
+    title: Open English Wordnet 2025+
+    abstract: Open English Wordnet 2025+ RDF dump.
+    description: >-
+      The 2025+ edition of Open English Wordnet, including a curated selection
+      of proper nouns from Open English Namenet.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://en-word.net/static/english-wordnet-2025-plus.ttl.gz
+      format: ttl
+      compression: gz
+      status: pending
