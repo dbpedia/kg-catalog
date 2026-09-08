@@ -28,7 +28,7 @@ sparql:
 - name: main
   url: http://dskg.org/sparql
 maintainers:
-- name: "Michael F\xE4rber"
+- name: "Michael Farber"
   contact: michael.faerber@tu-dresden.de
   github: michaelfaerber
 artifacts:
