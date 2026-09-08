@@ -17,6 +17,9 @@ YAML_FILE = Path(os.environ.get("WIKIDATA_METADATA_FILE", SCRIPT_DIR / "metadata
 DUMPS_INDEX_URL = "https://dumps.wikimedia.org/wikidatawiki/entities/"
 TIMEOUT = 30
 HARDCODED_SHA256 = "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"
+REQUEST_HEADERS = {
+    "User-Agent": "kg-catalog-wikidata-release-updater/1.0",
+}
 
 FOLDER_PATTERN = re.compile(r'href="(\d{8})/"')
 FILE_PATTERN = re.compile(r'href="([^"]+)"')
@@ -78,7 +81,9 @@ def latest_catalogued_version(artifact: dict) -> date:
 
 
 def available_dump_dates(session=requests) -> list[date]:
-    response = session.get(DUMPS_INDEX_URL, timeout=TIMEOUT)
+    response = session.get(
+        DUMPS_INDEX_URL, timeout=TIMEOUT, headers=REQUEST_HEADERS
+    )
     response.raise_for_status()
     dates = {
         datetime.strptime(match, "%Y%m%d").date()
@@ -89,7 +94,7 @@ def available_dump_dates(session=requests) -> list[date]:
 
 def available_dump_files(version: date, session=requests) -> set[str]:
     url = f"{DUMPS_INDEX_URL}{version.strftime('%Y%m%d')}/"
-    response = session.get(url, timeout=TIMEOUT)
+    response = session.get(url, timeout=TIMEOUT, headers=REQUEST_HEADERS)
     response.raise_for_status()
     return {
         filename
@@ -120,7 +125,12 @@ def distribution_url(version: date, filename: str) -> str:
 
 
 def fetch_file_size(url: str, session=requests) -> int:
-    response = session.head(url, timeout=TIMEOUT, allow_redirects=True)
+    response = session.head(
+        url,
+        timeout=TIMEOUT,
+        allow_redirects=True,
+        headers=REQUEST_HEADERS,
+    )
     response.raise_for_status()
     return int(response.headers.get("Content-Length", 0))
 
