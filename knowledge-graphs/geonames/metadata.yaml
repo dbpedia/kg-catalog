@@ -1,41 +1,45 @@
 databus-account: knowledge-graph-catalog
 id: geonames
 title: GeoNames
-abstract: GeoNames is a global geographical knowledge graph containing structured information about places, geographical features, names, administrative divisions, and other geographic entities.
-description: '**GeoNames** is a free geographical database and knowledge graph covering geographical features and place names worldwide.
+abstract: GeoNames is a global geographical knowledge graph containing structured
+  information about places, geographical features, names, administrative divisions,
+  and other geographic entities.
+description: '**GeoNames** is a free geographical database and knowledge graph covering
+  geographical features and place names worldwide.
 
 
   **Overview**
 
-  GeoNames contains over 11 million geographical features and more than 25 million geographical names. Each feature is identified by a unique URI and described using the GeoNames Ontology.
+  GeoNames contains over 11 million geographical features and more than 25 million
+  geographical names. Each feature is identified by a unique URI and described using
+  the GeoNames Ontology.
 
 
   **Data**
 
-  - Geographical feature names and alternate names
-  - Countries and administrative divisions
-  - Populated places and other geographical features
-  - Geographic coordinates
-  - Feature classes and feature codes
-  - Population and elevation information
-  - Postal codes
-  - Relationships between geographical features
-  - Links to Wikipedia and other resources
+  - Geographical feature names and alternate names - Countries and administrative
+  divisions - Populated places and other geographical features - Geographic coordinates
+  - Feature classes and feature codes - Population and elevation information - Postal
+  codes - Relationships between geographical features - Links to Wikipedia and other
+  resources
 
 
   **GeoNames Ontology**
 
-  The RDF data uses the GeoNames Ontology, which provides classes and properties for representing geographic features and their relationships. GeoNames features are exposed as Linked Data using URIs of the form `https://sws.geonames.org/{geonameId}/`.
+  The RDF data uses the GeoNames Ontology, which provides classes and properties for
+  representing geographic features and their relationships. GeoNames features are
+  exposed as Linked Data using URIs of the form `https://sws.geonames.org/{geonameId}/`.
 
 
   **RDF Dump**
 
-  The RDF dump contains RDF descriptions of GeoNames toponyms and can be used to build a local representation of the GeoNames knowledge graph.
+  The RDF dump contains RDF descriptions of GeoNames toponyms and can be used to build
+  a local representation of the GeoNames knowledge graph.
 
 
   '
-databus-publish: true
-moss-publish: true
+databus-publish: false
+moss-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://www.geonames.org/
 domains:
@@ -57,15 +61,19 @@ artifacts:
 - artifact: geonames-rdf
   title: GeoNames RDF
   abstract: RDF representation of the GeoNames geographical database.
-  description: RDF dump of GeoNames containing descriptions of geographical features and their relationships using the GeoNames Ontology.
+  description: RDF dump of GeoNames containing descriptions of geographical features
+    and their relationships using the GeoNames Ontology.
   versions:
   - version: 2020-02-14
     title: GeoNames RDF
     abstract: RDF representation of the GeoNames geographical database.
-    description: RDF dump of GeoNames containing descriptions of geographical features and their relationships using the GeoNames Ontology.
+    description: RDF dump of GeoNames containing descriptions of geographical features
+      and their relationships using the GeoNames Ontology.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://download.geonames.org/all-geonames-rdf.zip
       format: rdf
       compression: zip
-      status: pending
+      status: active
+      sha256: eb2b2cd7141bc202da87bfb449a255da488570cbdf6e406c36da32def87ee683
+      size: 742269561
