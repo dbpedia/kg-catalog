@@ -19,6 +19,7 @@ TIMEOUT = 30
 HARDCODED_SHA256 = "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"
 
 FOLDER_PATTERN = re.compile(r'href="(\d{8})/"')
+FILE_PATTERN = re.compile(r'href="([^"]+)"')
 
 ARTIFACT_PATTERNS = {
     "truthy-beta": [
@@ -86,9 +87,32 @@ def available_dump_dates(session=requests) -> list[date]:
     return sorted(dates)
 
 
-def next_available_version(current_version: date, available_versions: list[date]) -> date | None:
-    newer = [version for version in available_versions if version > current_version]
-    return newer[-1] if newer else None
+def available_dump_files(version: date, session=requests) -> set[str]:
+    url = f"{DUMPS_INDEX_URL}{version.strftime('%Y%m%d')}/"
+    response = session.get(url, timeout=TIMEOUT)
+    response.raise_for_status()
+    return {
+        filename
+        for filename in FILE_PATTERN.findall(response.text)
+        if not filename.endswith("/")
+    }
+
+
+def expected_filenames(artifact_id: str, version: date) -> set[str]:
+    version_string = version.strftime("%Y%m%d")
+    return {
+        f"wikidata-{version_string}-{dump_type}-BETA.{suffix}"
+        for _, _, dump_type, suffix in ARTIFACT_PATTERNS[artifact_id]
+    }
+
+
+def latest_artifact_version(
+    artifact_id: str, files_by_date: dict[date, set[str]]
+) -> date | None:
+    for version in sorted(files_by_date, reverse=True):
+        if expected_filenames(artifact_id, version) <= files_by_date[version]:
+            return version
+    return None
 
 
 def distribution_url(version: date, filename: str) -> str:
@@ -128,31 +152,42 @@ def build_version_entry(artifact: dict, version: date, license_url: str) -> dict
     }
 
 
-def update_artifact_if_needed(artifact: dict, newest_dump_date: date, license_url: str) -> bool:
-    current_version = latest_catalogued_version(artifact)
-    next_version = next_available_version(current_version, [newest_dump_date])
-    if next_version is None:
+def update_artifact_if_needed(
+    artifact: dict, newest_artifact_date: date | None, license_url: str
+) -> bool:
+    if newest_artifact_date is None:
         return False
-    artifact.setdefault("versions", []).append(build_version_entry(artifact, next_version, license_url))
+    current_version = latest_catalogued_version(artifact)
+    if newest_artifact_date <= current_version:
+        return False
+    artifact.setdefault("versions", []).append(
+        build_version_entry(artifact, newest_artifact_date, license_url)
+    )
     return True
 
 
 def main() -> None:
     data = load_metadata()
-    newest_dump_date = max(available_dump_dates())
+    dump_dates = available_dump_dates()
+    files_by_date = {
+        version: available_dump_files(version) for version in dump_dates
+    }
     license_url = str(data.get("license", ""))
 
     updated = False
     for artifact_id in ARTIFACT_PATTERNS:
         artifact = artifact_by_id(data, artifact_id)
-        updated = update_artifact_if_needed(artifact, newest_dump_date, license_url) or updated
+        newest_artifact_date = latest_artifact_version(artifact_id, files_by_date)
+        updated = update_artifact_if_needed(
+            artifact, newest_artifact_date, license_url
+        ) or updated
 
     if not updated:
-        print(f"Wikidata metadata is already up to date at {newest_dump_date}.")
+        print("Wikidata metadata is already up to date.")
         return
 
     save_metadata(data)
-    print(f"Added Wikidata dump version {newest_dump_date} where needed.")
+    print("Added new Wikidata dump versions where needed.")
 
 
 if __name__ == "__main__":
