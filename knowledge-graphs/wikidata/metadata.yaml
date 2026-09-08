@@ -43,13 +43,13 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260826/wikidata-20260826-truthy-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 43329477419
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260826/wikidata-20260826-truthy-BETA.nt.gz
       format: nt
       compression: gz
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 71357606611
   - version: 2026-09-02
@@ -58,13 +58,13 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260902/wikidata-20260902-truthy-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 43371183057
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260902/wikidata-20260902-truthy-BETA.nt.gz
       format: nt
       compression: gz
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 71426498934
 - artifact: lexemes-beta
@@ -79,25 +79,25 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 1107521050
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.nt.gz
       format: nt
       compression: gz
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 1452452774
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.ttl.bz2
       format: ttl
       compression: bz2
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 635665690
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260828/wikidata-20260828-lexemes-BETA.ttl.gz
       format: ttl
       compression: gz
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 796092383
   - version: 2026-09-04
@@ -113,25 +113,25 @@ artifacts:
       compression: bz2
       size: 1149418988
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: error
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.nt.gz
       format: nt
       compression: gz
       size: 1499634889
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: error
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.ttl.bz2
       format: ttl
       compression: bz2
       size: 663123869
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: error
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.ttl.gz
       format: ttl
       compression: gz
       size: 827442295
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: error
+      status: active
 - artifact: all-beta
   title: Wikidata Complete RDF Dump - Beta
   abstract: Beta complete Wikidata RDF dumps containing all entity information representable
@@ -146,25 +146,24 @@ artifacts:
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.nt.bz2
       format: nt
       compression: bz2
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 195523019927
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.nt.gz
       format: nt
       compression: gz
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 253259789622
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.ttl.bz2
       format: ttl
       compression: bz2
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 125305348476
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260831/wikidata-20260831-all-BETA.ttl.gz
       format: ttl
       compression: gz
-      status: error
+      status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 153805109912
-
