@@ -8,6 +8,7 @@ description: Wikidata is a large-scale, collaboratively maintained knowledge gra
   operated by the Wikimedia Foundation. It provides structured data about entities
   and their relationships, including labels, descriptions, aliases, statements, qualifiers,
   references, identifiers, and interlanguage links.
+check-new-release: wikidata_release_auto_update.py
 moss-publish: false
 databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
@@ -99,33 +100,6 @@ artifacts:
       status: error
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 796092383
-  - version: 2026-09-04
-    title: Wikidata Lexemes RDF Dump - Beta
-    distributions:
-    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.nt.bz2
-      format: nt
-      compression: bz2
-      status: error
-      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      size: 1149418988
-    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.nt.gz
-      format: nt
-      compression: gz
-      status: error
-      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      size: 1499634889
-    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.ttl.bz2
-      format: ttl
-      compression: bz2
-      status: error
-      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      size: 663123869
-    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260904/wikidata-20260904-lexemes-BETA.ttl.gz
-      format: ttl
-      compression: gz
-      status: error
-      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      size: 827442295
 - artifact: all-beta
   title: Wikidata Complete RDF Dump - Beta
   abstract: Beta complete Wikidata RDF dumps containing all entity information representable
