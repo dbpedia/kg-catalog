@@ -1,0 +1,39 @@
+name: Test Wikimedia dump access
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-access:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test with curl
+        continue-on-error: true
+        run: |
+          curl --fail-with-body -sS -L \
+            -A "kg-catalog-wikidata-release-updater/1.0 (https://www.dbpedia.org/)" \
+            -D - -o /dev/null \
+            -w "curl_status=%{http_code}\n" \
+            https://dumps.wikimedia.org/wikidatawiki/entities/
+
+      - name: Test with Python Requests
+        continue-on-error: true
+        run: |
+          python -m pip install --disable-pip-version-check requests
+          python - <<'PY'
+          import requests
+
+          url = "https://dumps.wikimedia.org/wikidatawiki/entities/"
+          headers = {
+              "User-Agent": (
+                  "kg-catalog-wikidata-release-updater/1.0 "
+                  "(https://www.dbpedia.org/)"
+              ),
+              "Accept-Encoding": "gzip",
+          }
+          response = requests.get(url, headers=headers, timeout=30)
+          print(f"requests_status={response.status_code}")
+          print(f"server={response.headers.get('Server')}")
+          print(f"content_type={response.headers.get('Content-Type')}")
+          response.raise_for_status()
+          PY

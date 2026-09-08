@@ -18,7 +18,11 @@ DUMPS_INDEX_URL = "https://dumps.wikimedia.org/wikidatawiki/entities/"
 TIMEOUT = 30
 HARDCODED_SHA256 = "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"
 REQUEST_HEADERS = {
-    "User-Agent": "kg-catalog-wikidata-release-updater/1.0",
+    "User-Agent": (
+        "kg-catalog-wikidata-release-updater/1.0 "
+        "(https://www.dbpedia.org/)"
+    ),
+    "Accept-Encoding": "gzip",
 }
 
 FOLDER_PATTERN = re.compile(r'href="(\d{8})/"')
