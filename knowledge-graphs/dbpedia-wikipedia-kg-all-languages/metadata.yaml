@@ -1,0 +1,18 @@
+databus-account: knowledge-graph-catalog
+id: dbpedia-wikipedia-kg-all-languages
+title: DBpedia Wikipedia KG
+databus-publish: false
+moss-publish: true
+homepage: https://dbpedia.org
+domains:
+- Cross-domain
+keywords:
+- dbpedia
+- wikipedia
+- multilingual
+- encyclopedia
+- open knowledge Graph
+maintainers:
+- name: Milan Dojchinovski
+  contact: dojcinovski.milan@gmail.com
+  github: m1ci
