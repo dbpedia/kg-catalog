@@ -2,7 +2,7 @@ databus-account: knowledge-graph-catalog
 id: dbpedia-wikipedia-kg-all-languages
 title: DBpedia Wikipedia KG
 databus-publish: false
-moss-publish: true
+moss-publish: false
 homepage: https://dbpedia.org
 domains:
 - Cross-domain
