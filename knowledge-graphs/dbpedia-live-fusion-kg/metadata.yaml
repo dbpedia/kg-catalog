@@ -2,7 +2,7 @@ databus-account: knowledge-graph-catalog
 id: dbpedia-live-fusion-kg
 title: DBpedia Live Fusion KG
 databus-publish: false
-moss-publish: true
+moss-publish: false
 homepage: https://dbpedia.org
 domains:
 - Cross-domain
