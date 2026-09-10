@@ -10,18 +10,28 @@ import requests
 # =========================================================
 # CONSTANTS
 # =========================================================
-SOURCE_GROUP = "https://databus.dev.dbpedia.link/fhofer/dbpedia-wikipedia-kg-dump"
 
-SPARQL_ENDPOINT = "https://databus.dev.dbpedia.link/sparql"
+SOURCE_GROUP = (
+    "https://databus.dbpedia.org/knowledge-graph-catalog/"
+    "dbpedia-wikipedia-kg-all-languages"
+)
 
-PUBLISH_URL = "https://databus.dbpedia.org/api/publish?fetch-file-properties=false"
+SPARQL_ENDPOINT = "https://databus.dbpedia.org/sparql"
 
-TARGET_BASE = "https://databus.dbpedia.org/knowledge-graph-catalog"
+PUBLISH_URL = (
+    "https://databus.dbpedia.org/api/publish"
+    "?fetch-file-properties=false"
+)
+
+TARGET_BASE = (
+    "https://databus.dbpedia.org/knowledge-graph-catalog"
+)
 
 
 # =========================================================
 # DEBUG
 # =========================================================
+
 def debug(title, obj):
     print("\n" + "=" * 90)
     print(title)
@@ -31,22 +41,31 @@ def debug(title, obj):
 
 def mask(headers):
     h = dict(headers)
+
     if "X-API-KEY" in h:
         h["X-API-KEY"] = "***REDACTED***"
+
     return h
 
 
 # =========================================================
-# JSON-LD CORE FIX (IMPORTANT)
+# JSON-LD HELPERS
 # =========================================================
-def all_nodes(data):
-    if isinstance(data, dict):
-        g = data.get("@graph")
 
-        if isinstance(g, list):
-            return g
-        if isinstance(g, dict):
-            return [g]
+def all_nodes(data):
+    """
+    Normalize JSON-LD into a list of nodes.
+    """
+
+    if isinstance(data, dict):
+
+        graph = data.get("@graph")
+
+        if isinstance(graph, list):
+            return graph
+
+        if isinstance(graph, dict):
+            return [graph]
 
         return [data]
 
@@ -54,70 +73,101 @@ def all_nodes(data):
 
 
 def find_first(data, ttype):
-    for n in all_nodes(data):
-        t = n.get("@type")
+    """
+    Find the first JSON-LD node of the requested @type.
+    """
 
-        if t == ttype:
-            return n
+    for node in all_nodes(data):
 
-        if isinstance(t, list) and ttype in t:
-            return n
+        node_type = node.get("@type")
+
+        if node_type == ttype:
+            return node
+
+        if isinstance(node_type, list) and ttype in node_type:
+            return node
 
     return None
 
 
 def find_all(data, ttype):
-    out = []
+    """
+    Find all JSON-LD nodes of the requested @type.
+    """
 
-    for n in all_nodes(data):
-        t = n.get("@type")
+    result = []
 
-        if t == ttype:
-            out.append(n)
+    for node in all_nodes(data):
 
-        elif isinstance(t, list) and ttype in t:
-            out.append(n)
+        node_type = node.get("@type")
 
-    return out
+        if node_type == ttype:
+            result.append(node)
+
+        elif isinstance(node_type, list) and ttype in node_type:
+            result.append(node)
+
+    return result
 
 
 # =========================================================
 # HTTP
 # =========================================================
-def fetch_jsonld(url):
-    headers = {"accept": "application/ld+json"}
 
-    debug("GET", {"url": url, "headers": headers})
+def fetch_jsonld(url):
+
+    headers = {
+        "accept": "application/ld+json"
+    }
+
+    debug(
+        "GET",
+        {
+            "url": url,
+            "headers": headers
+        }
+    )
 
     r = requests.get(url, headers=headers)
 
     print("→ STATUS:", r.status_code)
 
     if r.status_code >= 400:
+
         print("❌ RESPONSE:", r.text)
 
     r.raise_for_status()
+
     return r.json()
 
 
 def publish(payload, api_key):
+
     headers = {
         "accept": "application/json",
         "Content-Type": "application/ld+json",
         "X-API-KEY": api_key.strip()
     }
 
-    debug("POST PUBLISH", {
-        "url": PUBLISH_URL,
-        "headers": mask(headers),
-        "payload": payload
-    })
+    debug(
+        "POST PUBLISH",
+        {
+            "url": PUBLISH_URL,
+            "headers": mask(headers),
+            "payload": payload
+        }
+    )
 
-    r = requests.post(PUBLISH_URL, headers=headers, json=payload)
+    r = requests.post(
+        PUBLISH_URL,
+        headers=headers,
+        json=payload
+    )
 
     print("→ STATUS:", r.status_code)
 
     if r.status_code >= 400:
+
         print("❌ RESPONSE:", r.text)
         sys.exit(1)
 
@@ -127,28 +177,44 @@ def publish(payload, api_key):
 # =========================================================
 # GROUP
 # =========================================================
+
 def fetch_group():
+
     data = fetch_jsonld(SOURCE_GROUP)
 
-    g = find_first(data, "Group")
+    group = find_first(data, "Group")
 
-    if not g:
+    if not group:
         raise Exception("Group node not found")
 
     return (
-        g.get("description", ""),
-        g.get("abstract", "")
+        group.get("description", ""),
+        group.get("abstract", "")
     )
 
 
-def publish_group(group_id, title, description, abstract, api_key):
+def publish_group(
+    group_id,
+    title,
+    description,
+    abstract,
+    api_key
+):
+
     group_id = group_id.strip("/")
 
+    target_group_uri = (
+        f"{TARGET_BASE}/{group_id}"
+    )
+
     payload = {
-        "@context": "https://databus.dbpedia.org/res/context.jsonld",
+        "@context": (
+            "https://databus.dbpedia.org/"
+            "res/context.jsonld"
+        ),
         "@graph": {
             "@type": "Group",
-            "@id": f"{TARGET_BASE}/{group_id}",
+            "@id": target_group_uri,
             "title": title,
             "description": description,
             "abstract": abstract
@@ -156,13 +222,20 @@ def publish_group(group_id, title, description, abstract, api_key):
     }
 
     print("\n===== PUBLISH GROUP =====")
-    publish(payload, api_key)
+    print("TARGET GROUP:", target_group_uri)
+
+    publish(
+        payload,
+        api_key
+    )
 
 
 # =========================================================
 # ARTIFACTS
 # =========================================================
+
 def query_artifacts():
+
     query = f"""
 PREFIX databus: <https://dataid.dbpedia.org/databus#>
 
@@ -173,59 +246,111 @@ WHERE {{
 }}
 """
 
-    debug("SPARQL ARTIFACTS", {"query": query})
+    debug(
+        "SPARQL ARTIFACTS",
+        {
+            "query": query
+        }
+    )
 
     r = requests.post(
         SPARQL_ENDPOINT,
-        data={"query": query},
-        headers={"accept": "application/sparql-results+json"}
+        data={
+            "query": query
+        },
+        headers={
+            "accept": "application/sparql-results+json"
+        }
     )
 
     print("→ STATUS:", r.status_code)
 
     if r.status_code >= 400:
+
         print("❌ RESPONSE:", r.text)
         r.raise_for_status()
 
     data = r.json()
 
     return [
-        b["artifact"]["value"]
-        for b in data["results"]["bindings"]
+        binding["artifact"]["value"]
+        for binding in data["results"]["bindings"]
     ]
 
 
-def publish_artifact(group_id, artifact_uri, api_key):
+def publish_artifact(
+    group_id,
+    artifact_uri,
+    api_key
+):
+
     data = fetch_jsonld(artifact_uri)
 
-    a = find_first(data, "Artifact")
+    artifact = find_first(
+        data,
+        "Artifact"
+    )
 
-    if not a:
-        raise Exception(f"Artifact node missing: {artifact_uri}")
+    if not artifact:
+        raise Exception(
+            f"Artifact node missing: {artifact_uri}"
+        )
 
-    artifact_id = artifact_uri.rstrip("/").split("/")[-1]
+    artifact_id = (
+        artifact_uri
+        .rstrip("/")
+        .split("/")[-1]
+    )
 
-    target_id = f"{TARGET_BASE}/{group_id}/{artifact_id}"
+    target_id = (
+        f"{TARGET_BASE}/"
+        f"{group_id}/"
+        f"{artifact_id}"
+    )
 
     payload = {
-        "@context": "https://databus.dbpedia.org/res/context.jsonld",
+        "@context": (
+            "https://databus.dbpedia.org/"
+            "res/context.jsonld"
+        ),
         "@graph": {
             "@type": "Artifact",
             "@id": target_id,
-            "title": a.get("title", artifact_id),
-            "description": a.get("description", ""),
-            "abstract": a.get("abstract", "")
+            "title": artifact.get(
+                "title",
+                artifact_id
+            ),
+            "description": artifact.get(
+                "description",
+                ""
+            ),
+            "abstract": artifact.get(
+                "abstract",
+                ""
+            )
         }
     }
 
-    print("\n===== PUBLISH ARTIFACT =====", target_id)
-    publish(payload, api_key)
+    print(
+        "\n===== PUBLISH ARTIFACT =====",
+        target_id
+    )
+
+    publish(
+        payload,
+        api_key
+    )
 
 
 # =========================================================
 # VERSIONS
 # =========================================================
-def query_versions(artifact_uri, graph):
+
+def query_versions(
+    artifact_uri,
+    graph
+):
+
     query = f"""
 PREFIX databus: <https://dataid.dbpedia.org/databus#>
 PREFIX databus-cv: <https://dataid.dbpedia.org/databus-cv#>
@@ -238,57 +363,187 @@ WHERE {{
   ?version dcat:distribution ?distribution .
   ?distribution databus-cv:graph "{graph}" .
 }}
+ORDER BY ?version
 """
 
-    debug("SPARQL VERSIONS", {"query": query})
+    debug(
+        "SPARQL VERSIONS",
+        {
+            "graph": graph,
+            "query": query
+        }
+    )
 
     r = requests.post(
         SPARQL_ENDPOINT,
-        data={"query": query},
-        headers={"accept": "application/sparql-results+json"}
+        data={
+            "query": query
+        },
+        headers={
+            "accept": "application/sparql-results+json"
+        }
     )
 
     print("→ STATUS:", r.status_code)
 
     if r.status_code >= 400:
+
         print("❌ RESPONSE:", r.text)
         r.raise_for_status()
 
     data = r.json()
 
     return [
-        b["version"]["value"]
-        for b in data["results"]["bindings"]
+        binding["version"]["value"]
+        for binding in data["results"]["bindings"]
     ]
+
+
+# =========================================================
+# PART GRAPH MATCHING
+# =========================================================
+
+def part_matches_graph(part, graph):
+
+    part_graph = part.get("dcv:graph")
+
+    if part_graph is None:
+        return False
+
+    # Usually this is simply:
+    #
+    #   "dbpedia-org"
+    #
+    # but support JSON-LD values represented
+    # as dictionaries as well.
+
+    if isinstance(part_graph, dict):
+
+        value = (
+            part_graph.get("@value")
+            or part_graph.get("@id")
+        )
+
+        return value == graph
+
+    if isinstance(part_graph, list):
+
+        for value in part_graph:
+
+            if isinstance(value, dict):
+
+                value = (
+                    value.get("@value")
+                    or value.get("@id")
+                )
+
+            if value == graph:
+                return True
+
+        return False
+
+    return part_graph == graph
 
 
 # =========================================================
 # VERSION + PARTS
 # =========================================================
-def publish_version(group_id, artifact_id, version_uri, api_key):
+
+def publish_version(
+    group_id,
+    artifact_id,
+    version_uri,
+    graph,
+    api_key
+):
+
+    print("\n----------------------------------------")
+    print("SOURCE VERSION:", version_uri)
+    print("GRAPH FILTER:", graph)
+    print("----------------------------------------")
 
     data = fetch_jsonld(version_uri)
 
-    v = find_first(data, "Version")
-    parts = find_all(data, "Part")
-
-    if not v:
-        raise Exception(f"Version node missing: {version_uri}")
-
-    version_number = (
-        v.get("hasVersion")
-        or version_uri.rstrip("/").split("/")[-1]
+    version = find_first(
+        data,
+        "Version"
     )
 
-    version_id = f"{TARGET_BASE}/{group_id}/{artifact_id}/{version_number}"
+    parts = find_all(
+        data,
+        "Part"
+    )
+
+    if not version:
+
+        raise Exception(
+            f"Version node missing: {version_uri}"
+        )
+
+    version_number = (
+        version.get("hasVersion")
+        or version_uri
+        .rstrip("/")
+        .split("/")[-1]
+    )
+
+    version_id = (
+        f"{TARGET_BASE}/"
+        f"{group_id}/"
+        f"{artifact_id}/"
+        f"{version_number}"
+    )
+
+    # =====================================================
+    # FILTER PARTS BY GRAPH
+    # =====================================================
+
+    matching_parts = [
+        part
+        for part in parts
+        if part_matches_graph(
+            part,
+            graph
+        )
+    ]
+
+    print(
+        f"TOTAL PARTS: {len(parts)}"
+    )
+
+    print(
+        f"MATCHING PARTS FOR GRAPH "
+        f"'{graph}': {len(matching_parts)}"
+    )
+
+    if not matching_parts:
+
+        print(
+            f"⚠️ No Parts matching graph "
+            f"'{graph}' in version:"
+        )
+
+        print(version_uri)
+
+        return
 
     distributions = []
 
-    for p in parts:
+    for part in matching_parts:
 
-        part_id = p["@id"]
+        part_id = part.get("@id")
 
-        fragment = part_id.split("#", 1)[1] if "#" in part_id else ""
+        if not part_id:
+            print(
+                "⚠️ Skipping Part without @id"
+            )
+            continue
+
+        fragment = (
+            part_id.split("#", 1)[1]
+            if "#" in part_id
+            else ""
+        )
 
         target_part_id = (
             f"{version_id}#{fragment}"
@@ -299,103 +554,324 @@ def publish_version(group_id, artifact_id, version_uri, api_key):
         dist = {
             "@id": target_part_id,
             "@type": "Part",
-            "downloadURL": p.get("downloadURL"),
-            "sha256sum": p.get("sha256sum"),
-            "dcat:byteSize": p.get("dcat:byteSize")
+            "downloadURL": part.get(
+                "downloadURL"
+            ),
+            "sha256sum": part.get(
+                "sha256sum"
+            ),
+            "dcat:byteSize": part.get(
+                "dcat:byteSize"
+            )
         }
 
-        # =====================================================
-        # ✅ CRITICAL FIX: COPY CONTENT VARIANTS
-        # =====================================================
-        if p.get("dcv:graph") is not None:
-            dist["dcv:graph"] = p.get("dcv:graph")
+        # =================================================
+        # CONTENT VARIANTS
+        # =================================================
 
-        if p.get("dcv:partition") is not None:
-            dist["dcv:partition"] = p.get("dcv:partition")
-    
-        if "compression" in p:
-            dist["compression"] = p["compression"]
+        if part.get("dcv:graph") is not None:
 
-        if "formatExtension" in p:
-            dist["formatExtension"] = p["formatExtension"]
+            dist["dcv:graph"] = (
+                part.get("dcv:graph")
+            )
+
+        if part.get("dcv:partition") is not None:
+
+            dist["dcv:partition"] = (
+                part.get("dcv:partition")
+            )
+
+        if "compression" in part:
+
+            dist["compression"] = (
+                part["compression"]
+            )
+
+        if "formatExtension" in part:
+
+            dist["formatExtension"] = (
+                part["formatExtension"]
+            )
 
         distributions.append(dist)
 
+    if not distributions:
+
+        print(
+            "⚠️ No distributions left "
+            "after filtering."
+        )
+
+        return
+
+    # =====================================================
+    # VERSION PAYLOAD
+    # =====================================================
+
     payload = {
-        "@context": "https://databus.dbpedia.org/res/context.jsonld",
+        "@context": (
+            "https://databus.dbpedia.org/"
+            "res/context.jsonld"
+        ),
         "@graph": {
             "@type": "Version",
             "@id": version_id,
-            "title": v.get("title", artifact_id),
-            "description": v.get("description", ""),
-            "abstract": v.get("abstract", ""),
-            "license": v.get("license"),
+            "title": version.get(
+                "title",
+                artifact_id
+            ),
+            "description": version.get(
+                "description",
+                ""
+            ),
+            "abstract": version.get(
+                "abstract",
+                ""
+            ),
+            "license": version.get(
+                "license"
+            ),
             "distribution": distributions
         }
     }
 
-    print("\n===== PUBLISH VERSION =====", version_id)
-    publish(payload, api_key)
+    print(
+        "\n===== PUBLISH VERSION ====="
+    )
+
+    print(
+        "TARGET VERSION:",
+        version_id
+    )
+
+    print(
+        "GRAPH:",
+        graph
+    )
+
+    print(
+        "DISTRIBUTIONS:",
+        len(distributions)
+    )
+
+    publish(
+        payload,
+        api_key
+    )
 
 
 # =========================================================
 # MAIN
 # =========================================================
-def main():
-    parser = argparse.ArgumentParser()
 
-    parser.add_argument("group_id")
-    parser.add_argument("group_title")
-    parser.add_argument("--api-key", required=False)
-    parser.add_argument("--graph", required=True)
-    
+def main():
+
+    parser = argparse.ArgumentParser(
+        description=(
+            "Copy DBpedia Databus metadata from "
+            "the source group into a target group."
+        )
+    )
+
+    # Target group ID
+    parser.add_argument(
+        "group_id",
+        help="Target Databus group ID"
+    )
+
+    # Target group title
+    parser.add_argument(
+        "group_title",
+        help="Target Databus group title"
+    )
+
+    # API key
+    parser.add_argument(
+        "--api-key",
+        required=False,
+        help="Databus API key"
+    )
+
+    # Graph filter
+    parser.add_argument(
+        "--graph",
+        required=True,
+        help=(
+            "Only publish versions and Parts "
+            "matching this dcv:graph value"
+        )
+    )
+
     args = parser.parse_args()
 
-    api_key = args.api_key or os.getenv("DATABUS_API_KEY")
+    # =====================================================
+    # API KEY
+    # =====================================================
+
+    api_key = (
+        args.api_key
+        or os.getenv("DATABUS_API_KEY")
+    )
 
     if not api_key:
-        print("Missing API key")
+
+        print(
+            "❌ Missing API key"
+        )
+
         sys.exit(1)
 
-    # ---------------- GROUP ----------------
+    # =====================================================
+    # SHOW CONFIGURATION
+    # =====================================================
+
+    print("\n################ CONFIGURATION ################")
+
+    print(
+        "SOURCE GROUP:",
+        SOURCE_GROUP
+    )
+
+    print(
+        "TARGET GROUP ID:",
+        args.group_id
+    )
+
+    print(
+        "TARGET GROUP TITLE:",
+        args.group_title
+    )
+
+    print(
+        "TARGET GROUP URI:",
+        f"{TARGET_BASE}/{args.group_id}"
+    )
+
+    print(
+        "GRAPH FILTER:",
+        args.graph
+    )
+
+    print(
+        "API KEY: ***REDACTED***"
+    )
+
+    # =====================================================
+    # GROUP
+    # =====================================================
+
     print("\n################ GROUP ################")
 
-    desc, abs_ = fetch_group()
+    description, abstract = fetch_group()
 
-    publish_group(args.group_id, args.group_title, desc, abs_, api_key)
+    publish_group(
+        args.group_id,
+        args.group_title,
+        description,
+        abstract,
+        api_key
+    )
 
-    # ---------------- ARTIFACTS ----------------
-    print("\n################ ARTIFACTS ################")
+    # =====================================================
+    # ARTIFACTS
+    # =====================================================
+
+    print(
+        "\n################ ARTIFACTS ################"
+    )
 
     artifacts = query_artifacts()
 
-    print(f"\nFOUND {len(artifacts)} ARTIFACTS")
+    print(
+        f"\nFOUND {len(artifacts)} ARTIFACTS"
+    )
+
+    # =====================================================
+    # PROCESS EACH ARTIFACT
+    # =====================================================
 
     for artifact_uri in artifacts:
 
         try:
-            print("\n======================================")
 
-            publish_artifact(args.group_id, artifact_uri, api_key)
+            print(
+                "\n======================================"
+            )
 
-            artifact_id = artifact_uri.rstrip("/").split("/")[-1]
+            print(
+                "SOURCE ARTIFACT:",
+                artifact_uri
+            )
 
-            versions = query_versions(artifact_uri, args.graph)
+            # -------------------------------------------------
+            # Publish artifact metadata
+            # -------------------------------------------------
 
-            print(f"FOUND {len(versions)} VERSIONS")
+            publish_artifact(
+                args.group_id,
+                artifact_uri,
+                api_key
+            )
 
-            for v in versions:
+            artifact_id = (
+                artifact_uri
+                .rstrip("/")
+                .split("/")[-1]
+            )
+
+            # -------------------------------------------------
+            # Find versions matching --graph
+            # -------------------------------------------------
+
+            print(
+                f"\nQUERYING VERSIONS "
+                f"FOR GRAPH '{args.graph}'"
+            )
+
+            versions = query_versions(
+                artifact_uri,
+                args.graph
+            )
+
+            print(
+                f"FOUND {len(versions)} VERSIONS "
+                f"FOR GRAPH '{args.graph}'"
+            )
+
+            # -------------------------------------------------
+            # Publish matching versions
+            # -------------------------------------------------
+
+            for version_uri in versions:
+
                 publish_version(
                     args.group_id,
                     artifact_id,
-                    v,
+                    version_uri,
+                    args.graph,
                     api_key
                 )
 
         except Exception as e:
-            print("❌ FAILED:", artifact_uri)
-            print(e)
 
+            print(
+                "\n❌ FAILED:",
+                artifact_uri
+            )
+
+            print(
+                "ERROR:",
+                e
+            )
+
+    print(
+        "\n################ DONE ################"
+    )
+
+
+# =========================================================
+# ENTRY POINT
+# =========================================================
 
 if __name__ == "__main__":
     main()
