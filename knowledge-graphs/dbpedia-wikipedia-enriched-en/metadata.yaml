@@ -2,7 +2,7 @@ databus-account: knowledge-graph-catalog
 id: dbpedia-wikipedia-enriched-en
 title: DBpedia Wikipedia KG - Enriched (EN)
 databus-publish: false
-moss-publish: true
+moss-publish: false
 homepage: https://dbpedia.org
 domains:
 - Cross-domain
