@@ -1,0 +1,18 @@
+databus-account: knowledge-graph-catalog
+id: dbpedia-wikipedia-enriched-en
+title: DBpedia Wikipedia KG - Enriched (EN)
+databus-publish: false
+moss-publish: true
+homepage: https://dbpedia.org
+domains:
+- Cross-domain
+keywords:
+- dbpedia
+- english wikipedia
+- knowledge extraction
+- encyclopedia
+- data enrichment
+maintainers:
+- name: Milan Dojchinovski
+  contact: dojcinovski.milan@gmail.com
+  github: m1ci
