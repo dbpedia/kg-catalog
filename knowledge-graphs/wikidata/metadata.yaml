@@ -67,6 +67,26 @@ artifacts:
       status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 71426498934
+  - version: 2026-09-09
+    title: Wikidata Truthy RDF Dump - Beta
+    abstract: Beta Wikidata truthy RDF dumps containing the best-rank direct statements.
+    description: 'Beta truthy RDF dumps contain the simplified truthy representation
+      of Wikidata, including direct best-rank statements represented using wdt: and
+      wdtn: properties. Qualifiers and references are omitted.'
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260909/wikidata-20260909-truthy-BETA.nt.bz2
+      format: nt
+      compression: bz2
+      size: 43422182003
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260909/wikidata-20260909-truthy-BETA.nt.gz
+      format: nt
+      compression: gz
+      size: 71507723142
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
 - artifact: lexemes-beta
   title: Wikidata Lexemes RDF Dump - Beta
   abstract: Beta RDF dumps containing Wikidata lexemes and associated linguistic information.
@@ -167,3 +187,36 @@ artifacts:
       status: active
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       size: 153805109912
+  - version: 2026-09-07
+    title: Wikidata Complete RDF Dump - Beta
+    abstract: Beta complete Wikidata RDF dumps containing all entity information representable
+      in RDF.
+    description: Beta complete Wikidata RDF dumps contain all entity information representable
+      in RDF, including statements, qualifiers, references, labels, descriptions,
+      aliases, and other RDF-representable data.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260907/wikidata-20260907-all-BETA.nt.bz2
+      format: nt
+      compression: bz2
+      size: 195743753799
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260907/wikidata-20260907-all-BETA.nt.gz
+      format: nt
+      compression: gz
+      size: 253515835782
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260907/wikidata-20260907-all-BETA.ttl.bz2
+      format: ttl
+      compression: bz2
+      size: 125450443663
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260907/wikidata-20260907-all-BETA.ttl.gz
+      format: ttl
+      compression: gz
+      size: 153981088288
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
