@@ -152,6 +152,38 @@ artifacts:
       size: 827442295
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       status: active
+  - version: 2026-09-11
+    title: Wikidata Lexemes RDF Dump - Beta
+    abstract: Beta RDF dumps containing Wikidata lexemes and associated linguistic
+      information.
+    description: Beta Wikidata lexeme dumps contain the lexeme namespace and associated
+      linguistic information represented in RDF.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260911/wikidata-20260911-lexemes-BETA.nt.bz2
+      format: nt
+      compression: bz2
+      size: 1157601946
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260911/wikidata-20260911-lexemes-BETA.nt.gz
+      format: nt
+      compression: gz
+      size: 1508755670
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260911/wikidata-20260911-lexemes-BETA.ttl.bz2
+      format: ttl
+      compression: bz2
+      size: 668457682
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260911/wikidata-20260911-lexemes-BETA.ttl.gz
+      format: ttl
+      compression: gz
+      size: 833500816
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
 - artifact: all-beta
   title: Wikidata Complete RDF Dump - Beta
   abstract: Beta complete Wikidata RDF dumps containing all entity information representable
