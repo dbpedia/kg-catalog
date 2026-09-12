@@ -165,25 +165,25 @@ artifacts:
       compression: bz2
       size: 1157601946
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260911/wikidata-20260911-lexemes-BETA.nt.gz
       format: nt
       compression: gz
       size: 1508755670
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260911/wikidata-20260911-lexemes-BETA.ttl.bz2
       format: ttl
       compression: bz2
       size: 668457682
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260911/wikidata-20260911-lexemes-BETA.ttl.gz
       format: ttl
       compression: gz
       size: 833500816
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
 - artifact: all-beta
   title: Wikidata Complete RDF Dump - Beta
   abstract: Beta complete Wikidata RDF dumps containing all entity information representable
