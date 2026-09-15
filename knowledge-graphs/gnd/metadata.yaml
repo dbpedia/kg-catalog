@@ -10,49 +10,40 @@ description: The GND (Gemeinsame Normdatei) is a knowledge graph by the German N
   and locations. It unifies legacy authority files using RDF, enabling semantic links
   across libraries and research institutions.
 homepage: https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/LDS/lds_node.html
-license: https://dalicc.net/licenselibrary/Cc010Universal
+domains:
+- cross-domain
+license: https://creativecommons.org/publicdomain/zero/1.0/deed.de
 check-new-release: check_gnd_release.py
 databus-publish: false
 moss-publish: false
 keywords:
-- bibliographic
-- publications
+- Cross-domain
 sparql:
 - name: main
-  url: https://sparql.dnb.de
+  url: https://sparql.dnb.de/api/gnd
 maintainers:
 - name: Tracy Arndt
   contact: T.Arndt@dnb.de
-  github: n/a
-last-version-size: 3686365
+  github: thoffma
 artifacts:
-- artifact: authorities-gnd-geografikum_lds
-  title: authorities-gnd-geografikum_lds
-  abstract: 2025-09-29 14:49 42M Stabiler Link auf den aktuellen Gesamtabzug der GND,
-    Entitaeten Geografikum (Geographical entity, Code g). This version has been **auto-generated**.
-  description: 2025-09-29 14:49 42M Stabiler Link auf den aktuellen Gesamtabzug der
-    GND, Entitaeten Geografikum (Geographical entity, Code g). This version has been
-    **auto-generated**.
+- artifact: authorities-gnd_lds
+  title: authorities-gnd_lds
+  abstract: Gesamtabzug der GND im Format RDF
+  description: Gesamtabzug der GND im Format RDF
   versions:
-  - version: 2025-09-16
-    title: authorities-gnd-geografikum_lds
-    abstract: 2025-09-29 14:49 42M Stabiler Link auf den aktuellen Gesamtabzug der
-      GND, Entitaeten Geografikum (Geographical entity, Code g). This version has
-      been **auto-generated**.
-    description: 2025-09-29 14:49 42M Stabiler Link auf den aktuellen Gesamtabzug
-      der GND, Entitaeten Geografikum (Geographical entity, Code g). This version
-      has been **auto-generated**.
-    license: https://dalicc.net/licenselibrary/Cc010Universal
+  - version: 2026-02-17
+    title: authorities-gnd_lds
+    abstract: Gesamtabzug der GND im Format RDF
+    description: Gesamtabzug der GND im Format RDF
+    license: https://creativecommons.org/publicdomain/zero/1.0/deed.de
     distributions:
-    - file: https://data.dnb.de/opendata/authorities-gnd-geografikum_lds_20250926.jsonld.gz
-      format: jsonld
+    - file: https://data.dnb.de/opendata/authorities-gnd_lds_20260217.nt.gz
+      format: ntriples
       compression: gz
-      size: 43984924
-      sha256: 926239dc82b3894916ad4e377d113752666b4b68aaaa517d04c0300ca4ba9844
+      sha256: e773583749c425a815e923a4c4a4dcbe26e33c607a4111d8efb56992b42f9a75
       status: active
-    - file: https://data.dnb.de/opendata/authorities-gnd-geografikum_lds_20250913.rdf.gz
+    - file: https://data.dnb.de/opendata/authorities-gnd_lds_20260217.rdf.gz
       format: rdf
       compression: gz
-      size: 43476315
-      sha256: f329bd6cd74d2851072bf62701ee3ce4023e027615002da2954fb5b751b922a3
-      status: error
+      sha256: ff9654434d5e2fdf21dece9c25fa6f9540140f6ac3ca6dfc182b19874df9a8e9
+      status: active
