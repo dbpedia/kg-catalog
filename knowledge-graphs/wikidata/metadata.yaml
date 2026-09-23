@@ -9,7 +9,7 @@ description: Wikidata is a large-scale, collaboratively maintained knowledge gra
   and their relationships, including labels, descriptions, aliases, statements, qualifiers,
   references, identifiers, and interlanguage links.
 check-new-release: wikidata_release_auto_update.py
-moss-publish: false
+moss-publish: true
 databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://www.wikidata.org/
@@ -25,7 +25,8 @@ keywords:
 - semantic web
 sparql:
 - name: main
-  url: https://query.wikidata.org/
+  url: https://query.wikidata.org/sparql
+  ui: https://query.wikidata.org/
 maintainers:
 - name: Halley Coplin, MediaWiki Interfaces
   contact: hcoplin@wikimedia.org

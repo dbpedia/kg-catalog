@@ -10,7 +10,7 @@ description: The Microsoft Academic Knowledge Graph (MAKG) is an RDF representat
   entities such as authors, affiliations, journals, conferences, and fields of study.
   The enhanced MAKG additionally provides author name disambiguation, publication
   classifications, links to Wikidata, and other scholarly metadata.
-moss-publish: false
+moss-publish: true
 databus-publish: false
 license: https://opendatacommons.org/licenses/by-1-0/
 homepage: https://makg.org/
@@ -24,9 +24,6 @@ keywords:
 - Microsoft Academic Graph
 - linked open data
 - RDF
-sparql:
-- name: main
-  url: https://makg.org/sparql
 maintainers:
 - name: "Michael Faerber"
   contact: michael.faerber@tu-dresden.de

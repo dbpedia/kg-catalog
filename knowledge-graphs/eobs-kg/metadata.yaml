@@ -7,7 +7,7 @@ description: EOBS-KG is a knowledge graph providing structured data about climat
   variables such as mean/min/max temperature, precipitation, relative humidity, and
   wind speed for Europe. The knowledge graph contains about 3 billion triples, covers
   the period 1950-2024.
-moss-publish: false
+moss-publish: true
 databus-publish: false
 license: https://creativecommons.org/licenses/by-nc/4.0/
 homepage: https://doi.org/10.34740/kaggle/ds/10081642
@@ -19,7 +19,8 @@ keywords:
 - scientific knowledge graph
 sparql:
 - name: main
-  url: https://w3id.org/climateobservations/eobs-v31
+  url: https://obs.knowledgehub.nfdi4earth.de/sparql
+  ui: https://w3id.org/climateobservations/eobs-v31
 maintainers:
 - name: Auriol Degbelo
   contact: auriol.degbelo@tu-dresden.de

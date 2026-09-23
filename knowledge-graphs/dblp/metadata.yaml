@@ -8,7 +8,7 @@ description: "The DBLP computer science bibliography KG is an open, curated KG o
   \ DBLP data, offering quality-checked metadata on authors, publications, and venues\
   \ in journals, conferences, etc.\n Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/blob/main/knowledge-graphs/dblp/metadata.yaml"
 check-new-release: dblp_release_auto_update.py
-databus-publish: false
+databus-publish: true
 moss-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/legalcode.rdf
 homepage: https://drops.dagstuhl.de/entities/collection/dblp
@@ -25,7 +25,8 @@ internal_namespaces:
 - https://dblp.org/
 sparql:
 - name: main
-  url: https://sparql.dblp.org
+  url: https://sparql.dblp.org/sparql
+  ui: https://sparql.dblp.org
 last-version-size: 5125379331
 artifacts:
 - artifact: monthly-snapshot

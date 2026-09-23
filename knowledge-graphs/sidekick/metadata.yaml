@@ -32,7 +32,7 @@ description: 'SIDEKICK is a semantically integrated biomedical knowledge graph f
   decision support.
 
   '
-moss-publish: false
+moss-publish: true
 databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://sidekick.bio2vec.net/
@@ -47,7 +47,8 @@ keywords:
 - biomedical ontology
 sparql:
 - name: main
-  url: https://sidekick.bio2vec.net/sparql
+  url: https://sidekick.bio2vec.net/fuseki/sidekick/query
+  ui: https://sidekick.bio2vec.net/sparql
 maintainers:
 - name: Robert Hoehndorf
   contact: robert.hoehndorf@kaust.edu.sa
