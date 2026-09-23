@@ -32,7 +32,7 @@ description: 'SIDEKICK is a semantically integrated biomedical knowledge graph f
   decision support.
 
   '
-moss-publish: true
+moss-publish: false
 databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://sidekick.bio2vec.net/

@@ -13,7 +13,7 @@ homepage: https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/LDS/ld
 license: https://dalicc.net/licenselibrary/Cc010Universal
 check-new-release: check_gnd_release.py
 databus-publish: false
-moss-publish: true
+moss-publish: false
 keywords:
 - bibliographic
 - publications

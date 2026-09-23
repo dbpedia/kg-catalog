@@ -8,7 +8,7 @@ description: "The DBLP computer science bibliography KG is an open, curated KG o
   \ DBLP data, offering quality-checked metadata on authors, publications, and venues\
   \ in journals, conferences, etc.\n Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/blob/main/knowledge-graphs/dblp/metadata.yaml"
 check-new-release: dblp_release_auto_update.py
-databus-publish: true
+databus-publish: false
 moss-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/legalcode.rdf
 homepage: https://drops.dagstuhl.de/entities/collection/dblp
