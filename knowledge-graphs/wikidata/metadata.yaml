@@ -25,7 +25,8 @@ keywords:
 - semantic web
 sparql:
 - name: main
-  url: https://query.wikidata.org/
+  url: https://query.wikidata.org/sparql
+  ui: https://query.wikidata.org/
 maintainers:
 - name: Halley Coplin, MediaWiki Interfaces
   contact: hcoplin@wikimedia.org
@@ -85,6 +86,26 @@ artifacts:
       format: nt
       compression: gz
       size: 71507723142
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+  - version: 2026-09-16
+    title: Wikidata Truthy RDF Dump - Beta
+    abstract: Beta Wikidata truthy RDF dumps containing the best-rank direct statements.
+    description: 'Beta truthy RDF dumps contain the simplified truthy representation
+      of Wikidata, including direct best-rank statements represented using wdt: and
+      wdtn: properties. Qualifiers and references are omitted.'
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260916/wikidata-20260916-truthy-BETA.nt.bz2
+      format: nt
+      compression: bz2
+      size: 43458740693
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260916/wikidata-20260916-truthy-BETA.nt.gz
+      format: nt
+      compression: gz
+      size: 71568239134
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       status: active
 - artifact: lexemes-beta
@@ -184,6 +205,38 @@ artifacts:
       size: 833500816
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       status: active
+  - version: 2026-09-18
+    title: Wikidata Lexemes RDF Dump - Beta
+    abstract: Beta RDF dumps containing Wikidata lexemes and associated linguistic
+      information.
+    description: Beta Wikidata lexeme dumps contain the lexeme namespace and associated
+      linguistic information represented in RDF.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260918/wikidata-20260918-lexemes-BETA.nt.bz2
+      format: nt
+      compression: bz2
+      size: 1162140892
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260918/wikidata-20260918-lexemes-BETA.nt.gz
+      format: nt
+      compression: gz
+      size: 1514120498
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260918/wikidata-20260918-lexemes-BETA.ttl.bz2
+      format: ttl
+      compression: bz2
+      size: 671197478
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260918/wikidata-20260918-lexemes-BETA.ttl.gz
+      format: ttl
+      compression: gz
+      size: 836780156
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
 - artifact: all-beta
   title: Wikidata Complete RDF Dump - Beta
   abstract: Beta complete Wikidata RDF dumps containing all entity information representable
@@ -250,5 +303,38 @@ artifacts:
       format: ttl
       compression: gz
       size: 153981088288
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+  - version: 2026-09-14
+    title: Wikidata Complete RDF Dump - Beta
+    abstract: Beta complete Wikidata RDF dumps containing all entity information representable
+      in RDF.
+    description: Beta complete Wikidata RDF dumps contain all entity information representable
+      in RDF, including statements, qualifiers, references, labels, descriptions,
+      aliases, and other RDF-representable data.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260914/wikidata-20260914-all-BETA.nt.bz2
+      format: nt
+      compression: bz2
+      size: 195885605402
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260914/wikidata-20260914-all-BETA.nt.gz
+      format: nt
+      compression: gz
+      size: 253694082314
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260914/wikidata-20260914-all-BETA.ttl.bz2
+      format: ttl
+      compression: bz2
+      size: 125540901537
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: active
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260914/wikidata-20260914-all-BETA.ttl.gz
+      format: ttl
+      compression: gz
+      size: 154097496855
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       status: active

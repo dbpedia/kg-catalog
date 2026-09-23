@@ -24,11 +24,8 @@ keywords:
 - Microsoft Academic Graph
 - linked open data
 - RDF
-sparql:
-- name: main
-  url: https://makg.org/sparql
 maintainers:
-- name: "Michael Faerber"
+- name: Michael Faerber
   contact: michael.faerber@tu-dresden.de
   github: michaelfaerber
 artifacts:

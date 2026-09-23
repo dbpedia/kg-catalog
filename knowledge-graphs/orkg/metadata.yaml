@@ -22,7 +22,8 @@ keywords:
 - structured research papers
 sparql:
 - name: main
-  url: https://www.orkg.org/orkg/sparql/
+  url: https://orkg.org/triplestore
+  ui: https://www.orkg.org/orkg/sparql/
 maintainers:
 - name: Milan Dojchinovski
   contact: dojcinovski.milan@gmail.com

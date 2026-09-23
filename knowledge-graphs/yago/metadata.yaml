@@ -21,7 +21,8 @@ keywords:
 - facts
 sparql:
 - name: main
-  url: https://yago-knowledge.org/sparql
+  url: https://yago-knowledge.org/sparql/qlever
+  ui: https://yago-knowledge.org/sparql
 maintainers:
 - name: Fabian Suchanek
   contact: fabian@suchanek.name

@@ -47,7 +47,8 @@ keywords:
 - biomedical ontology
 sparql:
 - name: main
-  url: https://sidekick.bio2vec.net/sparql
+  url: https://sidekick.bio2vec.net/fuseki/sidekick/query
+  ui: https://sidekick.bio2vec.net/sparql
 maintainers:
 - name: Robert Hoehndorf
   contact: robert.hoehndorf@kaust.edu.sa

@@ -25,7 +25,8 @@ internal_namespaces:
 - https://dblp.org/
 sparql:
 - name: main
-  url: https://sparql.dblp.org
+  url: https://sparql.dblp.org/sparql
+  ui: https://sparql.dblp.org
 last-version-size: 5125379331
 artifacts:
 - artifact: monthly-snapshot
