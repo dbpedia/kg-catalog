@@ -1,14 +1,14 @@
 databus-account: knowledge-graph-catalog
 id: eobs-kg
-title: EOBS Knowledge graph
+title: EOBS Knowledge Graph
 abstract: EOBS-KG is a knowledge graph of European climate observations covering the
   time period 1950-2024.
 description: EOBS-KG is a knowledge graph providing structured data about climate
   variables such as mean/min/max temperature, precipitation, relative humidity, and
   wind speed for Europe. The knowledge graph contains about 3 billion triples, covers
   the period 1950-2024.
-moss-publish: false
-databus-publish: false
+moss-publish: true
+databus-publish: true
 license: https://creativecommons.org/licenses/by-nc/4.0/
 homepage: https://doi.org/10.34740/kaggle/ds/10081642
 domains:
