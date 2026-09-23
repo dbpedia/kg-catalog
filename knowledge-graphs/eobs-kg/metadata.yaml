@@ -8,7 +8,7 @@ description: EOBS-KG is a knowledge graph providing structured data about climat
   wind speed for Europe. The knowledge graph contains about 3 billion triples, covers
   the period 1950-2024.
 moss-publish: false
-databus-publish: true
+databus-publish: false
 license: https://creativecommons.org/licenses/by-nc/4.0/
 homepage: https://doi.org/10.34740/kaggle/ds/10081642
 domains:
@@ -38,6 +38,7 @@ artifacts:
       format: ttl
       status: error
       sha256: 3daa97090b313c5f06967381eb702c0b81f9a1971adae3196f57b0d6c153f0b0
+      size: 10370162736
 - artifact: eobs-kg-colllection-1955-1959
   title: Collection of observations from 1955-1959
   abstract: This file contains observations from 1955 to 1959.
