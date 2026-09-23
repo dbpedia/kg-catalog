@@ -1,0 +1,219 @@
+databus-account: knowledge-graph-catalog
+
+id: eobs-kg
+
+title: EOBS Knowledge graph
+
+abstract: EOBS-KG is a knowledge graph of European climate observations covering the
+  time period 1950-2024.
+
+description: EOBS-KG is a knowledge graph providing structured data about climate
+  variables such as mean/min/max temperature, precipitation, relative humidity, and
+  wind speed for Europe. The knowledge graph contains about 3 billion triples, covers
+  the period 1950-2024.
+moss-publish: true
+
+databus-publish: true
+
+license: https://creativecommons.org/licenses/by-nc/4.0/
+
+homepage: https://doi.org/10.34740/kaggle/ds/10081642
+
+domains:
+- Geography & Environment
+
+keywords:
+- climate data
+- geographic knowledge graph
+- scientific knowledge graph
+
+sparql:
+- name: main
+  url: https://w3id.org/climateobservations/eobs-v31
+
+maintainers:
+- name: Auriol Degbelo
+  contact: auriol.degbelo@tu-dresden.de
+  github: aurioldegbelo
+
+artifacts:
+- artifact: eobs-kg-colllection-1950-1954
+  title: Collection of observations from 1950-1954
+  abstract: This file contains observations from 1950 to 1954.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1950-1954
+    abstract: This file contains observations from 1950 to 1954.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1950_1954_20251216_004417.ttl
+      format: ttl
+      status: pending
+- artifact: eobs-kg-colllection-1955-1959
+  title: Collection of observations from 1955-1959
+  abstract: This file contains observations from 1955 to 1959.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1955-1959
+    abstract: This file contains observations from 1955 to 1959.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1955_1959_20251216_160101.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1960-1964
+  title: Collection of observations from 1960-1964
+  abstract: This file contains observations from 1960 to 1964.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1960-1964
+    abstract: This file contains observations from 1960 to 1964.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1960_1964_20251217_072456.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1965-1969
+  title: Collection of observations from 1965-1969
+  abstract: This file contains observations from 1965 to 1969.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1965-1969
+    abstract: This file contains observations from 1965 to 1969.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1965_1969_20251217_230110.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1970-1974
+  title: Collection of observations from 1970-1974
+  abstract: This file contains observations from 1970 to 1974.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1970-1974
+    abstract: This file contains observations from 1970 to 1974.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1970_1974_20251226_203257.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1975-1979
+  title: Collection of observations from 1975-1979
+  abstract: This file contains observations from 1975 to 1979.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1975-1979
+    abstract: This file contains observations from 1975 to 1979.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1975_1979_20251217_003449.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1980-1984
+  title: Collection of observations from 1980-1984
+  abstract: This file contains observations from 1980 to 1984.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1980-1984
+    abstract: This file contains observations from 1980 to 1984.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1980_1984_20251217_003450.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1985-1989
+  title: Collection of observations from 1985-1989
+  abstract: This file contains observations from 1985 to 1989.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1985-1989
+    abstract: This file contains observations from 1985 to 1989.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1985_1989_20251231_142101.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1990-1994
+  title: Collection of observations from 1990-1994
+  abstract: This file contains observations from 1990 to 1994.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1990-1994
+    abstract: This file contains observations from 1990 to 1994.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1990_1994_20251231_141928.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-1995-1999
+  title: Collection of observations from 1995-1999
+  abstract: This file contains observations from 1995 to 1999.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 1995-1999
+    abstract: This file contains observations from 1995 to 1999.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1995_1999_20251231_142040.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-2000-2004
+  title: Collection of observations from 2000-2004
+  abstract: This file contains observations from 2000 to 2004.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 2000-2004
+    abstract: This file contains observations from 2000 to 2004.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_2000_2004_20251231_141520.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-2005-2009
+  title: Collection of observations from 2005-2009
+  abstract: This file contains observations from 2005 to 2009.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 2005-2009
+    abstract: This file contains observations from 2005 to 2009.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_2005_2009_20251227_024839.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-2010-2014
+  title: Collection of observations from 2010-2014
+  abstract: This file contains observations from 2010 to 2014.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 2010-2014
+    abstract: This file contains observations from 2010 to 2014.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_2010_2014_20251217_011112.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-2015-2019
+  title: Collection of observations from 2015-2019
+  abstract: This file contains observations from 2015 to 2019.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 2015-2019
+    abstract: This file contains observations from 2015 to 2019.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_2015_2019_20251217_173418.ttl
+      format: ttl
+      status: active
+- artifact: eobs-kg-colllection-2020-2024
+  title: Collection of observations from 2020-2024
+  abstract: This file contains observations from 2020 to 2024.
+  versions:
+  - version: 2026.07.10
+    title: Collection of observations from 2020-2024
+    abstract: This file contains observations from 2020 to 2024.
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_2020_2024_20251227_032128.ttl
+      format: ttl
+      status: active
