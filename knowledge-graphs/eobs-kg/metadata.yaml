@@ -36,7 +36,7 @@ artifacts:
     distributions:
     - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_1950_1954_20251216_004417.ttl
       format: ttl
-      status: pending
+      status: error
       sha256: 3daa97090b313c5f06967381eb702c0b81f9a1971adae3196f57b0d6c153f0b0
 - artifact: eobs-kg-colllection-1955-1959
   title: Collection of observations from 1955-1959
