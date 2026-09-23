@@ -1,4 +1,4 @@
-databus-account: deutsche-natbib
+databus-account: knowledge-graph-catalog
 id: gnd
 title: Integrated Authority File
 abstract: The GND (Gemeinsame Normdatei) is a knowledge graph by the German National
@@ -11,11 +11,10 @@ description: The GND (Gemeinsame Normdatei) is a knowledge graph by the German N
   across libraries and research institutions.
 homepage: https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/LDS/lds_node.html
 domains:
-- cross-domain
+- Cross-domain
 license: https://creativecommons.org/publicdomain/zero/1.0/deed.de
-check-new-release: check_gnd_release.py
-databus-publish: false
-moss-publish: false
+databus-publish: true
+moss-publish: true
 keywords:
 - Cross-domain
 sparql:
