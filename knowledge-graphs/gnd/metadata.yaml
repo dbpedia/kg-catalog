@@ -1,6 +1,6 @@
 databus-account: knowledge-graph-catalog
 id: gnd
-title: Integrated Authority File
+title: Integrated Authority File (GND)
 abstract: The GND (Gemeinsame Normdatei) is a knowledge graph by the German National
   Library, providing structured metadata on persons, organizations, works, subjects,
   and locations. It unifies legacy authority files using RDF, enabling semantic links
