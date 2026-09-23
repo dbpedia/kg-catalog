@@ -13,8 +13,8 @@ homepage: https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/LDS/ld
 domains:
 - Cross-domain
 license: https://creativecommons.org/publicdomain/zero/1.0/deed.de
-databus-publish: true
-moss-publish: true
+databus-publish: false
+moss-publish: false
 keywords:
 - Cross-domain
 sparql:
