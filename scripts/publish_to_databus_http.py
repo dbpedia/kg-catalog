@@ -30,26 +30,65 @@ def calculate_sha256(url):
 
 def fetch_size(url):
     """
-    Fetch file size using HTTP HEAD request (Content-Length).
-    Returns int or None if unavailable.
+    Fetch file size without downloading the complete file.
+
+    1. Try HEAD with redirects.
+    2. If HEAD fails or has no Content-Length, try a 1-byte ranged GET.
+       Content-Range contains the total file size, e.g.:
+       bytes 0-0/10370162736
     """
+    headers = {
+        "User-Agent": "KG-Catalog/1.0 (https://github.com/dbpedia/kg-catalog)"
+    }
+
+    # --- 1. HEAD ---
     try:
-        r = requests.head(url, allow_redirects=True, timeout=30)
+        r = requests.head(
+            url,
+            headers=headers,
+            allow_redirects=True,
+            timeout=30
+        )
         r.raise_for_status()
 
         size = r.headers.get("Content-Length")
         if size is not None:
             return int(size)
 
-        r = requests.get(url, stream=True, timeout=30)
+    except requests.RequestException as e:
+        print(f"⚠️ HEAD failed for {url}: {e}")
+
+    # --- 2. Range GET ---
+    try:
+        range_headers = {
+            **headers,
+            "Range": "bytes=0-0"
+        }
+
+        r = requests.get(
+            url,
+            headers=range_headers,
+            allow_redirects=True,
+            stream=True,
+            timeout=30
+        )
         r.raise_for_status()
 
-        size = r.headers.get("Content-Length")
-        if size is not None:
-            return int(size)
+        # Content-Range: bytes 0-0/10370162736
+        content_range = r.headers.get("Content-Range")
 
-    except Exception as e:
-        print(f"⚠️ Could not fetch size for {url}: {e}")
+        if content_range and "/" in content_range:
+            total_size = content_range.rsplit("/", 1)[1]
+
+            if total_size != "*":
+                return int(total_size)
+
+        # Some servers may return Content-Length even for the ranged request.
+        # If response is 206, this is the size of the returned range, not
+        # necessarily the total file size, so don't use it as total size.
+
+    except requests.RequestException as e:
+        print(f"⚠️ Range GET failed for {url}: {e}")
 
     return None
 
