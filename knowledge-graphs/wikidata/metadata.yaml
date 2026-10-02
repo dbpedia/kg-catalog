@@ -121,13 +121,13 @@ artifacts:
       compression: bz2
       size: 43507090513
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20260930/wikidata-20260930-truthy-BETA.nt.gz
       format: nt
       compression: gz
       size: 71640460978
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
 - artifact: lexemes-beta
   title: Wikidata Lexemes RDF Dump - Beta
   abstract: Beta RDF dumps containing Wikidata lexemes and associated linguistic information.
