@@ -1,0 +1,76 @@
+databus-account: knowledge-graph-catalog
+id: andric-letters-kg
+title: Ivo Andrić Letters Knowledge Graph
+abstract: A knowledge graph representing a selected corpus of Ivo Andrić’s correspondence
+  with Zdenka Marković. It models letters, persons, places, organizations, and dates
+  as RDF, with selected entities linked to Wikidata.
+description: 'The Ivo Andrić Letters Knowledge Graph is derived from a selected corpus
+  of correspondence written by [Ivo Andrić](https://www.wikidata.org/wiki/Q47561),
+  a Yugoslav writer and Nobel Prize Laureate, to [Zdenka Marković](https://www.enciklopedija.hr/clanak/markovic-zdenka),
+  a Croatian writer and translator.
+
+  The graph was created using a semi-automated pipeline that combines text recognition
+  with Transkribus, letter segmentation, Named Entity Recognition (NER), entity normalization,
+  Named Entity Linking (NEL), and RDF generation. It represents individual letters
+  together with their metadata, including sender, recipient, date, and place of writing,
+  as well as persons, locations, organizations, dates, and other entities mentioned
+  in the correspondence.
+
+  Selected entities are linked to Wikidata identifiers, enabling integration with
+  the wider Linked Open Data ecosystem. The graph uses established Semantic Web vocabularies,
+  including Schema.org, Dublin Core Terms, PROV-O, SKOS, RDFS, and XML Schema datatypes.
+
+  The dataset supports SPARQL-based exploration of the correspondence and can be used
+  to investigate people, places, organizations, and other entities occurring in Andrić’s
+  letters, as well as the relationships between the letters and their broader historical
+  and cultural context.
+
+  The Knowledge Graph is part of a reproducible workflow for transforming historical
+  correspondence into structured Linked Data and was developed as part of the project
+  Ivo Andrić in the European Context ([project website](https://www.gralis2.at/gralis/projektarium/Andric/index.html)).'
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by-nc/4.0/
+homepage: https://github.com/marijadjokic/andrics_correspondence_as_kg
+domains:
+- Cross-domain
+keywords:
+- Ivo Andrić
+- correspondence
+- knowledge graph
+- RDF
+- linked data
+- digital humanities
+- named entity linking
+- Wikidata
+artifacts:
+- artifact: andric-letters
+  title: Ivo Andrić Letters KG
+  abstract: RDF representation of a selected corpus of Ivo Andrić's correspondence
+    with Zdenka Marković.
+  description: 'Knowledge graph representing letters, correspondence metadata, named
+    entities, entity mentions, and selected Wikidata links extracted from a corpus
+    of Ivo Andrić''s correspondence with Zdenka Marković.
+
+    '
+  versions:
+  - version: 2026.10.04
+    title: Ivo Andrić Letters KG
+    abstract: RDF representation of a selected corpus of Ivo Andrić's correspondence
+      with Zdenka Marković.
+    description: 'Release of the Ivo Andrić Letters Knowledge Graph containing letters,
+      correspondence metadata, persons, places, organizations, dates, entity mentions,
+      and selected links to Wikidata.
+
+      '
+    license: https://creativecommons.org/licenses/by-nc/4.0/
+    distributions:
+    - file: https://raw.githubusercontent.com/marijadjokic/andrics_correspondence_as_kg/master/data/output/andric_letters_kg.ttl
+      format: ttl
+      status: pending
+    - file: https://raw.githubusercontent.com/marijadjokic/andrics_correspondence_as_kg/master/data/output/andric_letters_kg.jsonld
+      format: jsonld
+      status: pending
+maintainers:
+- name: Marija Đokić Petrović
+  github: marijadjokic
