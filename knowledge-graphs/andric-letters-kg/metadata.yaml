@@ -23,7 +23,7 @@ description: "The Ivo Andri\u0107 Letters Knowledge Graph is derived from a sele
   \ a reproducible workflow for transforming historical correspondence into structured\
   \ Linked Data and was developed as part of the project Ivo Andri\u0107 in the European\
   \ Context ([project website](https://www.gralis2.at/gralis/projektarium/Andric/index.html))."
-moss-publish: true
+moss-publish: false
 databus-publish: false
 license: https://creativecommons.org/licenses/by-nc/4.0/
 homepage: https://github.com/marijadjokic/andrics_correspondence_as_kg
@@ -67,5 +67,5 @@ artifacts:
       sha256: d8a6fd0b2bd77b4fa9ad491bf91b4e26ca43ea8382019a9030be1462f23dc026
       size: 16050
 maintainers:
-- name: "Marija Djokic Petrovic"
+- name: Marija Djokic Petrovic
   github: marijadjokic
