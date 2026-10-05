@@ -108,11 +108,20 @@ if keywords:
     keyword_values = ",\n        ".join(f'"{k}"' for k in keywords)
     triples.append(f"    schema:keywords {keyword_values} ;")
 
-# SPARQL endpoint
+# SPARQL endpoint(s)
 if sparql:
-    endpoint = sparql[0].get("url")
-    if endpoint:
-        triples.append(f"    void:sparqlEndpoint <{endpoint}> ;")
+    if isinstance(sparql, str):
+        triples.append(f"    void:sparqlEndpoint <{sparql}> ;")
+    elif isinstance(sparql, list):
+        for entry in sparql:
+            if isinstance(entry, dict):
+                ep_url = entry.get("url")
+            elif isinstance(entry, str):
+                ep_url = entry
+            else:
+                ep_url = None
+            if ep_url:
+                triples.append(f"    void:sparqlEndpoint <{ep_url}> ;")
 
 # Dataset size
 if last_version_size is not None:
