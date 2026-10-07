@@ -23,14 +23,14 @@ description: "The Ivo Andri\u0107 Letters Knowledge Graph is derived from a sele
   \ a reproducible workflow for transforming historical correspondence into structured\
   \ Linked Data and was developed as part of the project Ivo Andri\u0107 in the European\
   \ Context ([project website](https://www.gralis2.at/gralis/projektarium/Andric/index.html))."
-moss-publish: false
+moss-publish: true
 databus-publish: false
 license: https://creativecommons.org/licenses/by-nc/4.0/
 homepage: https://github.com/marijadjokic/andrics_correspondence_as_kg
 domains:
 - Cross-domain
 keywords:
-- "Ivo Andri\u0107"
+- Ivo Andric
 - correspondence
 - knowledge graph
 - RDF
