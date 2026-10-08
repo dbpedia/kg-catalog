@@ -26,3 +26,9 @@ Content and cultural knowledge domains. Includes news, music, film, television, 
 
 ### 8. `Linguistics, Social & Digital Knowledge Systems`
 Language resources and digital interaction systems. Includes linguistics, ontologies, social networks, user-generated content, software systems, and digital/semantic infrastructure.
+
+## Importing RDF metadata
+
+Providers can expose catalog metadata through a fixed RDF file or a SPARQL
+endpoint. See [RDF metadata import](docs/rdf-metadata-import.md) for the RDF
+contract, source configuration, examples, and command-line usage.
