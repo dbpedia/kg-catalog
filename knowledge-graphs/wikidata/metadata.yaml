@@ -141,13 +141,13 @@ artifacts:
       compression: bz2
       size: 43534958911
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261007/wikidata-20261007-truthy-BETA.nt.gz
       format: nt
       compression: gz
       size: 71682496855
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
 - artifact: lexemes-beta
   title: Wikidata Lexemes RDF Dump - Beta
   abstract: Beta RDF dumps containing Wikidata lexemes and associated linguistic information.
@@ -354,25 +354,25 @@ artifacts:
       compression: bz2
       size: 1177721248
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261009/wikidata-20261009-lexemes-BETA.nt.gz
       format: nt
       compression: gz
       size: 1530626516
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261009/wikidata-20261009-lexemes-BETA.ttl.bz2
       format: ttl
       compression: bz2
       size: 681449877
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261009/wikidata-20261009-lexemes-BETA.ttl.gz
       format: ttl
       compression: gz
       size: 847995513
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
 - artifact: all-beta
   title: Wikidata Complete RDF Dump - Beta
   abstract: Beta complete Wikidata RDF dumps containing all entity information representable
