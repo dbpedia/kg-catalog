@@ -83,6 +83,56 @@ def clean_yaml(text):
     return text.strip()
 
 
+def parse_sparql_endpoints(text):
+    """
+    Parse SPARQL endpoint field into a list of dicts.
+    Accepts single URL, multiple URLs (per line or comma-separated),
+    or YAML list of dicts/strings.
+    """
+    if not text:
+        return []
+
+    text = text.strip()
+    if not text or text == "_No response_":
+        return []
+
+    cleaned = clean_yaml(text)
+    if cleaned.startswith("-") or "\n" in cleaned:
+        try:
+            loaded = yaml.safe_load(cleaned)
+            if isinstance(loaded, list):
+                endpoints = []
+                for i, item in enumerate(loaded):
+                    if isinstance(item, dict):
+                        endpoints.append(item)
+                    elif isinstance(item, str) and item.strip():
+                        name = "main" if i == 0 else f"endpoint-{i+1}"
+                        endpoints.append({"name": name, "url": item.strip()})
+                if endpoints:
+                    return endpoints
+            elif isinstance(loaded, dict) and "url" in loaded:
+                return [loaded]
+        except Exception:
+            pass
+
+    endpoints = []
+    raw_urls = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        for part in line.split(","):
+            u = part.strip()
+            if u:
+                raw_urls.append(u)
+
+    for i, u in enumerate(raw_urls):
+        name = "main" if i == 0 else f"endpoint-{i+1}"
+        endpoints.append({"name": name, "url": u})
+
+    return endpoints
+
+
 # --------------------------------------------------
 # Extract fields
 # --------------------------------------------------
@@ -119,8 +169,10 @@ keywords_text = get_field(
     "Keywords"
 )
 
-sparql_url = get_field(
-    "SPARQL Endpoint URL"
+sparql_url = (
+    get_field("SPARQL Endpoint URL")
+    or get_field("SPARQL Endpoint URLs")
+    or get_field("SPARQL Endpoints")
 )
 
 maintainer_name = get_field(
@@ -289,22 +341,13 @@ metadata = {
 
 
 # --------------------------------------------------
-# Optional SPARQL endpoint
+# Optional SPARQL endpoint(s)
 # --------------------------------------------------
 
 if sparql_url:
-
-    metadata["sparql"] = [
-
-        {
-            "name":
-                "main",
-
-            "url":
-                sparql_url
-        }
-
-    ]
+    endpoints = parse_sparql_endpoints(sparql_url)
+    if endpoints:
+        metadata["sparql"] = endpoints
 
 
 # --------------------------------------------------

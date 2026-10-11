@@ -76,6 +76,56 @@ def valid_url(value):
         return False
 
 
+def parse_sparql_endpoints(text):
+    """
+    Parse SPARQL endpoint field into a list of dicts.
+    Accepts single URL, multiple URLs (per line or comma-separated),
+    or YAML list of dicts/strings.
+    """
+    if not text:
+        return []
+
+    text = text.strip()
+    if not text or text == "_No response_":
+        return []
+
+    cleaned = clean_yaml(text)
+    if cleaned.startswith("-") or "\n" in cleaned:
+        try:
+            loaded = yaml.safe_load(cleaned)
+            if isinstance(loaded, list):
+                endpoints = []
+                for i, item in enumerate(loaded):
+                    if isinstance(item, dict):
+                        endpoints.append(item)
+                    elif isinstance(item, str) and item.strip():
+                        name = "main" if i == 0 else f"endpoint-{i+1}"
+                        endpoints.append({"name": name, "url": item.strip()})
+                if endpoints:
+                    return endpoints
+            elif isinstance(loaded, dict) and "url" in loaded:
+                return [loaded]
+        except Exception:
+            pass
+
+    endpoints = []
+    raw_urls = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        for part in line.split(","):
+            u = part.strip()
+            if u:
+                raw_urls.append(u)
+
+    for i, u in enumerate(raw_urls):
+        name = "main" if i == 0 else f"endpoint-{i+1}"
+        endpoints.append({"name": name, "url": u})
+
+    return endpoints
+
+
 def add_error(message):
     errors.append(message)
 
@@ -135,8 +185,10 @@ keywords = get_field(
     "Keywords"
 )
 
-sparql_url = get_field(
-    "SPARQL Endpoint URL"
+sparql_url = (
+    get_field("SPARQL Endpoint URL")
+    or get_field("SPARQL Endpoint URLs")
+    or get_field("SPARQL Endpoints")
 )
 
 artifacts_text = get_field(
@@ -311,14 +363,22 @@ else:
 
 
 # --------------------------------------------------
-# SPARQL endpoint
+# SPARQL endpoint(s)
 # --------------------------------------------------
 
-if sparql_url and not valid_url(sparql_url):
-
-    add_error(
-        f"SPARQL endpoint URL is invalid: {sparql_url}"
-    )
+if sparql_url:
+    endpoints = parse_sparql_endpoints(sparql_url)
+    if not endpoints:
+        add_error(
+            f"SPARQL endpoint is invalid: {sparql_url}"
+        )
+    else:
+        for ep in endpoints:
+            ep_url = ep.get("url") if isinstance(ep, dict) else (ep if isinstance(ep, str) else None)
+            if not ep_url or not valid_url(ep_url):
+                add_error(
+                    f"SPARQL endpoint URL is invalid: {ep_url or ep}"
+                )
 
 
 # --------------------------------------------------
