@@ -1,0 +1,40 @@
+@prefix ex: <https://example.org/metadata/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:kg a dcat:Dataset ;
+    dcterms:title "Example Knowledge Graph"@en ;
+    dcterms:description "An example KG with separately downloadable core and label partitions."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    foaf:homepage <https://example.org/kg> ;
+    dcat:version "2026.09.24" ;
+    void:sparqlEndpoint <https://example.org/sparql> ;
+    dcterms:hasPart ex:core, ex:labels .
+
+ex:core a dcat:Dataset ;
+    dcterms:identifier "core" ;
+    dcterms:title "Core facts" ;
+    dcat:distribution ex:core-file-1, ex:core-file-2 .
+
+ex:core-file-1 a dcat:Distribution ;
+    dcat:downloadURL <https://example.org/downloads/2026.09.24/core-1.ttl.gz> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:byteSize "1234"^^xsd:decimal ;
+    spdx:checksum [
+        spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+        spdx:checksumValue "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ] .
+
+ex:core-file-2 a dcat:Distribution ;
+    dcat:downloadURL <https://example.org/downloads/2026.09.24/core-2.ttl.gz> .
+
+# A VoID-style partition can advertise multiple dump files directly.
+ex:labels a void:Dataset ;
+    dcterms:identifier "labels" ;
+    dcterms:title "Labels" ;
+    void:dataDump <https://example.org/downloads/2026.09.24/labels-en.nt.bz2>,
+                  <https://example.org/downloads/2026.09.24/labels-fr.nt.bz2> .

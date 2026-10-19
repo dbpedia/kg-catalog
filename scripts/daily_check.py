@@ -33,6 +33,15 @@ def run_daily_check():
             log(f"Error reading {metadata_file}: {e}")
             continue
 
+        if metadata.get("metadata-source"):
+            importer = os.path.join(os.path.dirname(__file__), "import_rdf_metadata.py")
+            log(f"Importing RDF metadata for {kg_name}...")
+            try:
+                subprocess.run(["python3", importer, metadata_file], check=True)
+            except subprocess.CalledProcessError as e:
+                log(f"Error importing RDF metadata for {kg_name}: {e}")
+            continue
+
         script_name = metadata.get("check-new-release")
         if not script_name:
             log(f"No 'check-new-release' script for {kg_name}, skipping.")
