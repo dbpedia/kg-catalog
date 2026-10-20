@@ -68,9 +68,9 @@ artifacts:
   - version: 2026.08.17
     title: SSTIM 0.15.0
     abstract: Release 0.15.0 of the Sensory Stimulation Ontology.
-    description: 10,437 triples — 163 OWL classes, 157 object properties, 140 datatype
-      properties, 545 SKOS concepts across 67 concept schemes. Archived on Zenodo
-      with its own version DOI under the all-versions concept DOI 10.5281/zenodo.21286974.
+    description: "10,437 triples \u2014 163 OWL classes, 157 object properties, 140\
+      \ datatype properties, 545 SKOS concepts across 67 concept schemes. Archived\
+      \ on Zenodo with its own version DOI under the all-versions concept DOI 10.5281/zenodo.21286974."
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://labiosyncare.github.io/ontology/0.15.0/sstim-namespace.ttl
@@ -150,7 +150,7 @@ artifacts:
     distributions:
     - file: https://w3c-cg.github.io/sstim/ontology/0.20.0/sstim-namespace.ttl
       format: ttl
-      status: pending
+      status: active
       sha256: ea3170bd505e3abc40a9ad1ed1b008e7d1483256aacf0518bee1228ad7f1f148
       size: 994079
 maintainers:
