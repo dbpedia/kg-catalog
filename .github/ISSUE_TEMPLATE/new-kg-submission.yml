@@ -129,6 +129,9 @@ body:
       - A **distribution** represents a single downloadable file belonging to a specific artifact version.
       Each distribution should provide the file URL and its format (and compression, if applicable).
 
+      For KG dumps hosted on Kaggle, use the direct API download URL (`/api/v1/datasets/download/<owner>/<dataset-slug>?filename=<filename>`), not the browser URL (`/datasets/<owner>/<dataset-slug>?select=<filename>`).
+      See [Kaggle download URL guidance](https://github.com/dbpedia/kg-catalog#adding-kg-dumps-hosted-on-kaggle) for an example.
+
       Update the example below with information about your Knowledge Graph.
     render: yaml
     value: |

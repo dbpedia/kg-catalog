@@ -1,5 +1,36 @@
 # LOD Next Gen repository
 
+## Adding KG dumps hosted on Kaggle
+
+For a KG dump hosted on Kaggle, use the direct API download URL in the
+distribution's `file` field in `knowledge-graphs/<kg-id>/metadata.yaml` or in the
+**KG Content (Artifacts, Versions and Distributions)** field of the New KG
+submission form.
+
+The URL format is:
+
+```text
+https://www.kaggle.com/api/v1/datasets/download/<owner>/<dataset-slug>?filename=<filename>
+```
+
+For example:
+
+```yaml
+distributions:
+  - file: https://www.kaggle.com/api/v1/datasets/download/ammaryousaf45/e-obs-climate-data?filename=eobs_climate_kg_2015_2019_20251217_173418.ttl
+    format: ttl
+```
+
+Do not use the Kaggle dataset browser URL as a distribution's `file` URL:
+
+```text
+https://www.kaggle.com/datasets/ammaryousaf45/e-obs-climate-data?select=eobs_climate_kg_2015_2019_20251217_173418.ttl
+```
+
+The browser URL opens the dataset page with a file selected; the API download URL
+points to the file download. Keep the same owner, dataset slug, and filename when
+converting the URL, and replace `?select=` with `?filename=`.
+
 
 ## KG Domain Classification (Modernized LOD cloud domains)
 
