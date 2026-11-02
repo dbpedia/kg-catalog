@@ -1,0 +1,126 @@
+name: Monthly KG Catalog metadata release
+
+on:
+  schedule:
+    - cron: '17 6 1 * *' # Monthly, 1st day at 06:17 UTC (GitHub scheduled runs may be delayed)
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publish GitHub Release? Leave unchecked for a dry run.'
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kg-catalog-monthly-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: python -m pip install 'requests>=2.31,<3' 'rdflib>=7,<8' 'PyYAML>=6,<7'
+
+      - name: Compute release tag and decide publication
+        id: release
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_PUBLISH: ${{ inputs.publish }}
+        run: |
+          tag="kg-catalog-$(date -u +%Y-%m)"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          if [ "$EVENT_NAME" = schedule ] || [ "$INPUT_PUBLISH" = true ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Guard against overwriting a published monthly release
+        if: steps.release.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $TAG already exists; refusing to overwrite it."
+            exit 1
+          fi
+
+      - name: Export GitHub YAML metadata
+        run: python scripts/export_yaml_catalog.py --repo . --output yaml_metadata --no-zip
+
+      - name: Export Databus version metadata
+        run: python scripts/fetch_databus_catalog_fixed.py --output databus_metadata
+
+      - name: Export MOSS KG metadata
+        run: python scripts/fetch_moss_catalog.py --output moss_metadata
+
+      - name: Find previous monthly snapshot
+        id: previous
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          prev=$(gh release list --repo "$GITHUB_REPOSITORY" --limit 100 --json tagName,publishedAt \
+            --jq '[.[] | select(.tagName | test("^kg-catalog-[0-9]{4}-[0-9]{2}$"))] | sort_by(.publishedAt) | reverse | .[].tagName' \
+            | grep -vx "$TAG" | head -n 1 || true)
+          echo "tag=$prev" >> "$GITHUB_OUTPUT"
+          if [ -n "$prev" ]; then
+            mkdir -p previous
+            if gh release download "$prev" --repo "$GITHUB_REPOSITORY" \
+              --pattern "$prev.zip" --dir previous; then
+              echo "archive=previous/$prev.zip" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+      - name: Assemble snapshot and release notes
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+          PREV_TAG: ${{ steps.previous.outputs.tag }}
+          PREV_ARCHIVE: ${{ steps.previous.outputs.archive }}
+        run: |
+          if [ -n "$PREV_ARCHIVE" ]; then
+            python scripts/build_monthly_release.py --release "$TAG" \
+              --previous-tag "$PREV_TAG" --previous-archive "$PREV_ARCHIVE"
+          else
+            python scripts/build_monthly_release.py --release "$TAG"
+          fi
+
+      - name: Upload dry-run / troubleshooting artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.release.outputs.tag }}-candidate
+          path: |
+            release-assets/
+          retention-days: 14
+
+      - name: Publish monthly GitHub Release
+        if: steps.release.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          gh release create "$TAG" \
+            "release-assets/$TAG.zip" \
+            release-assets/SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$(git rev-parse HEAD)" \
+            --title "KG Catalog metadata snapshot — ${TAG#kg-catalog-}" \
+            --notes-file release-assets/release-notes.md \
+            --latest
