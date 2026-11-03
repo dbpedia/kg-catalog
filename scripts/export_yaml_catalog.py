@@ -69,12 +69,14 @@ def export(repo, output, make_zip=True, validate=True):
                      'raw_url': f'{raw_base}/{ref}/{rel}',
                      'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest(), 'status': 'ok'})
         LOG.info('[%d/%d] OK %s', len(rows), len(files), kg_id)
-    with (output / 'manifest.csv').open('w', newline='', encoding='utf-8') as f:
+    provenance = output / 'provenance'
+    provenance.mkdir(parents=True, exist_ok=True)
+    with (provenance / 'manifest.csv').open('w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['kg_id', 'path', 'github_url', 'raw_url', 'bytes', 'sha256', 'status'])
         writer.writeheader()
         writer.writerows(rows)
     info = {'source': 'GitHub repository YAML source of truth', 'repository': 'https://github.com/dbpedia/kg-catalog', 'revision': revision, 'github_link_ref': ref, 'exported_at_utc': datetime.now(timezone.utc).isoformat(), 'knowledge_graph_count': len(rows), 'yaml_files': len(rows), 'validation': 'PyYAML parse and id-match' if validate else 'not requested'}
-    (output / 'export-info.json').write_text(json.dumps(info, indent=2) + '\n', encoding='utf-8')
+    (provenance / 'export-info.json').write_text(json.dumps(info, indent=2) + '\n', encoding='utf-8')
     if make_zip:
         archive = output.with_suffix('.zip')
         with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
@@ -82,7 +84,7 @@ def export(repo, output, make_zip=True, validate=True):
                 if file.is_file():
                     zf.write(file, file.relative_to(output.parent))
         LOG.info('ZIP: %s', archive)
-    LOG.info('Finished: %d YAML files; manifest: %s', len(rows), output / 'manifest.csv')
+    LOG.info('Finished: %d YAML files; manifest: %s', len(rows), provenance / 'manifest.csv')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)

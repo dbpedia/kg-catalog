@@ -94,7 +94,7 @@ def discover(base, timeout, retries):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--base-url', default=BASE, help='MOSS server (default: dev instance)')
-    p.add_argument('--output', default='moss_metadata')
+    p.add_argument('--output', default='kg-level-metadata')
     p.add_argument('--kg', action='append', help='Fetch given KG directly, bypassing SPARQL (repeatable)')
     p.add_argument('--limit', type=int, default=0, help='First N discovered KGs; 0 means all')
     p.add_argument('--timeout', type=int, default=30)
@@ -104,13 +104,15 @@ def main():
     base = args.base_url.rstrip('/')
     out = Path(args.output)
     out.mkdir(parents=True, exist_ok=True)
+    provenance = out / 'provenance'
+    provenance.mkdir(parents=True, exist_ok=True)
     if args.kg:
         groups = {validate_group(GROUP_PREFIX + kg): GROUP_PREFIX + kg for kg in args.kg}
         LOG.info('Direct KG test mode: %d groups (no SPARQL discovery)', len(groups))
     else:
         groups, parsed = discover(base, args.timeout, args.retries)
-        (out / 'discovery.sparql').write_text(QUERY + '\n', encoding='utf-8')
-        (out / 'discovery.json').write_text(json.dumps(parsed, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+        (provenance / 'discovery.sparql').write_text(QUERY + '\n', encoding='utf-8')
+        (provenance / 'discovery.json').write_text(json.dumps(parsed, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
         LOG.info('Discovered %d KG Catalog groups in MOSS SPARQL', len(groups))
     items = sorted(groups.items())
     if args.limit > 0:
@@ -121,7 +123,7 @@ def main():
         suffix = 'databus.dbpedia.org/knowledge-graph-catalog/%s/kg-metadata' % kg
         entry = base + '/entries/' + suffix
         url = base + '/g/content/' + suffix + '.ttl'
-        dest = out / kg / 'kg-metadata.ttl'
+        dest = out / 'knowledge-graphs' / kg / 'kg-metadata.ttl'
         row = dict.fromkeys(FIELDS, '')
         row.update(kg=kg, group_uri=group_uri, entry_url=entry, content_url=url)
         try:
@@ -152,11 +154,11 @@ def main():
         counts[row['status']] += 1
         LOG.info('[%d/%d] %s %s %s', i, len(items), row['status'].upper(), kg, row['error'])
         manifest.append(row)
-    with (out / 'manifest.csv').open('w', newline='', encoding='utf-8') as f:
+    with (provenance / 'manifest.csv').open('w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS)
         writer.writeheader()
         writer.writerows(manifest)
-    LOG.info('Finished: %s; manifest: %s', counts, out / 'manifest.csv')
+    LOG.info('Finished: %s; manifest: %s', counts, provenance / 'manifest.csv')
     return 1 if counts['failed'] else 0
 
 

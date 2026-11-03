@@ -28,6 +28,7 @@ jobs:
         with:
           ref: main
           persist-credentials: false
+          fetch-depth: 0  # Resolve software-version Git tags
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -63,13 +64,13 @@ jobs:
           fi
 
       - name: Export GitHub YAML metadata
-        run: python scripts/export_yaml_catalog.py --repo . --output yaml_metadata --no-zip
+        run: python scripts/export_yaml_catalog.py --repo . --output kg-source-metadata --no-zip
 
-      - name: Export Databus version metadata
-        run: python scripts/fetch_databus_catalog_fixed.py --output databus_metadata
+      - name: Export Databus group, artifact and version metadata
+        run: python scripts/fetch_databus_catalog_fixed.py --output kg-release-metadata
 
       - name: Export MOSS KG metadata
-        run: python scripts/fetch_moss_catalog.py --output moss_metadata
+        run: python scripts/fetch_moss_catalog.py --output kg-level-metadata
 
       - name: Find previous monthly snapshot
         id: previous
