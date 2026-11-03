@@ -130,11 +130,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ steps.release.outputs.tag }}
         run: |
+          month=$(date -u -d "${TAG#kg-catalog-}-01" '+%B %Y')
           gh release create "$TAG" \
             "release-assets/$TAG.zip" \
             release-assets/SHA256SUMS.txt \
             --repo "$GITHUB_REPOSITORY" \
             --target "$(git rev-parse HEAD)" \
-            --title "KG Catalog metadata snapshot — ${TAG#kg-catalog-}" \
+            --title "DBpedia KG Catalog — $month" \
             --notes-file release-assets/release-notes.md \
             --latest
