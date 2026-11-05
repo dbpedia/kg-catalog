@@ -103,11 +103,26 @@ This section defines the main activities, timing, and impact indicators for each
 - Invite communities to contribute KGs and provide feedback.
 - Maintain a list of relevant mailing lists and their posting rules.
 
-**Initial mailing lists:**
-- [W3C Semantic Web](https://lists.w3.org/Archives/Public/semantic-web/) — Initial announcement published in September 2026.
-- Additional relevant mailing lists to be identified.
+**Target mailing lists:**
 
-**Timing:** Quarterly dissemination (every 3 months), major milestones and significant updates; avoid repetitive announcements.
+| Mailing list | Relevance | Priority |
+| --- | --- | --- |
+| [W3C Semantic Web](https://lists.w3.org/Archives/Public/semantic-web/) | Broad Semantic Web community; initial announcement published in September 2026 | High |
+| [W3C Linked Open Data](https://lists.w3.org/Archives/Public/public-lod/) (`public-lod@w3.org`) | Linked Data community; relevant technical discussions only (calls for participation prohibited) | High - BUT **check with the the `public-lod` list administrators before publishing** CFP is not allowed|
+| [W3C Knowledge Graph Construction](https://lists.w3.org/Archives/Public/public-kg-construct/) | KG construction and engineering community | High |
+| [W3C RDF-DEV](https://lists.w3.org/Archives/Public/public-rdf-dev/) (`public-rdf-dev@w3.org`) | RDF developers, Semantic Web applications, vocabularies, and infrastructure | High |
+| [W3C Ontologies and Knowledge Graphs in Industry](https://lists.w3.org/Archives/Public/public-oki/) (`public-oki@w3.org`) | Industrial knowledge graph publishers and consumers | High |
+| [W3C Dataset Exchange Working Group](https://lists.w3.org/Archives/Public/public-dxwg-wg/) (`public-dxwg-wg@w3.org`) | Dataset catalogs, DCAT metadata, interoperability, and dataset descriptions; technical discussions only | High |
+| GOBLIN All (`goblin-all@googlegroups.com`) | GOBLIN research network and KG community | High |
+| [DBpedia Discussion](https://sourceforge.net/p/dbpedia/mailman/dbpedia-discussion/) | DBpedia users, developers, and contributors | High |
+| GOBLIN WG1 (`goblin-wg1@googlegroups.com`) | KG engineering, publishing, and metadata specialists | High |
+| [Ontolog Forum](https://groups.google.com/g/ontolog-forum) | Ontology engineering and Semantic Web community | Medium |
+| [LD4 Community](https://groups.google.com/g/ld4-community) | Linked Data community in libraries and cultural heritage | Medium |
+| [Linked Open Data in Digital Humanities](https://lists.digitalhumanities.org/mailman/lists/lod.lists.digitalhumanities.org/) | Linked Data researchers in digital humanities | Medium |
+
+**IMPORTANT:** Verify each mailing list's posting rules, activity, and suitability before publishing an announcement.
+
+**Timing:** Quarterly dissemination (every 3 months), focusing on high-priority mailing lists. Additional announcements may be published for major milestones. Messages should be adapted to each community, avoiding repetitive announcements and duplication across overlapping mailing lists. Verify posting rules and list activity before sending.
 
 **Impact measurement:** Mailing lists reached, responses, referrals, resulting contributions.
 
@@ -188,7 +203,7 @@ This section defines the main activities, timing, and impact indicators for each
 - Participate in relevant discussions and answer questions.
 - Invite feedback and KG contributions.
 
-**Timing:** Aligned with the mailing lists annoucement, new catalog release or milestone reached, or opportunistic, based on relevant discussions and developments.
+**Timing:** Aligned with major catalog releases, mailing list announcements, and milestones, or opportunistically when relevant discussions arise.
 
 **Impact measurement:** Community interactions, feedback, contacts established, resulting contributions.
 
@@ -210,5 +225,3 @@ At the end of each quarter:
 2. Compare results with the previous quarter and record any gaps in measurement.
 3. Identify activities that generated meaningful contributions or usage, not only impressions.
 4. Review channel priorities and adjust activities and targets for the next quarter.
-
-Record the results and evaluate.
