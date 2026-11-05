@@ -51,11 +51,12 @@ The following table summarizes the dissemination channels, prioritized according
 | **LinkedIn** | Maintain regular visibility through KG showcases, release highlights, and engagement with publishers and consumers. | High |
 | **Mailing lists** | Reach relevant Semantic Web, Linked Data, and KG communities with substantial announcements and targeted calls for contributions. | High |
 | **KG maintainer updates** | Provide registered KG maintainers with monthly updates on the status and usage of their KGs, using the contact information provided in the catalog metadata. | High |
+| **Slack and other community platforms** | Interact directly with relevant communities, answer questions, and share contextual updates. | High |
 | **DBpedia website/blog** | Publish official announcements and persistent, detailed content that can be referenced from other channels. | Medium |
 | **Newsletters (DBpedia, GOBLIN)** | Inform the DBpedia and GOBLIN communities about catalog developments, promote KG discovery and reuse, and encourage contributions. | Medium |
 | **Conferences and workshops** | Demonstrate the catalog, establish contacts with publishers and consumers, and collect feedback. | Medium |
 | **GitHub repository and Releases** | Maintain the authoritative record of catalog updates, releases, documentation, and contribution opportunities. | Medium |
-| **Slack and other community platforms** | Interact directly with relevant communities, answer questions, and share contextual updates. | Low |
+
 
 Priorities reflect the expected contribution of each channel to catalog growth, adoption, and community engagement:
 
