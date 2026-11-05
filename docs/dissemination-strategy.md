@@ -68,6 +68,14 @@ Priorities should be reviewed periodically based on measured results.
 
 ## 6. Channel-specific dissemination plans
 
+| Communication type | Frequency | Blog | LinkedIn | X | Slack [#general](https://aksw.slack.com/archives/C02RQPZGJ) | Forum | Internal mailing lists | External mailing lists | KG maintainer updates |
+|---|---|---|---|---|---|---|---|---|---|
+| KG of the Week | Weekly | — | ✓ | ✓ | — | — | — | — | — |
+| Monthly Release | Monthly | ✓ | ✓ | — | ✓ | ✓ | ✓ | — | — |
+| Quarterly Update | Quarterly | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — |
+| Major Releases / Updates | As needed | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — |
+| KG-specific Update | As needed | — | — | — | — | — | — | — | ✓ |
+
 This section defines the main activities, timing, and impact indicators for each dissemination channel, following the priorities established in Section 5.
 
 ### 6.1. Targeted outreach
