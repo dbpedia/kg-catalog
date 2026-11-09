@@ -234,3 +234,9 @@ At the end of each quarter:
 2. Compare results with the previous quarter and record any gaps in measurement.
 3. Identify activities that generated meaningful contributions or usage, not only impressions.
 4. Review channel priorities and adjust activities and targets for the next quarter.
+
+### Dissemination records
+
+Dissemination activities are documented in the [`dissemination/`](dissemination/) directory. Each report records the communication channels used, publication dates where available, and links to announcements or other supporting evidence.
+
+These records support the quarterly evaluation of dissemination activities described above.
