@@ -1,0 +1,83 @@
+databus-account: knowledge-graph-catalog
+id: skos
+title: Simple Knowledge Organization System (SKOS)
+abstract: >-
+  W3C RDF vocabularies for representing knowledge organization systems, including
+  thesauri, taxonomies and classification schemes, with an optional extension
+  for describing and linking lexical entities.
+description: >-
+  SKOS defines classes and properties for concepts, concept schemes, lexical
+  labels, documentation, semantic relations, collections and mappings between
+  schemes. This entry catalogues the SKOS ontology and its optional SKOS-XL
+  extension as separate artifacts. It describes the vocabularies used to publish
+  knowledge organization systems, rather than a collection of those systems.
+  The normative specification is https://www.w3.org/TR/skos-reference/.
+moss-publish: true
+databus-publish: true
+# The official RDF download page links the W3C software license:
+# https://www.w3.org/2004/02/skos/vocabs
+# Neither RDF file contains its own license statement.
+license: https://www.w3.org/Consortium/Legal/copyright-software
+homepage: https://www.w3.org/2004/02/skos/
+domains:
+  - Linguistics, Social & Digital Knowledge Systems
+keywords:
+  - SKOS
+  - SKOS-XL
+  - knowledge organization systems
+  - controlled vocabularies
+  - thesauri
+  - taxonomies
+  - classification schemes
+artifacts:
+  - artifact: skos
+    title: SKOS vocabulary
+    abstract: RDF schema defining the SKOS classes, properties and expressible axioms.
+    description: >-
+      The ontology IRI is http://www.w3.org/2004/02/skos/core and the term
+      namespace is http://www.w3.org/2004/02/skos/core#. The RDF/XML namespace
+      document expresses a normative subset of the SKOS Reference; some semantic
+      conditions cannot be expressed as RDF axioms. See Appendix C.2 at
+      https://www.w3.org/TR/skos-reference/#namespace-documents.
+    versions:
+      # W3C specification-edition identifier, not an asserted dataset release date.
+      - version: REC-skos-reference-20090818
+        title: SKOS vocabulary — 18 August 2009 Recommendation edition
+        description: >-
+          The version identifier is taken from the dated W3C Recommendation URI
+          https://www.w3.org/TR/2009/REC-skos-reference-20090818/. It identifies
+          the specification edition represented by this schema, not a separate
+          software release or the last modification date of the RDF file.
+        license: https://www.w3.org/Consortium/Legal/copyright-software
+        distributions:
+          # RDF/XML (application/rdf+xml); bytes verified 2026-11-10.
+          - file: https://www.w3.org/TR/2009/REC-skos-reference-20090818/skos.rdf
+            format: rdf
+            status: pending
+            sha256: e79633b8d0564816cee8a99f5c9acf9a0e6fc7257c7209acd684ecad53a89dd6
+            size: 28966
+  - artifact: skos-xl
+    title: SKOS eXtension for Labels (SKOS-XL)
+    abstract: Optional SKOS extension for identifying, describing and linking lexical entities.
+    description: >-
+      The ontology IRI is http://www.w3.org/2008/05/skos-xl and the term namespace
+      is http://www.w3.org/2008/05/skos-xl#. This module imports the SKOS ontology;
+      its distribution is not a self-contained bundle including SKOS core.
+      The extension is specified in Appendix B of the SKOS Reference.
+    versions:
+      # The same Recommendation specifies both vocabularies.
+      - version: REC-skos-reference-20090818
+        title: SKOS-XL vocabulary — 18 August 2009 Recommendation edition
+        description: >-
+          The version identifier refers to the specification edition at
+          https://www.w3.org/TR/2009/REC-skos-reference-20090818/#xl,
+          not an independently numbered SKOS-XL release or an RDF file timestamp.
+          Some semantic conditions are documented in comments rather than axioms.
+        license: https://www.w3.org/Consortium/Legal/copyright-software
+        distributions:
+          # RDF/XML (application/rdf+xml); bytes verified 2026-11-10.
+          - file: https://www.w3.org/TR/2009/REC-skos-reference-20090818/skos-xl.rdf
+            format: rdf
+            status: pending
+            sha256: fb6519c5719250d77f17a84ac28c75660c7de09da7286dda138bbe9d8f834b9a
+            size: 7614
