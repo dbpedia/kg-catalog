@@ -72,11 +72,11 @@ body:
   validations:
     required: true
 
-- type: input
+- type: textarea
   id: sparql-name
   attributes:
     label: SPARQL Endpoint URL
-    description: Provide URL to the SPARQL endpoint, if it exist. (optional)
+    description: Provide URL(s) to the SPARQL endpoint(s), if they exist. Multiple endpoints can be provided one per line, comma-separated, or as a YAML list. (optional)
   validations:
     required: false
 
