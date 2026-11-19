@@ -840,22 +840,22 @@ artifacts:
       compression: bz2
       size: 197303044111
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261116/wikidata-20261116-all-BETA.nt.gz
       format: nt
       compression: gz
       size: 255412744452
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261116/wikidata-20261116-all-BETA.ttl.bz2
       format: ttl
       compression: bz2
       size: 126485779092
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
     - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261116/wikidata-20261116-all-BETA.ttl.gz
       format: ttl
       compression: gz
       size: 155231657752
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
-      status: pending
+      status: active
