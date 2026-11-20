@@ -9,7 +9,7 @@ description: SemOpenAlex provides the OpenAlex scholarly dataset as an RDF knowl
   scientific publications and related scholarly entities. SemOpenAlex provides resolvable
   URIs, a public SPARQL endpoint, and full RDF snapshots in compressed TriG format
   via its public AWS S3 bucket.
-moss-publish: false
+moss-publish: true
 databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://semopenalex.org/
@@ -28,7 +28,7 @@ sparql:
 - name: main
   url: https://semopenalex.org/sparql
 maintainers:
-- name: "Michael F\xE4rber"
+- name: "Michael Faerber"
   contact: michael.faerber@tu-dresden.de
   github: michaelfaerber
 artifacts:
