@@ -95,3 +95,185 @@ artifacts:
       size: 200800361
       sha256: c9e52cf0338c9dd6586f4d601b02398fef55253a2be94dcace8ae9115f0d889d
       status: active
+  - version: '4.6'
+    title: YAGO Tiny 4.6
+    abstract: A small sample of YAGO 4.6 for quick experiments and testing.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-tiny.zip
+      format: zip
+      compression: zip
+      size: 91188862
+      sha256: 0cb8805ea3d555b3c0487891498cf9042962b0e96caca701e83926c4418a0f81
+      status: active
+- artifact: yago-schema
+  title: YAGO Schema
+  abstract: The upper taxonomy, constraints, and property definitions of YAGO in SHACL.
+  description: The upper taxonomy, constraints, and property definitions of YAGO in SHACL.
+  versions:
+  - version: '4.6'
+    title: YAGO Schema 4.6
+    abstract: The upper taxonomy, constraints, and property definitions of YAGO in SHACL.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-schema.zip
+      format: zip
+      compression: zip
+      size: 19471
+      sha256: 01a4f4fd80a04ce38375163993644e8370da3b6761b3e8cc703be97cc5a3d07a
+      status: active
+- artifact: yago-taxonomy
+  title: YAGO Taxonomy
+  abstract: The full taxonomy of classes in YAGO.
+  description: The full taxonomy of classes in YAGO.
+  versions:
+  - version: '4.6'
+    title: YAGO Taxonomy 4.6
+    abstract: The full taxonomy of classes in YAGO.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-taxonomy.zip
+      format: zip
+      compression: zip
+      size: 41519942
+      sha256: 6cc9f409ee96208dbba79d571e0471b69efc73d0f2384c3250e8b27942a95278
+      status: active
+- artifact: yago-facts
+  title: YAGO Facts
+  abstract: All facts about entities that have an English Wikipedia page.
+  description: All facts about entities that have an English Wikipedia page.
+  versions:
+  - version: '4.6'
+    title: YAGO Facts 4.6
+    abstract: All facts about entities that have an English Wikipedia page.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-facts.zip
+      format: zip
+      compression: zip
+      size: 829349027
+      sha256: f9b57f355f0b1f8bf5b968ac20f33778fce2b521c675c5a7d28f0afd4f1c14b1
+      status: active
+- artifact: yago-labels
+  title: YAGO Labels
+  abstract: All labels of entities that have an English Wikipedia page.
+  description: All labels of entities that have an English Wikipedia page.
+  versions:
+  - version: '4.6'
+    title: YAGO Labels 4.6
+    abstract: All labels of entities that have an English Wikipedia page.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-labels.zip
+      format: zip
+      compression: zip
+      size: 2188238999
+      sha256: aa189157fd48892a4b63d3063a838be03c09de65fe320374d774252bbee1774e
+      status: active
+- artifact: yago-beyond-wikipedia
+  title: YAGO Facts beyond Wikipedia
+  abstract: All facts about entities that do not have an English Wikipedia page.
+  description: All facts about entities that do not have an English Wikipedia page.
+  versions:
+  - version: '4.6'
+    title: YAGO Facts beyond Wikipedia 4.6
+    abstract: All facts about entities that do not have an English Wikipedia page.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-beyond-wikipedia.zip
+      format: zip
+      compression: zip
+      size: 2535563171
+      sha256: 783e39eb3b2bee6ede00beec11a00d8ec632e9f2242b960f20579336f3e59180
+      status: active
+- artifact: yago-beyond-wikipedia-labels
+  title: YAGO Labels beyond Wikipedia
+  abstract: All labels of entities that do not have an English Wikipedia page.
+  description: All labels of entities that do not have an English Wikipedia page.
+  versions:
+  - version: '4.6'
+    title: YAGO Labels beyond Wikipedia 4.6
+    abstract: All labels of entities that do not have an English Wikipedia page.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-beyond-wikipedia-labels.zip
+      format: zip
+      compression: zip
+      size: 3507195426
+      sha256: 474c20b402d204cbd854318dee70f52d4a1b9f60a8321faef50ac56d2723ec81
+      status: active
+- artifact: yago-meta
+  title: YAGO Meta
+  abstract: Fact annotations (facts about facts) in RDF*.
+  description: Fact annotations (facts about facts) in RDF*.
+  versions:
+  - version: '4.6'
+    title: YAGO Meta 4.6
+    abstract: Fact annotations (facts about facts) in RDF*.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-meta.zip
+      format: zip
+      compression: zip
+      size: 106018818
+      sha256: d551720dc88efa941378d0edf374e8308db62f0d87b2bf235d92dc202591c964
+      status: active
+- artifact: yago-fact-log
+  title: YAGO Fact Log
+  abstract: Logs of statements that were excluded from YAGO, in RDF* (fact log).
+  description: Logs of statements that were excluded from YAGO, in RDF* (fact log).
+  versions:
+  - version: '4.6'
+    title: YAGO Fact Log 4.6
+    abstract: Logs of statements that were excluded from YAGO, in RDF* (fact log).
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-fact-log.zip
+      format: zip
+      compression: zip
+      size: 413825430
+      sha256: 7af4fc24c467d6ff38b2a88ca1fdce139ecd5b6a1f3f006ba3d89bb40f21931c
+      status: active
+- artifact: yago-range-log
+  title: YAGO Range Log
+  abstract: Logs of statements that were excluded from YAGO, in RDF* (range log).
+  description: Logs of statements that were excluded from YAGO, in RDF* (range log).
+  versions:
+  - version: '4.6'
+    title: YAGO Range Log 4.6
+    abstract: Logs of statements that were excluded from YAGO, in RDF* (range log).
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-range-log.zip
+      format: zip
+      compression: zip
+      size: 57694789
+      sha256: 977b3cb8b96b32ba86fe8790a6c9b768856373609e121524ab06f635094cd37f
+      status: active
+- artifact: yago-taxonomy-log
+  title: YAGO Taxonomy Log
+  abstract: Logs of statements that were excluded from YAGO, in RDF* (taxonomy log).
+  description: Logs of statements that were excluded from YAGO, in RDF* (taxonomy log).
+  versions:
+  - version: '4.6'
+    title: YAGO Taxonomy Log 4.6
+    abstract: Logs of statements that were excluded from YAGO, in RDF* (taxonomy log).
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers, schema.org classes and properties, a curated selection of the Wikidata taxonomy, and SHACL constraints. It contains 39 million entities and 167 million facts.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://yago-knowledge.org/data/yago4.6/yago-4.6-taxonomy-log.zip
+      format: zip
+      compression: zip
+      size: 155673
+      sha256: bbcdf526fc04fda3d3fbe13ce630eb027b444dc61aebbb89da0947e098b39ef9
+      status: active
