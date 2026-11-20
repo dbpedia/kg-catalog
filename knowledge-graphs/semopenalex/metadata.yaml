@@ -1,0 +1,65 @@
+databus-account: knowledge-graph-catalog
+id: semopenalex
+title: SemOpenAlex
+
+abstract: >-
+  SemOpenAlex is a large-scale RDF knowledge graph of the global scientific
+  landscape based on OpenAlex, covering publications, authors, institutions,
+  sources, publishers, funders, and research concepts.
+
+description: >-
+  SemOpenAlex provides the OpenAlex scholarly dataset as an RDF knowledge
+  graph following Linked Data principles. It contains billions of RDF triples
+  describing scientific publications and related scholarly entities. SemOpenAlex
+  provides resolvable URIs, a public SPARQL endpoint, and full RDF snapshots
+  in compressed TriG format via its public AWS S3 bucket.
+
+moss-publish: true
+databus-publish: true
+
+license: https://creativecommons.org/publicdomain/zero/1.0/
+homepage: https://semopenalex.org/
+
+domains:
+- Publications, Education & Research
+
+keywords:
+- scholarly data
+- scientific publications
+- OpenAlex
+- knowledge graph
+- linked data
+- RDF
+- open science
+- bibliographic data
+
+sparql:
+- name: main
+  url: https://semopenalex.org/sparql
+
+maintainers:
+- name: Michael Färber
+  contact: michael.faerber@tu-dresden.de
+  github: michaelfaerber
+
+artifacts:
+- artifact: data-sample
+  title: SemOpenAlex Data Sample
+  abstract: >-
+    A representative RDF sample of the SemOpenAlex knowledge graph.
+  description: >-
+    This official SemOpenAlex data sample contains RDF data about a
+    scientific publication and its authors. Complete SemOpenAlex RDF
+    snapshots are available separately from the public AWS S3 bucket.
+  versions:
+  - version: 2023.10.28
+    title: SemOpenAlex Data Sample
+    abstract: >-
+      RDF sample accompanying the SemOpenAlex knowledge graph.
+    description: >-
+      Small representative SemOpenAlex RDF dataset serialized in TriG.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://raw.githubusercontent.com/metaphacts/semopenalex/main/data-sample/semopenalex-data-sample.trig
+      format: trig
+      status: pending
