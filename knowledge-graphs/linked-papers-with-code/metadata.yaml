@@ -1,0 +1,69 @@
+databus-account: knowledge-graph-catalog
+id: linked-papers-with-code
+title: Linked Papers With Code
+
+abstract: >-
+  Linked Papers With Code (LPWC) is an RDF knowledge graph describing
+  the machine learning research landscape, including papers, tasks,
+  datasets, methods, evaluations, and results.
+
+description: >-
+  Linked Papers With Code (LPWC) is a scholarly RDF knowledge graph based
+  on Papers With Code. It models more than 400,000 machine learning
+  publications together with the tasks they address, datasets they use,
+  methods they apply, and evaluation results. LPWC provides resolvable
+  Linked Data URIs, RDF dumps, a public SPARQL endpoint, and links to
+  external resources such as SemOpenAlex, Wikidata, and DBLP.
+
+moss-publish: true
+databus-publish: true
+
+license: https://creativecommons.org/licenses/by-sa/4.0/
+homepage: https://linkedpaperswithcode.com/
+
+domains:
+- Publications, Education & Research
+
+keywords:
+- machine learning
+- scholarly knowledge graph
+- publications
+- datasets
+- methods
+- linked data
+- RDF
+
+sparql:
+- name: main
+  url: https://linkedpaperswithcode.com/sparql
+
+maintainers:
+- name: Michael Färber
+  contact: michael.faerber@tu-dresden.de
+  github: michaelfaerber
+
+artifacts:
+- artifact: linked-papers-with-code
+  title: Linked Papers With Code Knowledge Graph
+  abstract: >-
+    RDF dump of Linked Papers With Code describing publications, tasks,
+    datasets, methods, evaluations, and results in machine learning.
+  description: >-
+    The LPWC knowledge graph represents the machine learning research
+    landscape and interlinks scholarly entities with external Linked Open
+    Data sources.
+  versions:
+  - version: 2024-09-05
+    title: Linked Papers With Code 2024-09-05
+    abstract: >-
+      RDF snapshot of Linked Papers With Code from September 5, 2024.
+    description: >-
+      The release provides LPWC in N-Triples and Turtle serializations.
+    license: https://creativecommons.org/licenses/by-sa/4.0/
+    distributions:
+    - file: https://zenodo.org/records/13881433/files/linkedpaperswithcode_2024-09-05.nt?download=1
+      format: nt
+      status: pending
+    - file: https://zenodo.org/records/13881433/files/linkedpaperswithcode_2024-09-05.ttl?download=1
+      format: ttl
+      status: pending
