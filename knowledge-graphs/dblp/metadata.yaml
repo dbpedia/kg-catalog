@@ -8,7 +8,7 @@ description: "The DBLP computer science bibliography KG is an open, curated KG o
   \ DBLP data, offering quality-checked metadata on authors, publications, and venues\
   \ in journals, conferences, etc.\n Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/blob/main/knowledge-graphs/dblp/metadata.yaml"
 check-new-release: dblp_release_auto_update.py
-databus-publish: false
+databus-publish: true
 moss-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/legalcode.rdf
 homepage: https://drops.dagstuhl.de/entities/collection/dblp
@@ -314,3 +314,21 @@ artifacts:
       size: 5436187013
       sha256: 795e9fd7d532dafa6685962e0fc59dcd4ba41087642a486bfd22af68d8fd11af
       status: active
+  - version: 2026-10-03
+    title: Monthly Snapshot
+    abstract: 'This file contains all the dblp data in a single file. The dblp computer
+        science bibliography is the open indexing service and knowledge graph of the
+        computer science community. '
+    description: 'This file contains all the dblp data in a single file. The dblp
+        computer science bibliography is the open indexing service and knowledge graph
+        of the computer science community. This version and its metadata have been **automatically
+        retrieved and published** by an automated update process.
+
+
+        Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/blob/main/knowledge-graphs/dblp/metadata.yaml'
+    license: https://creativecommons.org/publicdomain/zero/1.0/legalcode.rdf
+    distributions:
+    - file: https://drops.dagstuhl.de/storage/artifacts/dblp/rdf/2026/dblp-2026-10-03.nt.gz
+      format: nt
+      compression: gz
+      status: pending
