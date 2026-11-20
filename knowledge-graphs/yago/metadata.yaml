@@ -7,7 +7,7 @@ abstract: "YAGO is a high-quality knowledge graph based on Wikidata. It uses hum
 description: "YAGO is a high-quality knowledge graph based on Wikidata. It uses human-readable\
   \ IDs, schema.org classes & properties, a curated Wikidata taxonomy, and SHACL constraints\
   \ for clean data.\n\n Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/knowledge-graphs/yago/matadata.yaml"
-databus-publish: true
+databus-publish: false
 moss-publish: false
 license: https://creativecommons.org/licenses/by-sa/3.0/rdf
 homepage: https://yago-knowledge.org
@@ -304,34 +304,27 @@ artifacts:
       status: active
 - artifact: yago-entities
   title: YAGO Entities
-  abstract: >-
-    A list of YAGO entities in JSON Lines (JSONL) format,
-    containing entity identifiers, titles, and English descriptions
-    for entity linking and disambiguation.
-  description: >-
-    An entity list extracted from YAGO 4.6, containing entity
-    identifiers, titles, and English descriptions. Each line
-    represents an entity as a JSON object with id, title, and
-    description fields. The dataset is intended for entity
-    linking and disambiguation applications, including the
-    LELA entity linking system.
+  abstract: A list of YAGO entities in JSON Lines (JSONL) format, containing entity
+    identifiers, titles, and English descriptions for entity linking and disambiguation.
+  description: An entity list extracted from YAGO 4.6, containing entity identifiers,
+    titles, and English descriptions. Each line represents an entity as a JSON object
+    with id, title, and description fields. The dataset is intended for entity linking
+    and disambiguation applications, including the LELA entity linking system.
   versions:
   - version: '4.6'
     title: YAGO Entities 4.6
-    abstract: >-
-      A list of YAGO 4.6 entities in JSON Lines (JSONL) format,
-      containing entity identifiers, titles, and English descriptions.
-    description: >-
-      YAGO 4.6 is based on Wikidata. It uses human-readable identifiers,
-      schema.org classes and properties, a curated selection of the
-      Wikidata taxonomy, and SHACL constraints. It contains 39 million
-      entities and 167 million facts. This distribution provides an
-      entity list in JSON Lines (JSONL) format for entity linking
-      and disambiguation.
+    abstract: A list of YAGO 4.6 entities in JSON Lines (JSONL) format, containing
+      entity identifiers, titles, and English descriptions.
+    description: YAGO 4.6 is based on Wikidata. It uses human-readable identifiers,
+      schema.org classes and properties, a curated selection of the Wikidata taxonomy,
+      and SHACL constraints. It contains 39 million entities and 167 million facts.
+      This distribution provides an entity list in JSON Lines (JSONL) format for entity
+      linking and disambiguation.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://yago-knowledge.org/data/yago4.6/yago-entities.jsonl.zip
       format: zip
       compression: zip
       size: 136639474
-      status: pending
+      status: active
+      sha256: 5b2967409d1fc910f541ce24df26b52adb76aea8ff9d181c089a41cd5af8468c
