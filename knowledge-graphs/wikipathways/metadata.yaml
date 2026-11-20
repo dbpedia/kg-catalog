@@ -2,10 +2,11 @@ databus-account: knowledge-graph-catalog
 id: wikipathways
 title: WikiPathways
 abstract: WikiPathways provides community-curated biological pathways as linked RDF.
-description: WikiPathways hosts biological pathway descriptions, gene and metabolite identifiers,
-  and related diagram metadata. Monthly RDF exports are produced as zipped graph sets.
-moss-publish: true
-databus-publish: true
+description: WikiPathways hosts biological pathway descriptions, gene and metabolite
+  identifiers, and related diagram metadata. Monthly RDF exports are produced as zipped
+  graph sets.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://www.wikipathways.org/
 domains:
@@ -20,18 +21,24 @@ keywords:
 artifacts:
 - artifact: wikipathways
   title: WikiPathways
-  abstract: WikiPathways provides community-curated biological pathways as linked RDF.
-  description: WikiPathways hosts biological pathway descriptions, gene and metabolite identifiers,
-    and related diagram metadata. Monthly RDF exports are produced as zipped graph sets.
+  abstract: WikiPathways provides community-curated biological pathways as linked
+    RDF.
+  description: WikiPathways hosts biological pathway descriptions, gene and metabolite
+    identifiers, and related diagram metadata. Monthly RDF exports are produced as
+    zipped graph sets.
   versions:
   - version: '2026-11-10'
     title: WikiPathways - 2026-11-10
-    abstract: WikiPathways provides community-curated biological pathways as linked RDF.
-    description: WikiPathways hosts biological pathway descriptions, gene and metabolite identifiers,
-      and related diagram metadata. Monthly RDF exports are produced as zipped graph sets.
+    abstract: WikiPathways provides community-curated biological pathways as linked
+      RDF.
+    description: WikiPathways hosts biological pathway descriptions, gene and metabolite
+      identifiers, and related diagram metadata. Monthly RDF exports are produced
+      as zipped graph sets.
     license: https://creativecommons.org/publicdomain/zero/1.0/
     distributions:
     - file: https://data.wikipathways.org/current/rdf/wikipathways-20261110-rdf-wp.zip
       format: ttl
       compression: zip
-      status: pending
+      status: active
+      sha256: 06ab0834c2973952386f6b8c64e844760326f9bb98d2cc268ae09f210fe0f481
+      size: 17917914
