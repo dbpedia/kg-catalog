@@ -1,13 +1,13 @@
 databus-account: knowledge-graph-catalog
 id: gene-ontology
 title: Gene Ontology (GO)
-abstract: Gene Ontology provides interoperable biological process, function and component concepts
-  in OWL/RDF.
-description: Gene Ontology is a foundational biomedical ontology describing molecular functions, biological
-  processes and cellular components. The RDF/XML-serialized OWL ontology is maintained as a downloadable
-  file.
-moss-publish: true
-databus-publish: true
+abstract: Gene Ontology provides interoperable biological process, function and component
+  concepts in OWL/RDF.
+description: Gene Ontology is a foundational biomedical ontology describing molecular
+  functions, biological processes and cellular components. The RDF/XML-serialized
+  OWL ontology is maintained as a downloadable file.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://geneontology.org/
 domains:
@@ -22,21 +22,23 @@ keywords:
 artifacts:
 - artifact: gene-ontology
   title: Gene Ontology (GO)
-  abstract: Gene Ontology provides interoperable biological process, function and component concepts
-    in OWL/RDF.
-  description: Gene Ontology is a foundational biomedical ontology describing molecular functions,
-    biological processes and cellular components. The RDF/XML-serialized OWL ontology is maintained
-    as a downloadable file.
+  abstract: Gene Ontology provides interoperable biological process, function and
+    component concepts in OWL/RDF.
+  description: Gene Ontology is a foundational biomedical ontology describing molecular
+    functions, biological processes and cellular components. The RDF/XML-serialized
+    OWL ontology is maintained as a downloadable file.
   versions:
   - version: current
     title: Gene Ontology (GO) - current
-    abstract: Gene Ontology provides interoperable biological process, function and component concepts
-      in OWL/RDF.
-    description: Gene Ontology is a foundational biomedical ontology describing molecular functions,
-      biological processes and cellular components. The RDF/XML-serialized OWL ontology is maintained
-      as a downloadable file.
+    abstract: Gene Ontology provides interoperable biological process, function and
+      component concepts in OWL/RDF.
+    description: Gene Ontology is a foundational biomedical ontology describing molecular
+      functions, biological processes and cellular components. The RDF/XML-serialized
+      OWL ontology is maintained as a downloadable file.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://purl.obolibrary.org/obo/go.owl
       format: owl
-      status: pending
+      status: active
+      sha256: 653ce47cd7b02304e67eb67c54d3be02ec5b0ba5e00eb7384dfa0da00f9682ec
+      size: 129926009

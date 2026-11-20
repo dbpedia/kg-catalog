@@ -2,10 +2,11 @@ databus-account: knowledge-graph-catalog
 id: reactome
 title: Reactome
 abstract: Reactome is a curated biological pathways graph available as BioPAX OWL/RDF.
-description: Reactome curates biochemical reactions, pathways, molecules and related biological processes.
-  Its downloadable species-specific pathway graphs are packaged as BioPAX Level 3 OWL (RDF/XML).
-moss-publish: true
-databus-publish: true
+description: Reactome curates biochemical reactions, pathways, molecules and related
+  biological processes. Its downloadable species-specific pathway graphs are packaged
+  as BioPAX Level 3 OWL (RDF/XML).
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://reactome.org/
 domains:
@@ -21,19 +22,22 @@ artifacts:
 - artifact: reactome
   title: Reactome
   abstract: Reactome is a curated biological pathways graph available as BioPAX OWL/RDF.
-  description: Reactome curates biochemical reactions, pathways, molecules and related biological
-    processes. Its downloadable species-specific pathway graphs are packaged as BioPAX Level 3 OWL
-    (RDF/XML).
+  description: Reactome curates biochemical reactions, pathways, molecules and related
+    biological processes. Its downloadable species-specific pathway graphs are packaged
+    as BioPAX Level 3 OWL (RDF/XML).
   versions:
   - version: current
     title: Reactome - current
-    abstract: Reactome is a curated biological pathways graph available as BioPAX OWL/RDF.
-    description: Reactome curates biochemical reactions, pathways, molecules and related biological
-      processes. Its downloadable species-specific pathway graphs are packaged as BioPAX Level 3 OWL
-      (RDF/XML).
+    abstract: Reactome is a curated biological pathways graph available as BioPAX
+      OWL/RDF.
+    description: Reactome curates biochemical reactions, pathways, molecules and related
+      biological processes. Its downloadable species-specific pathway graphs are packaged
+      as BioPAX Level 3 OWL (RDF/XML).
     license: https://creativecommons.org/publicdomain/zero/1.0/
     distributions:
     - file: https://reactome.org/download/current/biopax.zip
       format: owl
       compression: zip
-      status: pending
+      status: active
+      sha256: 5ff50502d2a35e42887dae29a1636491faaeec7bea23d4b7371584f1eb7885f3
+      size: 165125074
