@@ -1,0 +1,37 @@
+databus-account: knowledge-graph-catalog
+id: wikipathways
+title: WikiPathways
+abstract: WikiPathways provides community-curated biological pathways as linked RDF.
+description: WikiPathways hosts biological pathway descriptions, gene and metabolite identifiers,
+  and related diagram metadata. Monthly RDF exports are produced as zipped graph sets.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/publicdomain/zero/1.0/
+homepage: https://www.wikipathways.org/
+domains:
+- Life Sciences & Health
+keywords:
+- pathway biology
+- community curation
+- genes
+- metabolites
+- Turtle
+- RDF
+artifacts:
+- artifact: wikipathways
+  title: WikiPathways
+  abstract: WikiPathways provides community-curated biological pathways as linked RDF.
+  description: WikiPathways hosts biological pathway descriptions, gene and metabolite identifiers,
+    and related diagram metadata. Monthly RDF exports are produced as zipped graph sets.
+  versions:
+  - version: '2026-11-10'
+    title: WikiPathways - 2026-11-10
+    abstract: WikiPathways provides community-curated biological pathways as linked RDF.
+    description: WikiPathways hosts biological pathway descriptions, gene and metabolite identifiers,
+      and related diagram metadata. Monthly RDF exports are produced as zipped graph sets.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://data.wikipathways.org/current/rdf/wikipathways-20261110-rdf-wp.zip
+      format: ttl
+      compression: zip
+      status: pending
