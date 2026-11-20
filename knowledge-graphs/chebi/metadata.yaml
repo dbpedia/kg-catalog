@@ -1,0 +1,49 @@
+databus-account: knowledge-graph-catalog
+id: chebi
+title: ChEBI
+abstract: ChEBI is a curated ontology of chemical entities published in RDF-compatible OWL.
+description: Chemical Entities of Biological Interest maintains chemical concepts, identifiers, annotations, chemical properties and hierarchical relationships. The complete OWL ontology is serialized as RDF/XML and published in nightly and monthly releases.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://www.ebi.ac.uk/chebi/
+domains:
+  - Life Sciences & Health
+keywords:
+  - chemical entities
+  - chemistry
+  - biological compounds
+  - ontology
+  - OWL
+  - RDF/XML
+artifacts:
+  - artifact: full
+    title: ChEBI Full Ontology
+    abstract: The full ChEBI OWL ontology, including synonyms and manually curated cross-references.
+    description: The full ChEBI OWL ontology, including synonyms and manually curated cross-references.
+    versions:
+      - version: current
+        title: ChEBI Full Ontology current
+        abstract: The full ChEBI OWL ontology, including synonyms and manually curated cross-references.
+        description: The full ChEBI OWL ontology, including synonyms and manually curated cross-references.
+        license: https://creativecommons.org/licenses/by/4.0/
+        distributions:
+          - file: https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl.gz
+            format: owl
+            compression: gz
+            status: pending
+  - artifact: core
+    title: ChEBI Core Ontology
+    abstract: The core ChEBI OWL ontology, omitting synonyms and manually curated cross-references.
+    description: The core ChEBI OWL ontology, omitting synonyms and manually curated cross-references.
+    versions:
+      - version: current
+        title: ChEBI Core Ontology current
+        abstract: The core ChEBI OWL ontology, omitting synonyms and manually curated cross-references.
+        description: The core ChEBI OWL ontology, omitting synonyms and manually curated cross-references.
+        license: https://creativecommons.org/licenses/by/4.0/
+        distributions:
+          - file: https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_core.owl.gz
+            format: owl
+            compression: gz
+            status: pending
