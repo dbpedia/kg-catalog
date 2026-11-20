@@ -1,12 +1,13 @@
 databus-account: knowledge-graph-catalog
 id: rhea
 title: Rhea
-abstract: Rhea is a curated database of biochemical reactions and their participants distributed as
-  RDF.
-description: Rhea provides standardized biochemical reactions, related chemical participants, reaction
-  directions, and cross-references. Its publisher provides RDF/XML and BioPAX OWL dumps.
-moss-publish: true
-databus-publish: true
+abstract: Rhea is a curated database of biochemical reactions and their participants
+  distributed as RDF.
+description: Rhea provides standardized biochemical reactions, related chemical participants,
+  reaction directions, and cross-references. Its publisher provides RDF/XML and BioPAX
+  OWL dumps.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://www.rhea-db.org/
 domains:
@@ -21,24 +22,30 @@ keywords:
 artifacts:
 - artifact: rhea
   title: Rhea
-  abstract: Rhea is a curated database of biochemical reactions and their participants distributed
-    as RDF.
-  description: Rhea provides standardized biochemical reactions, related chemical participants, reaction
-    directions, and cross-references. Its publisher provides RDF/XML and BioPAX OWL dumps.
+  abstract: Rhea is a curated database of biochemical reactions and their participants
+    distributed as RDF.
+  description: Rhea provides standardized biochemical reactions, related chemical
+    participants, reaction directions, and cross-references. Its publisher provides
+    RDF/XML and BioPAX OWL dumps.
   versions:
   - version: current
     title: Rhea - current
-    abstract: Rhea is a curated database of biochemical reactions and their participants distributed
-      as RDF.
-    description: Rhea provides standardized biochemical reactions, related chemical participants,
-      reaction directions, and cross-references. Its publisher provides RDF/XML and BioPAX OWL dumps.
+    abstract: Rhea is a curated database of biochemical reactions and their participants
+      distributed as RDF.
+    description: Rhea provides standardized biochemical reactions, related chemical
+      participants, reaction directions, and cross-references. Its publisher provides
+      RDF/XML and BioPAX OWL dumps.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.expasy.org/databases/rhea/rdf/rhea.rdf.gz
       format: rdf
       compression: gz
-      status: pending
+      status: active
+      sha256: 8f858aff8d984d8e882b90fac0d81d6980589fb819b460da388ccb796195fa25
+      size: 8875804
     - file: https://ftp.expasy.org/databases/rhea/biopax/rhea-biopax.owl.gz
       format: owl
       compression: gz
-      status: pending
+      status: active
+      sha256: 8967c3f2fd485c9ea646a47d42fd7cc15d78742bceb95a241e059363dbf11303
+      size: 25136426
