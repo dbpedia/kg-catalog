@@ -84,38 +84,39 @@ keywords:
 - quantity
 - quantity kind
 - unit
+- dimension
 - metrology
 artifacts:
-- artifact: first-artifact
-  title: First Artifact
-  abstract: Short description.
-  description: Longer description.
+- artifact: SHACL distribution
+  title: SHACL distribution
+  abstract: Vocabularies and SHACL schemas
+  description: This is a file that includes all the vocabularies and SHACL schemas in the QUDT distribution
   versions:
-  - version: 2026.07.10
-    title: First Artifact
-    abstract: Short description.
-    description: Longer description.
-    license: http://purl.oclc.org/NET/rdflicense/cc-by3.0
+  - version: Latest
+    title: SHACL distribution
+    abstract: Vocabularies and SHACL schemas
+    description: This is a file that includes all the vocabularies and SHACL schemas in the QUDT distribution
+    license: https://creativecommons.org/licenses/by/4.0/
     distributions:
-    - file: https://example.org/file1.ttl.bz2
+    - file: https://qudt.org/shacl/qudt-all
       format: ttl
-      compression: bz2
-      status: pending
-- artifact: second-artifact
-  title: Second Artifact
-  abstract: Short description.
-  description: Longer description.
+      compression: none
+      status: released
+- artifact: OWL distribution
+  title: OWL distribution
+  abstract: Vocabularies and OWL schemas
+  description: This is a file that includes all the vocabularies and OWL schemas in the QUDT distribution
   versions:
-  - version: 2026.07.10
-    title: Second Artifact
-    abstract: Short description.
-    description: Longer description.
-    license: http://purl.oclc.org/NET/rdflicense/cc-by3.0
+  - version: Latest
+    title: OWL distribution
+    abstract: Vocabularies and OWL schemas
+    description: This is a file that includes all the vocabularies and OWL schemas in the QUDT distribution
+    license: https://creativecommons.org/licenses/by/4.0/
     distributions:
-    - file: https://example.org/file2.ttl.bz2
+    - file: https://qudt.org/qudt-all
       format: ttl
-      compression: bz2
-      status: pending
+      compression: none
+      status: released
 sparql:
 - name: main
   url: https://www.qudt.org/fuseki/#/
