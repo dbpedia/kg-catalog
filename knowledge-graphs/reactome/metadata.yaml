@@ -1,0 +1,39 @@
+databus-account: knowledge-graph-catalog
+id: reactome
+title: Reactome
+abstract: Reactome is a curated biological pathways graph available as BioPAX OWL/RDF.
+description: Reactome curates biochemical reactions, pathways, molecules and related biological processes.
+  Its downloadable species-specific pathway graphs are packaged as BioPAX Level 3 OWL (RDF/XML).
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/publicdomain/zero/1.0/
+homepage: https://reactome.org/
+domains:
+- Life Sciences & Health
+keywords:
+- pathways
+- reactions
+- biology
+- BioPAX
+- OWL
+- RDF/XML
+artifacts:
+- artifact: reactome
+  title: Reactome
+  abstract: Reactome is a curated biological pathways graph available as BioPAX OWL/RDF.
+  description: Reactome curates biochemical reactions, pathways, molecules and related biological
+    processes. Its downloadable species-specific pathway graphs are packaged as BioPAX Level 3 OWL
+    (RDF/XML).
+  versions:
+  - version: current
+    title: Reactome - current
+    abstract: Reactome is a curated biological pathways graph available as BioPAX OWL/RDF.
+    description: Reactome curates biochemical reactions, pathways, molecules and related biological
+      processes. Its downloadable species-specific pathway graphs are packaged as BioPAX Level 3 OWL
+      (RDF/XML).
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://reactome.org/download/current/biopax.zip
+      format: owl
+      compression: zip
+      status: pending

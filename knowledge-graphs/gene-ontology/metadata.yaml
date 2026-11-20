@@ -1,0 +1,42 @@
+databus-account: knowledge-graph-catalog
+id: gene-ontology
+title: Gene Ontology (GO)
+abstract: Gene Ontology provides interoperable biological process, function and component concepts
+  in OWL/RDF.
+description: Gene Ontology is a foundational biomedical ontology describing molecular functions, biological
+  processes and cellular components. The RDF/XML-serialized OWL ontology is maintained as a downloadable
+  file.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://geneontology.org/
+domains:
+- Life Sciences & Health
+keywords:
+- gene ontology
+- molecular function
+- biological process
+- cellular component
+- OWL
+- RDF
+artifacts:
+- artifact: gene-ontology
+  title: Gene Ontology (GO)
+  abstract: Gene Ontology provides interoperable biological process, function and component concepts
+    in OWL/RDF.
+  description: Gene Ontology is a foundational biomedical ontology describing molecular functions,
+    biological processes and cellular components. The RDF/XML-serialized OWL ontology is maintained
+    as a downloadable file.
+  versions:
+  - version: current
+    title: Gene Ontology (GO) - current
+    abstract: Gene Ontology provides interoperable biological process, function and component concepts
+      in OWL/RDF.
+    description: Gene Ontology is a foundational biomedical ontology describing molecular functions,
+      biological processes and cellular components. The RDF/XML-serialized OWL ontology is maintained
+      as a downloadable file.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://purl.obolibrary.org/obo/go.owl
+      format: owl
+      status: pending
