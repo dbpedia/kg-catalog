@@ -1,94 +1,97 @@
 databus-account: knowledge-graph-catalog
 id: opencitations-meta
 title: OpenCitations Meta
-abstract: OpenCitations Meta publishes RDF metadata for scholarly publications and agents.
-description: OpenCitations Meta describes bibliographic resources, authors, venues and associated provenance. The September 2026 RDF release (v9.2.1) is archived on Zenodo as five compressed 7z files containing JSON-LD RDF metadata and provenance.
-moss-publish: true
+abstract: OpenCitations Meta publishes RDF metadata for scholarly publications and
+  agents.
+description: OpenCitations Meta describes bibliographic resources, authors, venues
+  and associated provenance. The September 2026 RDF release (v9.2.1) is archived on
+  Zenodo as five compressed 7z files containing JSON-LD RDF metadata and provenance.
+moss-publish: false
 databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://opencitations.net/meta
 domains:
-  - Publications, Education & Research
+- Publications, Education & Research
 keywords:
-  - bibliographic metadata
-  - scientific publications
-  - authors
-  - citation metadata
-  - JSON-LD
-  - RDF
+- bibliographic metadata
+- scientific publications
+- authors
+- citation metadata
+- JSON-LD
+- RDF
 artifacts:
-  - artifact: agent-roles
-    title: OpenCitations Meta Agent Roles
+- artifact: agent-roles
+  title: OpenCitations Meta Agent Roles
+  abstract: JSON-LD RDF metadata for bibliographic agent roles (ar).
+  description: JSON-LD RDF metadata for bibliographic agent roles (ar).
+  versions:
+  - version: 2026-09
+    title: OpenCitations Meta Agent Roles 2026-09
     abstract: JSON-LD RDF metadata for bibliographic agent roles (ar).
     description: JSON-LD RDF metadata for bibliographic agent roles (ar).
-    versions:
-      - version: 2026-09
-        title: OpenCitations Meta Agent Roles 2026-09
-        abstract: JSON-LD RDF metadata for bibliographic agent roles (ar).
-        description: JSON-LD RDF metadata for bibliographic agent roles (ar).
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/23059736/files/ar.7z?download=1
-            format: jsonld
-            compression: 7z
-            status: active
-  - artifact: bibliographic-resources
-    title: OpenCitations Meta Bibliographic Resources
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/23059736/files/ar.7z?download=1
+      format: jsonld
+      compression: 7z
+      status: active
+- artifact: bibliographic-resources
+  title: OpenCitations Meta Bibliographic Resources
+  abstract: JSON-LD RDF metadata for bibliographic resources (br).
+  description: JSON-LD RDF metadata for bibliographic resources (br).
+  versions:
+  - version: 2026-09
+    title: OpenCitations Meta Bibliographic Resources 2026-09
     abstract: JSON-LD RDF metadata for bibliographic resources (br).
     description: JSON-LD RDF metadata for bibliographic resources (br).
-    versions:
-      - version: 2026-09
-        title: OpenCitations Meta Bibliographic Resources 2026-09
-        abstract: JSON-LD RDF metadata for bibliographic resources (br).
-        description: JSON-LD RDF metadata for bibliographic resources (br).
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/23059736/files/br.7z?download=1
-            format: jsonld
-            compression: 7z
-            status: active
-  - artifact: identifiers
-    title: OpenCitations Meta Identifiers
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/23059736/files/br.7z?download=1
+      format: jsonld
+      compression: 7z
+      status: active
+- artifact: identifiers
+  title: OpenCitations Meta Identifiers
+  abstract: JSON-LD RDF metadata for identifiers (id).
+  description: JSON-LD RDF metadata for identifiers (id).
+  versions:
+  - version: 2026-09
+    title: OpenCitations Meta Identifiers 2026-09
     abstract: JSON-LD RDF metadata for identifiers (id).
     description: JSON-LD RDF metadata for identifiers (id).
-    versions:
-      - version: 2026-09
-        title: OpenCitations Meta Identifiers 2026-09
-        abstract: JSON-LD RDF metadata for identifiers (id).
-        description: JSON-LD RDF metadata for identifiers (id).
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/23059736/files/id.7z?download=1
-            format: jsonld
-            compression: 7z
-            status: active
-  - artifact: responsible-agents
-    title: OpenCitations Meta Responsible Agents
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/23059736/files/id.7z?download=1
+      format: jsonld
+      compression: 7z
+      status: active
+- artifact: responsible-agents
+  title: OpenCitations Meta Responsible Agents
+  abstract: JSON-LD RDF metadata for responsible agents (ra).
+  description: JSON-LD RDF metadata for responsible agents (ra).
+  versions:
+  - version: 2026-09
+    title: OpenCitations Meta Responsible Agents 2026-09
     abstract: JSON-LD RDF metadata for responsible agents (ra).
     description: JSON-LD RDF metadata for responsible agents (ra).
-    versions:
-      - version: 2026-09
-        title: OpenCitations Meta Responsible Agents 2026-09
-        abstract: JSON-LD RDF metadata for responsible agents (ra).
-        description: JSON-LD RDF metadata for responsible agents (ra).
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/23059736/files/ra.7z?download=1
-            format: jsonld
-            compression: 7z
-            status: active
-  - artifact: resource-embodiments
-    title: OpenCitations Meta Resource Embodiments
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/23059736/files/ra.7z?download=1
+      format: jsonld
+      compression: 7z
+      status: active
+- artifact: resource-embodiments
+  title: OpenCitations Meta Resource Embodiments
+  abstract: JSON-LD RDF metadata for resource embodiments (re).
+  description: JSON-LD RDF metadata for resource embodiments (re).
+  versions:
+  - version: 2026-09
+    title: OpenCitations Meta Resource Embodiments 2026-09
     abstract: JSON-LD RDF metadata for resource embodiments (re).
     description: JSON-LD RDF metadata for resource embodiments (re).
-    versions:
-      - version: 2026-09
-        title: OpenCitations Meta Resource Embodiments 2026-09
-        abstract: JSON-LD RDF metadata for resource embodiments (re).
-        description: JSON-LD RDF metadata for resource embodiments (re).
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/23059736/files/re.7z?download=1
-            format: jsonld
-            compression: 7z
-            status: active
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/23059736/files/re.7z?download=1
+      format: jsonld
+      compression: 7z
+      status: active

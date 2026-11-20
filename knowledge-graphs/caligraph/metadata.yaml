@@ -1,79 +1,90 @@
 databus-account: knowledge-graph-catalog
 id: caligraph
 title: CaLiGraph
-abstract: CaLiGraph is a general-purpose knowledge graph derived from Wikipedia categories and lists.
-description: CaLiGraph integrates Wikipedia categories, lists, and other source material into a typed knowledge graph with entities, taxonomic types, labels, and relations. This record points to an archived RDF distribution.
-moss-publish: true
-databus-publish: true
+abstract: CaLiGraph is a general-purpose knowledge graph derived from Wikipedia categories
+  and lists.
+description: CaLiGraph integrates Wikipedia categories, lists, and other source material
+  into a typed knowledge graph with entities, taxonomic types, labels, and relations.
+  This record points to an archived RDF distribution.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://github.com/nheist/CaLiGraph
 domains:
-  - Cross-domain
+- Cross-domain
 keywords:
-  - Wikipedia
-  - taxonomy
-  - entities
-  - linked data
-  - instance typing
-  - RDF
+- Wikipedia
+- taxonomy
+- entities
+- linked data
+- instance typing
+- RDF
 artifacts:
-  - artifact: instances-types
-    title: CaLiGraph Instance Types
+- artifact: instances-types
+  title: CaLiGraph Instance Types
+  abstract: Instance identifiers and their non-transitive type assertions.
+  description: Instance identifiers and their non-transitive type assertions.
+  versions:
+  - version: 3.1.1
+    title: CaLiGraph Instance Types 3.1.1
     abstract: Instance identifiers and their non-transitive type assertions.
     description: Instance identifiers and their non-transitive type assertions.
-    versions:
-      - version: 3.1.1
-        title: CaLiGraph Instance Types 3.1.1
-        abstract: Instance identifiers and their non-transitive type assertions.
-        description: Instance identifiers and their non-transitive type assertions.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://zenodo.org/records/8068322/files/caligraph-instances_types.nt.bz2?download=1
-            format: nt
-            compression: bz2
-            status: pending
-  - artifact: instances-labels
-    title: CaLiGraph Instance Labels
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/8068322/files/caligraph-instances_types.nt.bz2?download=1
+      format: nt
+      compression: bz2
+      status: active
+      sha256: 55e09b200e41817ed0b7e58c2957d72d8806f1054830f003163ff0438ba681b9
+      size: 525126739
+- artifact: instances-labels
+  title: CaLiGraph Instance Labels
+  abstract: Labels assigned to CaLiGraph instances.
+  description: Labels assigned to CaLiGraph instances.
+  versions:
+  - version: 3.1.1
+    title: CaLiGraph Instance Labels 3.1.1
     abstract: Labels assigned to CaLiGraph instances.
     description: Labels assigned to CaLiGraph instances.
-    versions:
-      - version: 3.1.1
-        title: CaLiGraph Instance Labels 3.1.1
-        abstract: Labels assigned to CaLiGraph instances.
-        description: Labels assigned to CaLiGraph instances.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://zenodo.org/records/8068322/files/caligraph-instances_labels.nt.bz2?download=1
-            format: nt
-            compression: bz2
-            status: pending
-  - artifact: instances-relations
-    title: CaLiGraph Instance Relations
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/8068322/files/caligraph-instances_labels.nt.bz2?download=1
+      format: nt
+      compression: bz2
+      status: active
+      sha256: 11515e14a5359c7216d6933d17919d71a33cd7a258b384a162f0fd1d7ba3c7fc
+      size: 485387503
+- artifact: instances-relations
+  title: CaLiGraph Instance Relations
+  abstract: Relations between CaLiGraph instances.
+  description: Relations between CaLiGraph instances.
+  versions:
+  - version: 3.1.1
+    title: CaLiGraph Instance Relations 3.1.1
     abstract: Relations between CaLiGraph instances.
     description: Relations between CaLiGraph instances.
-    versions:
-      - version: 3.1.1
-        title: CaLiGraph Instance Relations 3.1.1
-        abstract: Relations between CaLiGraph instances.
-        description: Relations between CaLiGraph instances.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://zenodo.org/records/8068322/files/caligraph-instances_relations.nt.bz2?download=1
-            format: nt
-            compression: bz2
-            status: pending
-  - artifact: ontology
-    title: CaLiGraph Ontology
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/8068322/files/caligraph-instances_relations.nt.bz2?download=1
+      format: nt
+      compression: bz2
+      status: active
+      sha256: 67033205e54b892978112d7e1f498d054d114729149507cdaba90906bfef57c2
+      size: 345225427
+- artifact: ontology
+  title: CaLiGraph Ontology
+  abstract: Class and property definitions, labels, and restrictions in CaLiGraph.
+  description: Class and property definitions, labels, and restrictions in CaLiGraph.
+  versions:
+  - version: 3.1.1
+    title: CaLiGraph Ontology 3.1.1
     abstract: Class and property definitions, labels, and restrictions in CaLiGraph.
     description: Class and property definitions, labels, and restrictions in CaLiGraph.
-    versions:
-      - version: 3.1.1
-        title: CaLiGraph Ontology 3.1.1
-        abstract: Class and property definitions, labels, and restrictions in CaLiGraph.
-        description: Class and property definitions, labels, and restrictions in CaLiGraph.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://zenodo.org/records/8068322/files/caligraph-ontology.nt.bz2?download=1
-            format: nt
-            compression: bz2
-            status: pending
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/8068322/files/caligraph-ontology.nt.bz2?download=1
+      format: nt
+      compression: bz2
+      status: active
+      sha256: 90cdf7b2927bbee7de99ca3357bcf3361b87735d0adc9717c4d6ea96eefeb831
+      size: 32098492
