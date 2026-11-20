@@ -19,27 +19,45 @@ keywords:
 - event knowledge graph
 - N-Quads
 artifacts:
-- artifact: eventkg
-  title: EventKG
-  abstract: EventKG is a multilingual RDF knowledge graph of events, times, locations and related
-    entities.
-  description: EventKG integrates event-centered facts from Wikipedia, Wikidata, and other sources.
-    Version 3.2 offers individual N-Quads dumps for entities, events and relationships.
+- artifact: events
+  title: EventKG Events
+  abstract: The EventKG 3.2 event statements, published as an RDF N-Quads dump.
+  description: The EventKG 3.2 event statements, published as an RDF N-Quads dump.
   versions:
   - version: '3.2'
-    title: EventKG - 3.2
-    abstract: EventKG is a multilingual RDF knowledge graph of events, times, locations and related
-      entities.
-    description: EventKG integrates event-centered facts from Wikipedia, Wikidata, and other sources.
-      Version 3.2 offers individual N-Quads dumps for entities, events and relationships.
+    title: EventKG Events 3.2
+    abstract: The EventKG 3.2 event statements, published as an RDF N-Quads dump.
+    description: The EventKG 3.2 event statements, published as an RDF N-Quads dump.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/events.nq
       format: nq
       status: pending
+- artifact: entities
+  title: EventKG Entities
+  abstract: The EventKG 3.2 entity statements, published as an RDF N-Quads dump.
+  description: The EventKG 3.2 entity statements, published as an RDF N-Quads dump.
+  versions:
+  - version: '3.2'
+    title: EventKG Entities 3.2
+    abstract: The EventKG 3.2 entity statements, published as an RDF N-Quads dump.
+    description: The EventKG 3.2 entity statements, published as an RDF N-Quads dump.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
     - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/entities.nq
       format: nq
       status: pending
+- artifact: relations_events_base
+  title: EventKG Event Relations (Base)
+  abstract: The EventKG 3.2 base event-relation statements, published as an RDF N-Quads dump.
+  description: The EventKG 3.2 base event-relation statements, published as an RDF N-Quads dump.
+  versions:
+  - version: '3.2'
+    title: EventKG Event Relations (Base) 3.2
+    abstract: The EventKG 3.2 base event-relation statements, published as an RDF N-Quads dump.
+    description: The EventKG 3.2 base event-relation statements, published as an RDF N-Quads dump.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
     - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/relations_events_base.nq
       format: nq
       status: pending
