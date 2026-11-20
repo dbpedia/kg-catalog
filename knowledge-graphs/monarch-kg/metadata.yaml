@@ -1,0 +1,37 @@
+databus-account: knowledge-graph-catalog
+id: monarch-kg
+title: Monarch Knowledge Graph
+abstract: Monarch KG links genes, diseases, phenotypes, biological entities and associations.
+description: Monarch Initiative integrates gene, disease, phenotype and organism data into an interoperable
+  biomedical knowledge graph. A dated 2025 release provides a bulk N-Triples dump.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/publicdomain/zero/1.0/
+homepage: https://monarchinitiative.org/
+domains:
+- Life Sciences & Health
+keywords:
+- phenotypes
+- diseases
+- genes
+- biomedical knowledge graph
+- N-Triples
+- RDF
+artifacts:
+- artifact: monarch-kg
+  title: Monarch Knowledge Graph
+  abstract: Monarch KG links genes, diseases, phenotypes, biological entities and associations.
+  description: Monarch Initiative integrates gene, disease, phenotype and organism data into an interoperable
+    biomedical knowledge graph. A dated 2025 release provides a bulk N-Triples dump.
+  versions:
+  - version: '2025-06-19'
+    title: Monarch Knowledge Graph - 2025-06-19
+    abstract: Monarch KG links genes, diseases, phenotypes, biological entities and associations.
+    description: Monarch Initiative integrates gene, disease, phenotype and organism data into an
+      interoperable biomedical knowledge graph. A dated 2025 release provides a bulk N-Triples dump.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://data.monarchinitiative.org/monarch-kg/2025-06-19/monarch-kg.nt.gz
+      format: nt
+      compression: gz
+      status: pending
