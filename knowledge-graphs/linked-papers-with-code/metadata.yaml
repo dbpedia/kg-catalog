@@ -9,7 +9,7 @@ description: Linked Papers With Code (LPWC) is a scholarly RDF knowledge graph b
   with the tasks they address, datasets they use, methods they apply, and evaluation
   results. LPWC provides resolvable Linked Data URIs, RDF dumps, a public SPARQL endpoint,
   and links to external resources such as SemOpenAlex, Wikidata, and DBLP.
-moss-publish: true
+moss-publish: false
 databus-publish: false
 license: https://creativecommons.org/licenses/by-sa/4.0/
 homepage: https://linkedpaperswithcode.com/
@@ -27,7 +27,7 @@ sparql:
 - name: main
   url: https://linkedpaperswithcode.com/sparql
 maintainers:
-- name: "Michael Faerber"
+- name: Michael Faerber
   contact: michael.faerber@tu-dresden.de
   github: michaelfaerber
 artifacts:
