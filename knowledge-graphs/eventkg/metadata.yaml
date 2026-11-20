@@ -1,0 +1,45 @@
+databus-account: knowledge-graph-catalog
+id: eventkg
+title: EventKG
+abstract: EventKG is a multilingual RDF knowledge graph of events, times, locations and related entities.
+description: EventKG integrates event-centered facts from Wikipedia, Wikidata, and other sources.
+  Version 3.2 offers individual N-Quads dumps for entities, events and relationships.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://eventkg.l3s.uni-hannover.de/
+domains:
+- Cross-domain
+- Media, Culture & Entertainment
+keywords:
+- events
+- time
+- locations
+- multilingual
+- event knowledge graph
+- N-Quads
+artifacts:
+- artifact: eventkg
+  title: EventKG
+  abstract: EventKG is a multilingual RDF knowledge graph of events, times, locations and related
+    entities.
+  description: EventKG integrates event-centered facts from Wikipedia, Wikidata, and other sources.
+    Version 3.2 offers individual N-Quads dumps for entities, events and relationships.
+  versions:
+  - version: '3.2'
+    title: EventKG - 3.2
+    abstract: EventKG is a multilingual RDF knowledge graph of events, times, locations and related
+      entities.
+    description: EventKG integrates event-centered facts from Wikipedia, Wikidata, and other sources.
+      Version 3.2 offers individual N-Quads dumps for entities, events and relationships.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/events.nq
+      format: nq
+      status: pending
+    - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/entities.nq
+      format: nq
+      status: pending
+    - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/relations_events_base.nq
+      format: nq
+      status: pending
