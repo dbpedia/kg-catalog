@@ -8,7 +8,7 @@ description: "The DBLP computer science bibliography KG is an open, curated KG o
   \ DBLP data, offering quality-checked metadata on authors, publications, and venues\
   \ in journals, conferences, etc.\n Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/blob/main/knowledge-graphs/dblp/metadata.yaml"
 check-new-release: dblp_release_auto_update.py
-databus-publish: true
+databus-publish: false
 moss-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/legalcode.rdf
 homepage: https://drops.dagstuhl.de/entities/collection/dblp
@@ -317,18 +317,20 @@ artifacts:
   - version: 2026-10-03
     title: Monthly Snapshot
     abstract: 'This file contains all the dblp data in a single file. The dblp computer
-        science bibliography is the open indexing service and knowledge graph of the
-        computer science community. '
+      science bibliography is the open indexing service and knowledge graph of the
+      computer science community. '
     description: 'This file contains all the dblp data in a single file. The dblp
-        computer science bibliography is the open indexing service and knowledge graph
-        of the computer science community. This version and its metadata have been **automatically
-        retrieved and published** by an automated update process.
+      computer science bibliography is the open indexing service and knowledge graph
+      of the computer science community. This version and its metadata have been **automatically
+      retrieved and published** by an automated update process.
 
 
-        Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/blob/main/knowledge-graphs/dblp/metadata.yaml'
+      Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/blob/main/knowledge-graphs/dblp/metadata.yaml'
     license: https://creativecommons.org/publicdomain/zero/1.0/legalcode.rdf
     distributions:
     - file: https://drops.dagstuhl.de/storage/artifacts/dblp/rdf/2026/dblp-2026-10-03.nt.gz
       format: nt
       compression: gz
-      status: pending
+      status: active
+      sha256: 92c9f1c70770cffa2d6224bc721b40dbc26fcfa5b0a88fa1a193de938c942ace
+      size: 5433578394
