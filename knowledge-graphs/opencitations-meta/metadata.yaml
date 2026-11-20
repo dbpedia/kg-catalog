@@ -4,7 +4,7 @@ title: OpenCitations Meta
 abstract: OpenCitations Meta publishes RDF metadata for scholarly publications and agents.
 description: OpenCitations Meta describes bibliographic resources, authors, venues and associated provenance. The September 2026 RDF release (v9.2.1) is archived on Zenodo as five compressed 7z files containing JSON-LD RDF metadata and provenance.
 moss-publish: true
-databus-publish: true
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://opencitations.net/meta
 domains:
@@ -31,7 +31,7 @@ artifacts:
           - file: https://zenodo.org/records/23059736/files/ar.7z?download=1
             format: jsonld
             compression: 7z
-            status: pending
+            status: active
   - artifact: bibliographic-resources
     title: OpenCitations Meta Bibliographic Resources
     abstract: JSON-LD RDF metadata for bibliographic resources (br).
@@ -46,7 +46,7 @@ artifacts:
           - file: https://zenodo.org/records/23059736/files/br.7z?download=1
             format: jsonld
             compression: 7z
-            status: pending
+            status: active
   - artifact: identifiers
     title: OpenCitations Meta Identifiers
     abstract: JSON-LD RDF metadata for identifiers (id).
@@ -61,7 +61,7 @@ artifacts:
           - file: https://zenodo.org/records/23059736/files/id.7z?download=1
             format: jsonld
             compression: 7z
-            status: pending
+            status: active
   - artifact: responsible-agents
     title: OpenCitations Meta Responsible Agents
     abstract: JSON-LD RDF metadata for responsible agents (ra).
@@ -76,7 +76,7 @@ artifacts:
           - file: https://zenodo.org/records/23059736/files/ra.7z?download=1
             format: jsonld
             compression: 7z
-            status: pending
+            status: active
   - artifact: resource-embodiments
     title: OpenCitations Meta Resource Embodiments
     abstract: JSON-LD RDF metadata for resource embodiments (re).
@@ -91,4 +91,4 @@ artifacts:
           - file: https://zenodo.org/records/23059736/files/re.7z?download=1
             format: jsonld
             compression: 7z
-            status: pending
+            status: active
