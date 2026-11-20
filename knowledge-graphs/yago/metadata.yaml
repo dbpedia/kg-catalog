@@ -7,7 +7,7 @@ abstract: "YAGO is a high-quality knowledge graph based on Wikidata. It uses hum
 description: "YAGO is a high-quality knowledge graph based on Wikidata. It uses human-readable\
   \ IDs, schema.org classes & properties, a curated Wikidata taxonomy, and SHACL constraints\
   \ for clean data.\n\n Found an issue? Update metadata: https://github.com/m1ci/lod-next-gen/knowledge-graphs/yago/matadata.yaml"
-databus-publish: false
+databus-publish: true
 moss-publish: false
 license: https://creativecommons.org/licenses/by-sa/3.0/rdf
 homepage: https://yago-knowledge.org
@@ -106,7 +106,7 @@ artifacts:
       compression: zip
       size: 91188862
       sha256: 0cb8805ea3d555b3c0487891498cf9042962b0e96caca701e83926c4418a0f81
-      status: active
+      status: pending
 - artifact: yago-schema
   title: YAGO Schema
   abstract: The upper taxonomy, constraints, and property definitions of YAGO in SHACL.
@@ -123,7 +123,7 @@ artifacts:
       compression: zip
       size: 19471
       sha256: 01a4f4fd80a04ce38375163993644e8370da3b6761b3e8cc703be97cc5a3d07a
-      status: active
+      status: pending
 - artifact: yago-taxonomy
   title: YAGO Taxonomy
   abstract: The full taxonomy of classes in YAGO.
@@ -140,7 +140,7 @@ artifacts:
       compression: zip
       size: 41519942
       sha256: 6cc9f409ee96208dbba79d571e0471b69efc73d0f2384c3250e8b27942a95278
-      status: active
+      status: pending
 - artifact: yago-facts
   title: YAGO Facts
   abstract: All facts about entities that have an English Wikipedia page.
@@ -157,7 +157,7 @@ artifacts:
       compression: zip
       size: 829349027
       sha256: f9b57f355f0b1f8bf5b968ac20f33778fce2b521c675c5a7d28f0afd4f1c14b1
-      status: active
+      status: pending
 - artifact: yago-labels
   title: YAGO Labels
   abstract: All labels of entities that have an English Wikipedia page.
@@ -174,7 +174,7 @@ artifacts:
       compression: zip
       size: 2188238999
       sha256: aa189157fd48892a4b63d3063a838be03c09de65fe320374d774252bbee1774e
-      status: active
+      status: pending
 - artifact: yago-beyond-wikipedia
   title: YAGO Facts beyond Wikipedia
   abstract: All facts about entities that do not have an English Wikipedia page.
@@ -191,7 +191,7 @@ artifacts:
       compression: zip
       size: 2535563171
       sha256: 783e39eb3b2bee6ede00beec11a00d8ec632e9f2242b960f20579336f3e59180
-      status: active
+      status: pending
 - artifact: yago-beyond-wikipedia-labels
   title: YAGO Labels beyond Wikipedia
   abstract: All labels of entities that do not have an English Wikipedia page.
@@ -208,7 +208,7 @@ artifacts:
       compression: zip
       size: 3507195426
       sha256: 474c20b402d204cbd854318dee70f52d4a1b9f60a8321faef50ac56d2723ec81
-      status: active
+      status: pending
 - artifact: yago-meta
   title: YAGO Meta
   abstract: Fact annotations (facts about facts) in RDF*.
@@ -225,7 +225,7 @@ artifacts:
       compression: zip
       size: 106018818
       sha256: d551720dc88efa941378d0edf374e8308db62f0d87b2bf235d92dc202591c964
-      status: active
+      status: pending
 - artifact: yago-fact-log
   title: YAGO Fact Log
   abstract: Logs of statements that were excluded from YAGO, in RDF* (fact log).
@@ -242,7 +242,7 @@ artifacts:
       compression: zip
       size: 413825430
       sha256: 7af4fc24c467d6ff38b2a88ca1fdce139ecd5b6a1f3f006ba3d89bb40f21931c
-      status: active
+      status: pending
 - artifact: yago-range-log
   title: YAGO Range Log
   abstract: Logs of statements that were excluded from YAGO, in RDF* (range log).
@@ -259,7 +259,7 @@ artifacts:
       compression: zip
       size: 57694789
       sha256: 977b3cb8b96b32ba86fe8790a6c9b768856373609e121524ab06f635094cd37f
-      status: active
+      status: pending
 - artifact: yago-taxonomy-log
   title: YAGO Taxonomy Log
   abstract: Logs of statements that were excluded from YAGO, in RDF* (taxonomy log).
@@ -276,4 +276,4 @@ artifacts:
       compression: zip
       size: 155673
       sha256: bbcdf526fc04fda3d3fbe13ce630eb027b444dc61aebbb89da0947e098b39ef9
-      status: active
+      status: pending
