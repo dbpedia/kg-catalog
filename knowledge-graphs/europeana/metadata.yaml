@@ -1,0 +1,40 @@
+databus-account: knowledge-graph-catalog
+id: europeana
+title: Europeana
+abstract: Europeana provides RDF metadata about digitized European cultural heritage collections.
+description: Europeana aggregates descriptions of cultural heritage objects from European heritage
+  institutions. Publisher ZIP archives contain RDF Turtle for each Europeana contributing dataset;
+  the listed file is one complete dataset partition.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/publicdomain/zero/1.0/
+homepage: https://www.europeana.eu/
+domains:
+- Media, Culture & Entertainment
+keywords:
+- digital heritage
+- Europeana Data Model
+- museums
+- libraries
+- Turtle
+- RDF
+artifacts:
+- artifact: europeana
+  title: Europeana
+  abstract: Europeana provides RDF metadata about digitized European cultural heritage collections.
+  description: Europeana aggregates descriptions of cultural heritage objects from European heritage
+    institutions. Publisher ZIP archives contain RDF Turtle for each Europeana contributing dataset;
+    the listed file is one complete dataset partition.
+  versions:
+  - version: rolling
+    title: Europeana - rolling
+    abstract: Europeana provides RDF metadata about digitized European cultural heritage collections.
+    description: Europeana aggregates descriptions of cultural heritage objects from European heritage
+      institutions. Publisher ZIP archives contain RDF Turtle for each Europeana contributing dataset;
+      the listed file is one complete dataset partition.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://download.europeana.eu/dataset/TTL/00101.zip
+      format: ttl
+      compression: zip
+      status: pending
