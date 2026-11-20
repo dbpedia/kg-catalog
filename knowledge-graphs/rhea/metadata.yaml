@@ -1,0 +1,44 @@
+databus-account: knowledge-graph-catalog
+id: rhea
+title: Rhea
+abstract: Rhea is a curated database of biochemical reactions and their participants distributed as
+  RDF.
+description: Rhea provides standardized biochemical reactions, related chemical participants, reaction
+  directions, and cross-references. Its publisher provides RDF/XML and BioPAX OWL dumps.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://www.rhea-db.org/
+domains:
+- Life Sciences & Health
+keywords:
+- biochemical reactions
+- enzymes
+- chemical participants
+- biochemistry
+- RDF
+- BioPAX
+artifacts:
+- artifact: rhea
+  title: Rhea
+  abstract: Rhea is a curated database of biochemical reactions and their participants distributed
+    as RDF.
+  description: Rhea provides standardized biochemical reactions, related chemical participants, reaction
+    directions, and cross-references. Its publisher provides RDF/XML and BioPAX OWL dumps.
+  versions:
+  - version: current
+    title: Rhea - current
+    abstract: Rhea is a curated database of biochemical reactions and their participants distributed
+      as RDF.
+    description: Rhea provides standardized biochemical reactions, related chemical participants,
+      reaction directions, and cross-references. Its publisher provides RDF/XML and BioPAX OWL dumps.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://ftp.expasy.org/databases/rhea/rdf/rhea.rdf.gz
+      format: rdf
+      compression: gz
+      status: pending
+    - file: https://ftp.expasy.org/databases/rhea/biopax/rhea-biopax.owl.gz
+      format: owl
+      compression: gz
+      status: pending
