@@ -1,0 +1,123 @@
+databus-account: knowledge-graph-catalog
+id: qudt
+title: Quantities, Units, Dimensions and Types
+abstract: QUDT presents a unified architecture for the conceptual representation of
+  quantities, quantity kinds, units, dimensions, and data types, which lie at the
+  core of all scientific and engineering inquiry.
+description: 'The goals of the QUDT ontologies are to provide:
+
+
+  A standardized consistent vocabulary, focused on terminology used in science and
+  engineering.
+
+  The vocabulary in this standard consists of standardized terminology, definitions,
+  identifiers, and information models.
+
+  The intent is to use this vocabulary with a variety of encodings, formats, and data
+  definitions, so it is defined independent of those forms.
+
+  Some or all portions of this vocabulary will be of interest to various users and
+  applications, depending on the use case and policy mandates.
+
+  It is expected that a large set of existing corpus will not be changed, and so this
+  standard serves as a critical ''Rosetta Stone'' to reference existing uses of quantities,
+  units, dimensions, and types to a consistent base.
+
+
+  A set of consistent coded identifiers, for human and machine use.
+
+  In the same way that modern digital computers could not represent and process meaningful
+  information without the use of standards such as ASCII and Unicode, this standard
+  also introduces a similar coding scheme, for a like purpose.
+
+  Assigning an explicit designator (e.g. ASCII uses a numerical value for each letter
+  of the alphabet, numbers, and punctuation) to quantities, units, dimensions, and
+  types is used to provide a robust, unequivocal method of identification of digital
+  information by computer software and hardware.
+
+  This definitional approach provides generalized usability for both humans and machines,
+  avoiding problems with uncertainty and misinterpretation.
+
+
+  A collection of foundational vocabularies that can serve a variety of applications.
+  Some examples include:
+
+  providing terminology and vocabulary definitions for Documents and Publications.
+  Define consistent terminology for general Program and Project documentation, technical
+  reports, conference papers, guides, drawings, technical specifications, engineering
+  and process documentation, etc.
+
+  defining software code documentation, pragmas and/or comments, and independent reference
+  documentation. Referencing system and software variables and constants provides
+  explicit, unambiguous definitions that can be used for data exchanges, semantic
+  consistency, automated checking, software reuse, and more robust search and discovery.
+
+  improving the quality of software interfaces, web services, and data exchanges.
+  The model basis of this standard can be used by other software, or to build software,
+  for a variety of purposes; model creation, validation, compilation and run-time
+  checking, translation and transformation, data exchange definitions, etc.
+
+  generating schema specifications and data definitions in other formalisms. Examples
+  include database, data file (ex, XML) schema, software application data structures,
+  code-lists, and other controlled vocabularies.
+
+  enabling files, datasets, messages, communications and Data Exchange Packages to
+  use consistent terms and constructs when defining elements of datasets and messages
+  in a variety of forms and formats.
+
+
+  A framework designed for extensibility and evolution, but model-based (instead of
+  just a typical dictionary) and governed.
+
+  The authors recognize that any given release will not have every possible quantity,
+  unit, dimension, or type that a user may need.
+
+  The framework has been designed to grow in a consistent manner.'
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://qudt.org
+domains:
+- Cross-domain
+keywords:
+- units of measure
+- quantity
+- quantity kind
+- unit
+- metrology
+artifacts:
+- artifact: first-artifact
+  title: First Artifact
+  abstract: Short description.
+  description: Longer description.
+  versions:
+  - version: 2026.07.10
+    title: First Artifact
+    abstract: Short description.
+    description: Longer description.
+    license: http://purl.oclc.org/NET/rdflicense/cc-by3.0
+    distributions:
+    - file: https://example.org/file1.ttl.bz2
+      format: ttl
+      compression: bz2
+      status: pending
+- artifact: second-artifact
+  title: Second Artifact
+  abstract: Short description.
+  description: Longer description.
+  versions:
+  - version: 2026.07.10
+    title: Second Artifact
+    abstract: Short description.
+    description: Longer description.
+    license: http://purl.oclc.org/NET/rdflicense/cc-by3.0
+    distributions:
+    - file: https://example.org/file2.ttl.bz2
+      format: ttl
+      compression: bz2
+      status: pending
+sparql:
+- name: main
+  url: https://www.qudt.org/fuseki/#/
+maintainers:
+- contact: info@qudt.org
