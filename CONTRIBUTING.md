@@ -68,6 +68,8 @@ artifacts:
             status: pending
 ```
 
+Version names must be at least 3 characters long and use only letters, digits, `_`, `.` and `-` (for example `2026.10.01` or `2.0`), because Databus rejects other version names. If a version looks like a number that YAML would change, such as `2.10` (read as `2.1`), put it in quotes: `version: "2.10"`.
+
 For an actual contribution, provide accurate download URLs, and preferably `sha256` and `size` (in bytes) for each distribution. Do not invent checksums or use placeholder values. Missing checksums may cause the Databus publisher to download the whole file, which can be extremely expensive for large KG dumps.
 
 ## Updating an existing KG
