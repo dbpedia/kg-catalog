@@ -1,94 +1,107 @@
 databus-account: knowledge-graph-catalog
 id: mlsea-kg
 title: MLSea-KG
-abstract: MLSea-KG links machine learning experiments, datasets, models and related research resources.
-description: MLSea-KG publishes machine-learning experiment and resource metadata collected from platforms such as Kaggle and OpenML. Its RDF N-Triples releases are split into compressed partitions.
-moss-publish: true
-databus-publish: true
+abstract: MLSea-KG links machine learning experiments, datasets, models and related
+  research resources.
+description: MLSea-KG publishes machine-learning experiment and resource metadata
+  collected from platforms such as Kaggle and OpenML. Its RDF N-Triples releases are
+  split into compressed partitions.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://zenodo.org/records/17954333
 domains:
-  - Publications, Education & Research
+- Publications, Education & Research
 keywords:
-  - machine learning
-  - experiments
-  - Kaggle
-  - OpenML
-  - datasets
-  - RDF
+- machine learning
+- experiments
+- Kaggle
+- OpenML
+- datasets
+- RDF
 artifacts:
-  - artifact: kaggle-part-1
-    title: MLSea-KG Kaggle Part 1
+- artifact: kaggle-part-1
+  title: MLSea-KG Kaggle Part 1
+  abstract: First N-Triples partition of MLSea-KG data sourced from Kaggle.
+  description: First N-Triples partition of MLSea-KG data sourced from Kaggle.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG Kaggle Part 1 2.0
     abstract: First N-Triples partition of MLSea-KG data sourced from Kaggle.
     description: First N-Triples partition of MLSea-KG data sourced from Kaggle.
-    versions:
-      - version: '2.0'
-        title: MLSea-KG Kaggle Part 1 2.0
-        abstract: First N-Triples partition of MLSea-KG data sourced from Kaggle.
-        description: First N-Triples partition of MLSea-KG data sourced from Kaggle.
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/17954333/files/kaggle_1.nt.gz?download=1
-            format: nt
-            compression: gz
-            status: pending
-  - artifact: kaggle-part-2
-    title: MLSea-KG Kaggle Part 2
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/kaggle_1.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: active
+      sha256: 61aef7170e99bca17728405fd4d0549d32ad11930740a05aec6e0d9d0f3fe655
+      size: 313654762
+- artifact: kaggle-part-2
+  title: MLSea-KG Kaggle Part 2
+  abstract: Second N-Triples partition of MLSea-KG data sourced from Kaggle.
+  description: Second N-Triples partition of MLSea-KG data sourced from Kaggle.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG Kaggle Part 2 2.0
     abstract: Second N-Triples partition of MLSea-KG data sourced from Kaggle.
     description: Second N-Triples partition of MLSea-KG data sourced from Kaggle.
-    versions:
-      - version: '2.0'
-        title: MLSea-KG Kaggle Part 2 2.0
-        abstract: Second N-Triples partition of MLSea-KG data sourced from Kaggle.
-        description: Second N-Triples partition of MLSea-KG data sourced from Kaggle.
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/17954333/files/kaggle_2.nt.gz?download=1
-            format: nt
-            compression: gz
-            status: pending
-  - artifact: openml-datasets-part-1
-    title: MLSea-KG OpenML Datasets Part 1
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/kaggle_2.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: active
+      sha256: 71a7f976d2f2fc442514031772b206a7fee3cdb4ba5ed851bdd2a36c4e3c2e05
+      size: 177528355
+- artifact: openml-datasets-part-1
+  title: MLSea-KG OpenML Datasets Part 1
+  abstract: First N-Triples partition of MLSea-KG OpenML dataset records.
+  description: First N-Triples partition of MLSea-KG OpenML dataset records.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Datasets Part 1 2.0
     abstract: First N-Triples partition of MLSea-KG OpenML dataset records.
     description: First N-Triples partition of MLSea-KG OpenML dataset records.
-    versions:
-      - version: '2.0'
-        title: MLSea-KG OpenML Datasets Part 1 2.0
-        abstract: First N-Triples partition of MLSea-KG OpenML dataset records.
-        description: First N-Triples partition of MLSea-KG OpenML dataset records.
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/17954333/files/openml_datasets_1.nt.gz?download=1
-            format: nt
-            compression: gz
-            status: pending
-  - artifact: openml-datasets-part-2
-    title: MLSea-KG OpenML Datasets Part 2
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_datasets_1.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: active
+      sha256: f0f264528b99fb138f107513df9910ae44519bcffef613c8bbe55b283667b474
+      size: 378162529
+- artifact: openml-datasets-part-2
+  title: MLSea-KG OpenML Datasets Part 2
+  abstract: Second N-Triples partition of MLSea-KG OpenML dataset records.
+  description: Second N-Triples partition of MLSea-KG OpenML dataset records.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Datasets Part 2 2.0
     abstract: Second N-Triples partition of MLSea-KG OpenML dataset records.
     description: Second N-Triples partition of MLSea-KG OpenML dataset records.
-    versions:
-      - version: '2.0'
-        title: MLSea-KG OpenML Datasets Part 2 2.0
-        abstract: Second N-Triples partition of MLSea-KG OpenML dataset records.
-        description: Second N-Triples partition of MLSea-KG OpenML dataset records.
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/17954333/files/openml_datasets_2.nt.gz?download=1
-            format: nt
-            compression: gz
-            status: pending
-  - artifact: openml-flows-part-1
-    title: MLSea-KG OpenML Flows Part 1
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_datasets_2.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: active
+      sha256: 8755eeaec98fe465a379c4827d9b49cd8de54ef54c39f50324fd84135af561d1
+      size: 30405001
+- artifact: openml-flows-part-1
+  title: MLSea-KG OpenML Flows Part 1
+  abstract: First N-Triples partition of MLSea-KG OpenML flow records.
+  description: First N-Triples partition of MLSea-KG OpenML flow records.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Flows Part 1 2.0
     abstract: First N-Triples partition of MLSea-KG OpenML flow records.
     description: First N-Triples partition of MLSea-KG OpenML flow records.
-    versions:
-      - version: '2.0'
-        title: MLSea-KG OpenML Flows Part 1 2.0
-        abstract: First N-Triples partition of MLSea-KG OpenML flow records.
-        description: First N-Triples partition of MLSea-KG OpenML flow records.
-        license: https://creativecommons.org/publicdomain/zero/1.0/
-        distributions:
-          - file: https://zenodo.org/records/17954333/files/openml_flows_1.nt.gz?download=1
-            format: nt
-            compression: gz
-            status: pending
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_flows_1.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: active
+      sha256: bfb98da138476e72ae672f152130590147afc60ba7bb310e233951dc61107d9f
+      size: 20576602
