@@ -30,5 +30,5 @@ artifacts:
         distributions:
           - file: https://transfert.bnf.fr/link/88406694-9ab4-41ea-873d-f91e003695a2
             format: rdf
-            compression: tar.gz
+            compression: gz
             status: pending
