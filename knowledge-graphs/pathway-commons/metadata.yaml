@@ -1,0 +1,42 @@
+databus-account: knowledge-graph-catalog
+id: pathway-commons
+title: Pathway Commons
+abstract: Pathway Commons integrates curated biological pathways and interactions into a BioPAX graph.
+description: Pathway Commons aggregates molecular pathway and interaction data from multiple public
+  databases and provides it as BioPAX Level 3 OWL/RDF/XML. Version 14 integrates numerous pathway
+  sources.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://www.pathwaycommons.org/
+domains:
+- Life Sciences & Health
+keywords:
+- biological pathways
+- molecular interactions
+- BioPAX
+- OWL
+- RDF/XML
+- bioinformatics
+artifacts:
+- artifact: pathway-commons
+  title: Pathway Commons
+  abstract: Pathway Commons integrates curated biological pathways and interactions into a BioPAX
+    graph.
+  description: Pathway Commons aggregates molecular pathway and interaction data from multiple public
+    databases and provides it as BioPAX Level 3 OWL/RDF/XML. Version 14 integrates numerous pathway
+    sources.
+  versions:
+  - version: '14'
+    title: Pathway Commons - 14
+    abstract: Pathway Commons integrates curated biological pathways and interactions into a BioPAX
+      graph.
+    description: Pathway Commons aggregates molecular pathway and interaction data from multiple public
+      databases and provides it as BioPAX Level 3 OWL/RDF/XML. Version 14 integrates numerous pathway
+      sources.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+      format: owl
+      compression: gz
+      status: pending
