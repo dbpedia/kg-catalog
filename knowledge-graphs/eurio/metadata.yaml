@@ -1,14 +1,14 @@
 databus-account: knowledge-graph-catalog
 id: eurio
 title: EURIO Knowledge Graph (CORDIS)
-abstract: The EURIO Knowledge Graph describes EU-funded research projects, organisations and results
-  as linked RDF data.
-description: The EURIO Knowledge Graph publishes interconnected CORDIS records about EU-funded
-  research projects, participating organisations, programme funding, and research outputs. This
-  artifact is the publisher-provided full N-Quads dump as a ZIP archive, not the EURIO ontology
-  alone.
-moss-publish: true
-databus-publish: true
+abstract: The EURIO Knowledge Graph describes EU-funded research projects, organisations
+  and results as linked RDF data.
+description: The EURIO Knowledge Graph publishes interconnected CORDIS records about
+  EU-funded research projects, participating organisations, programme funding, and
+  research outputs. This artifact is the publisher-provided full N-Quads dump as a
+  ZIP archive, not the EURIO ontology alone.
+moss-publish: false
+databus-publish: false
 license: https://commission.europa.eu/legal-notice_en
 homepage: https://cordis.europa.eu/datalab/en
 domains:
@@ -22,24 +22,26 @@ keywords:
 artifacts:
 - artifact: eurio-full
   title: EURIO Knowledge Graph (CORDIS)
-  abstract: The EURIO Knowledge Graph describes EU-funded research projects, organisations and
-    results as linked RDF data.
-  description: The EURIO Knowledge Graph publishes interconnected CORDIS records about EU-funded
-    research projects, participating organisations, programme funding, and research outputs. This
-    artifact is the publisher-provided full N-Quads dump as a ZIP archive, not the EURIO ontology
-    alone.
+  abstract: The EURIO Knowledge Graph describes EU-funded research projects, organisations
+    and results as linked RDF data.
+  description: The EURIO Knowledge Graph publishes interconnected CORDIS records about
+    EU-funded research projects, participating organisations, programme funding, and
+    research outputs. This artifact is the publisher-provided full N-Quads dump as
+    a ZIP archive, not the EURIO ontology alone.
   versions:
   - version: '2026-06-17'
-    title: EURIO Knowledge Graph (CORDIS) — 2026-06-17
-    abstract: The EURIO Knowledge Graph describes EU-funded research projects, organisations and
-      results as linked RDF data.
-    description: The EURIO Knowledge Graph publishes interconnected CORDIS records about EU-funded
-      research projects, participating organisations, programme funding, and research outputs.
-      This artifact is the publisher-provided full N-Quads dump as a ZIP archive, not the EURIO
-      ontology alone.
+    title: "EURIO Knowledge Graph (CORDIS) \u2014 2026-06-17"
+    abstract: The EURIO Knowledge Graph describes EU-funded research projects, organisations
+      and results as linked RDF data.
+    description: The EURIO Knowledge Graph publishes interconnected CORDIS records
+      about EU-funded research projects, participating organisations, programme funding,
+      and research outputs. This artifact is the publisher-provided full N-Quads dump
+      as a ZIP archive, not the EURIO ontology alone.
     license: https://commission.europa.eu/legal-notice_en
     distributions:
     - file: https://cordis.europa.eu/data/cordis-EURIOKnowledgeGraph-nq.zip
       format: nq
       compression: zip
-      status: pending
+      status: active
+      sha256: 37a2ccf520c8c70148c82aff641b19ad2b23769e7b17a1436518b7222128afc6
+      size: 1184616717

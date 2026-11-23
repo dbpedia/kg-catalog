@@ -1,12 +1,14 @@
 databus-account: knowledge-graph-catalog
 id: gptkb
 title: GPTKB 2.0
-abstract: GPTKB is a general-purpose, LLM-generated knowledge base exported as RDF N-Triples.
-description: GPTKB contains entity-centric factual claims and relationships generated using language
-  models. Its version 2.0 simplified RDF export is available as gzip-compressed N-Triples. This
-  graph is machine-generated, so claims should not be treated as independently verified facts.
-moss-publish: true
-databus-publish: true
+abstract: GPTKB is a general-purpose, LLM-generated knowledge base exported as RDF
+  N-Triples.
+description: GPTKB contains entity-centric factual claims and relationships generated
+  using language models. Its version 2.0 simplified RDF export is available as gzip-compressed
+  N-Triples. This graph is machine-generated, so claims should not be treated as independently
+  verified facts.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://gptkb.org/
 domains:
@@ -21,23 +23,26 @@ keywords:
 artifacts:
 - artifact: gptkb
   title: GPTKB 2.0
-  abstract: GPTKB is a general-purpose, LLM-generated knowledge base exported as RDF N-Triples.
-  description: GPTKB contains entity-centric factual claims and relationships generated using
-    language models. Its version 2.0 simplified RDF export is available as gzip-compressed N-Triples.
-    This graph is machine-generated, so claims should not be treated as independently verified
-    facts.
+  abstract: GPTKB is a general-purpose, LLM-generated knowledge base exported as RDF
+    N-Triples.
+  description: GPTKB contains entity-centric factual claims and relationships generated
+    using language models. Its version 2.0 simplified RDF export is available as gzip-compressed
+    N-Triples. This graph is machine-generated, so claims should not be treated as
+    independently verified facts.
   versions:
   - version: '2.0'
-    title: GPTKB 2.0 — 2.0
-    abstract: GPTKB is a general-purpose, LLM-generated knowledge base exported as RDF N-Triples.
-    description: GPTKB contains entity-centric factual claims and relationships generated using
-      language models. Its version 2.0 simplified RDF export is available as gzip-compressed N-Triples.
-      This graph is machine-generated, so claims should not be treated as independently verified
-      facts.
+    title: "GPTKB 2.0 \u2014 2.0"
+    abstract: GPTKB is a general-purpose, LLM-generated knowledge base exported as
+      RDF N-Triples.
+    description: GPTKB contains entity-centric factual claims and relationships generated
+      using language models. Its version 2.0 simplified RDF export is available as
+      gzip-compressed N-Triples. This graph is machine-generated, so claims should
+      not be treated as independently verified facts.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://huggingface.co/datasets/Knowledge-aware-AI/GPTKB_v2/resolve/main/gptkb_v2.0_rdf.nt.gz
       format: nt
       compression: gz
-      status: pending
+      status: active
       sha256: f96c5ba5d71236863b4e64b55c7ef35dc7cb1d24712f2969c7ee5de1d83484b8
+      size: 365741591

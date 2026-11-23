@@ -1,14 +1,14 @@
 databus-account: knowledge-graph-catalog
 id: era-kg
 title: ERA Knowledge Graph
-abstract: The European Union Agency for Railways knowledge graph describes railway infrastructure,
-  places and linked operational information.
-description: The ERA Knowledge Graph integrates factual European railway infrastructure data.
-  Version v8 supplies the entire archived graph in N-Quads format inside a ZIP archive, describing
-  real operational points, railway assets and their relationships. This is the KG instance dataset,
-  not just the ERA ontology.
-moss-publish: true
-databus-publish: true
+abstract: The European Union Agency for Railways knowledge graph describes railway
+  infrastructure, places and linked operational information.
+description: The ERA Knowledge Graph integrates factual European railway infrastructure
+  data. Version v8 supplies the entire archived graph in N-Quads format inside a ZIP
+  archive, describing real operational points, railway assets and their relationships.
+  This is the KG instance dataset, not just the ERA ontology.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://www.era.europa.eu/domains/registers/era-knowledge-graph
 domains:
@@ -23,24 +23,26 @@ keywords:
 artifacts:
 - artifact: rinf-kg
   title: ERA Knowledge Graph
-  abstract: The European Union Agency for Railways knowledge graph describes railway infrastructure,
-    places and linked operational information.
-  description: The ERA Knowledge Graph integrates factual European railway infrastructure data.
-    Version v8 supplies the entire archived graph in N-Quads format inside a ZIP archive, describing
-    real operational points, railway assets and their relationships. This is the KG instance dataset,
-    not just the ERA ontology.
+  abstract: The European Union Agency for Railways knowledge graph describes railway
+    infrastructure, places and linked operational information.
+  description: The ERA Knowledge Graph integrates factual European railway infrastructure
+    data. Version v8 supplies the entire archived graph in N-Quads format inside a
+    ZIP archive, describing real operational points, railway assets and their relationships.
+    This is the KG instance dataset, not just the ERA ontology.
   versions:
   - version: v8.0
-    title: ERA Knowledge Graph — v8.0
-    abstract: The European Union Agency for Railways knowledge graph describes railway infrastructure,
-      places and linked operational information.
-    description: The ERA Knowledge Graph integrates factual European railway infrastructure data.
-      Version v8 supplies the entire archived graph in N-Quads format inside a ZIP archive, describing
-      real operational points, railway assets and their relationships. This is the KG instance
-      dataset, not just the ERA ontology.
+    title: "ERA Knowledge Graph \u2014 v8.0"
+    abstract: The European Union Agency for Railways knowledge graph describes railway
+      infrastructure, places and linked operational information.
+    description: The ERA Knowledge Graph integrates factual European railway infrastructure
+      data. Version v8 supplies the entire archived graph in N-Quads format inside
+      a ZIP archive, describing real operational points, railway assets and their
+      relationships. This is the KG instance dataset, not just the ERA ontology.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://zenodo.org/records/20012690/files/rinfplus-kg-20260503.nq.zip?download=1
       format: nq
       compression: zip
-      status: pending
+      status: active
+      sha256: eb7142ee4a07669a02e541abebf66fb439f5c11c5f0edc96865d6af41bef2b87
+      size: 404877101
