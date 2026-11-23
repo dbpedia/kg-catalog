@@ -1,0 +1,46 @@
+databus-account: knowledge-graph-catalog
+id: cs-kg
+title: Computer Science Knowledge Graph (CS-KG 2.0)
+abstract: CS-KG 2.0 links computer science research concepts, methods, tasks, metrics and other
+  entities extracted from scientific publications.
+description: CS-KG 2.0 is an instance-level scientific knowledge graph derived from approximately
+  14.5 million computer science publications. It describes scientific entities and their factual
+  and semantic relationships. The official RDF release is provided as a ZIP archive containing
+  Turtle data.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://w3id.org/cskg
+domains:
+- Publications, Education & Research
+keywords:
+- computer science
+- research
+- scientific knowledge graph
+- methods
+- tasks
+- Turtle
+artifacts:
+- artifact: cs-kg
+  title: Computer Science Knowledge Graph (CS-KG 2.0)
+  abstract: CS-KG 2.0 links computer science research concepts, methods, tasks, metrics and other
+    entities extracted from scientific publications.
+  description: CS-KG 2.0 is an instance-level scientific knowledge graph derived from approximately
+    14.5 million computer science publications. It describes scientific entities and their factual
+    and semantic relationships. The official RDF release is provided as a ZIP archive containing
+    Turtle data.
+  versions:
+  - version: '2.0'
+    title: Computer Science Knowledge Graph (CS-KG 2.0) — 2.0
+    abstract: CS-KG 2.0 links computer science research concepts, methods, tasks, metrics and
+      other entities extracted from scientific publications.
+    description: CS-KG 2.0 is an instance-level scientific knowledge graph derived from approximately
+      14.5 million computer science publications. It describes scientific entities and their factual
+      and semantic relationships. The official RDF release is provided as a ZIP archive containing
+      Turtle data.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/14167682/files/rdf_release_v1.zip?download=1
+      format: ttl
+      compression: zip
+      status: pending
