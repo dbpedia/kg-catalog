@@ -1,0 +1,34 @@
+databus-account: knowledge-graph-catalog
+id: data-bnf
+title: data.bnf.fr
+abstract: data.bnf.fr publishes French National Library authority and bibliographic data as RDF.
+description: Data.bnf.fr exposes RDF descriptions for works, people, topics, places, publications and relationships. BnF provides a bulk RDF/XML archive and smaller component dumps.
+moss-publish: true
+databus-publish: true
+license: https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+homepage: https://data.bnf.fr/
+domains:
+  - Publications, Education & Research
+keywords:
+  - national library
+  - bibliographic data
+  - authority records
+  - France
+  - RDF/XML
+  - linked data
+artifacts:
+  - artifact: data-bnf
+    title: data.bnf.fr
+    abstract: data.bnf.fr publishes French National Library authority and bibliographic data as RDF.
+    description: Data.bnf.fr exposes RDF descriptions for works, people, topics, places, publications and relationships. BnF provides a bulk RDF/XML archive and smaller component dumps.
+    versions:
+      - version: rolling
+        title: data.bnf.fr - rolling
+        abstract: data.bnf.fr publishes French National Library authority and bibliographic data as RDF.
+        description: Data.bnf.fr exposes RDF descriptions for works, people, topics, places, publications and relationships. BnF provides a bulk RDF/XML archive and smaller component dumps.
+        license: https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+        distributions:
+          - file: https://transfert.bnf.fr/link/88406694-9ab4-41ea-873d-f91e003695a2
+            format: rdf
+            compression: tar.gz
+            status: pending
