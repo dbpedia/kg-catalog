@@ -27,7 +27,7 @@ artifacts:
     databases and provides it as BioPAX Level 3 OWL/RDF/XML. Version 14 integrates numerous pathway
     sources.
   versions:
-  - version: '14'
+  - version: 'v14'
     title: Pathway Commons - 14
     abstract: Pathway Commons integrates curated biological pathways and interactions into a BioPAX
       graph.
