@@ -1,53 +1,49 @@
 databus-account: knowledge-graph-catalog
 id: lcnaf
 title: Library of Congress Name Authority File (LCNAF)
-abstract: >-
-  The Library of Congress Name Authority File is a linked-data authority graph
+abstract: The Library of Congress Name Authority File is a linked-data authority graph
   identifying people, organizations, works, and other named entities.
-description: >-
-  The Library of Congress Name Authority File (LCNAF) provides persistent
-  identifiers, authorized and variant names, and relationships for people,
-  organizations, works, and other named entities used in library cataloging.
-  The Library of Congress Linked Data Service publishes the complete authority
-  file in MADS/RDF as compressed N-Triples. This catalog record references the
-  full MADS/RDF bulk export, not a SKOS vocabulary-only representation.
-moss-publish: true
-databus-publish: true
+description: The Library of Congress Name Authority File (LCNAF) provides persistent
+  identifiers, authorized and variant names, and relationships for people, organizations,
+  works, and other named entities used in library cataloging. The Library of Congress
+  Linked Data Service publishes the complete authority file in MADS/RDF as compressed
+  N-Triples. This catalog record references the full MADS/RDF bulk export, not a SKOS
+  vocabulary-only representation.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/publicdomain/mark/1.0/
 homepage: https://id.loc.gov/authorities/names.html
 domains:
-  - Publications, Education & Research
+- Publications, Education & Research
 keywords:
-  - Library of Congress
-  - LCNAF
-  - name authority file
-  - linked data
-  - persons
-  - organizations
-  - authority records
-  - MADS/RDF
-  - N-Triples
+- Library of Congress
+- LCNAF
+- name authority file
+- linked data
+- persons
+- organizations
+- authority records
+- MADS/RDF
+- N-Triples
 artifacts:
-  - artifact: names
-    title: LCNAF Name Authority Records (MADS/RDF)
-    abstract: >-
-      Complete LCNAF name authority records and their relationships in MADS/RDF.
-    description: >-
-      The full Library of Congress Name Authority File represented in MADS/RDF,
-      including authority descriptions and related real-world entities. The
-      publisher periodically refreshes this bulk N-Triples export.
-    versions:
-      - version: rolling
-        title: LCNAF MADS/RDF Bulk Export (rolling)
-        abstract: >-
-          The latest available complete MADS/RDF N-Triples bulk export of LCNAF.
-        description: >-
-          Rolling download of the complete LCNAF name authority file in
-          MADS/RDF N-Triples, compressed with gzip. The contents may change when
-          the publisher refreshes the file.
-        license: https://creativecommons.org/publicdomain/mark/1.0/
-        distributions:
-          - file: https://id.loc.gov/download/authorities/names.madsrdf.nt.gz
-            format: nt
-            compression: gz
-            status: pending
+- artifact: names
+  title: LCNAF Name Authority Records (MADS/RDF)
+  abstract: Complete LCNAF name authority records and their relationships in MADS/RDF.
+  description: The full Library of Congress Name Authority File represented in MADS/RDF,
+    including authority descriptions and related real-world entities. The publisher
+    periodically refreshes this bulk N-Triples export.
+  versions:
+  - version: rolling
+    title: LCNAF MADS/RDF Bulk Export (rolling)
+    abstract: The latest available complete MADS/RDF N-Triples bulk export of LCNAF.
+    description: Rolling download of the complete LCNAF name authority file in MADS/RDF
+      N-Triples, compressed with gzip. The contents may change when the publisher
+      refreshes the file.
+    license: https://creativecommons.org/publicdomain/mark/1.0/
+    distributions:
+    - file: https://id.loc.gov/download/authorities/names.madsrdf.nt.gz
+      format: nt
+      compression: gz
+      status: active
+      sha256: c00a55fd16cfc446b114e29374403ee35ea8d42b3f332153bd5fd21d4f020e08
+      size: 7329753448
