@@ -1,15 +1,16 @@
 databus-account: knowledge-graph-catalog
 id: uniprot
 title: UniProt
-abstract: UniProt provides an RDF knowledge graph of proteins, organisms, proteomes, functional annotations,
-  and associated relationships.
-description: UniProt is a curated protein resource maintained by the UniProt Consortium. This catalog
-  entry covers the complete reviewed UniProtKB/Swiss-Prot RDF/XML taxonomic partitions together with UniProt
-  proteomes and taxonomy instance data (35 compressed RDF files). It excludes the much larger unreviewed
-  UniProtKB/TrEMBL, UniRef, and UniParc datasets. RDF files are downloaded from a publicly indexed mirror
-  of the UniProt current-release directory; content may change with each release.
-moss-publish: true
-databus-publish: true
+abstract: UniProt provides an RDF knowledge graph of proteins, organisms, proteomes,
+  functional annotations, and associated relationships.
+description: UniProt is a curated protein resource maintained by the UniProt Consortium.
+  This catalog entry covers the complete reviewed UniProtKB/Swiss-Prot RDF/XML taxonomic
+  partitions together with UniProt proteomes and taxonomy instance data (35 compressed
+  RDF files). It excludes the much larger unreviewed UniProtKB/TrEMBL, UniRef, and
+  UniParc datasets. RDF files are downloaded from a publicly indexed mirror of the
+  UniProt current-release directory; content may change with each release.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://www.uniprot.org/
 domains:
