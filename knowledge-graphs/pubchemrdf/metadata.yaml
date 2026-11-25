@@ -1,0 +1,122 @@
+databus-account: knowledge-graph-catalog
+id: pubchemrdf
+title: PubChemRDF
+abstract: >-
+  PubChemRDF publishes structured chemical and biomedical knowledge as RDF,
+  linking genes, taxonomic entities, bioassays, pathways, diseases and other resources.
+description: >-
+  PubChemRDF is the RDF representation of information provided by PubChem at
+  the National Center for Biotechnology Information (NCBI). It describes
+  chemical and biomedical entities and their relationships, with interlinked
+  subdomains distributed as compressed Turtle files. This catalog record
+  currently covers five selected PubChemRDF subdomains (gene, taxonomy,
+  bioassay, pathway, and disease), not the complete PubChemRDF dataset.
+moss-publish: true
+databus-publish: true
+license: https://www.ncbi.nlm.nih.gov/home/about/policies/
+homepage: https://pubchem.ncbi.nlm.nih.gov/docs/rdf
+domains:
+  - Life Sciences & Health
+keywords:
+  - PubChem
+  - chemistry
+  - biomedical knowledge graph
+  - genes
+  - taxonomy
+  - bioassays
+  - pathways
+  - diseases
+  - RDF
+  - Turtle
+artifacts:
+  - artifact: gene
+    title: PubChemRDF Gene
+    abstract: RDF descriptions of gene entities and their biological relationships.
+    description: >-
+      Gene entities in PubChemRDF, including identifiers, names,
+      biological functions, and links to related resources.
+    versions:
+      - version: rolling
+        title: PubChemRDF Gene (rolling)
+        abstract: RDF descriptions of gene entities and their biological relationships.
+        description: >-
+          The currently published RDF dump of PubChemRDF gene entities.
+          PubChem updates the RDF database approximately monthly.
+        license: https://www.ncbi.nlm.nih.gov/home/about/policies/
+        distributions:
+          - file: https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/gene/pc_gene.ttl.gz
+            format: ttl
+            compression: gz
+            status: pending
+
+  - artifact: taxonomy
+    title: PubChemRDF Taxonomy
+    abstract: RDF descriptions of taxonomic entities linked to PubChem resources.
+    description: >-
+      Taxonomic entities, their identifiers and labels, and links to other
+      PubChemRDF subdomains and external biological resources.
+    versions:
+      - version: rolling
+        title: PubChemRDF Taxonomy (rolling)
+        abstract: RDF descriptions of taxonomic entities linked to PubChem resources.
+        description: The currently published PubChemRDF taxonomy dump.
+        license: https://www.ncbi.nlm.nih.gov/home/about/policies/
+        distributions:
+          - file: https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/taxonomy/pc_taxonomy.ttl.gz
+            format: ttl
+            compression: gz
+            status: pending
+
+  - artifact: bioassay
+    title: PubChemRDF BioAssay
+    abstract: RDF descriptions of biological assays and their associated entities.
+    description: >-
+      PubChem bioassay entities, titles, identifiers, assay relationships,
+      sources, and links to other biomedical records.
+    versions:
+      - version: rolling
+        title: PubChemRDF BioAssay (rolling)
+        abstract: RDF descriptions of biological assays and their associated entities.
+        description: The currently published PubChemRDF bioassay dump.
+        license: https://www.ncbi.nlm.nih.gov/home/about/policies/
+        distributions:
+          - file: https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/bioassay/pc_bioassay.ttl.gz
+            format: ttl
+            compression: gz
+            status: pending
+
+  - artifact: pathway
+    title: PubChemRDF Pathway
+    abstract: RDF descriptions of biological pathways and their participants.
+    description: >-
+      PubChem pathways, including their titles, sources, participants,
+      related pathways, and cross-references to external pathway resources.
+    versions:
+      - version: rolling
+        title: PubChemRDF Pathway (rolling)
+        abstract: RDF descriptions of biological pathways and their participants.
+        description: The currently published PubChemRDF pathway dump.
+        license: https://www.ncbi.nlm.nih.gov/home/about/policies/
+        distributions:
+          - file: https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/pathway/pc_pathway.ttl.gz
+            format: ttl
+            compression: gz
+            status: pending
+
+  - artifact: disease
+    title: PubChemRDF Disease
+    abstract: RDF descriptions of disease entities and their linked biomedical information.
+    description: >-
+      PubChemRDF disease entities and semantic relationships to biomedical
+      information represented in other PubChemRDF subdomains.
+    versions:
+      - version: rolling
+        title: PubChemRDF Disease (rolling)
+        abstract: RDF descriptions of disease entities and their linked biomedical information.
+        description: The currently published PubChemRDF disease dump.
+        license: https://www.ncbi.nlm.nih.gov/home/about/policies/
+        distributions:
+          - file: https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/disease/pc_disease.ttl.gz
+            format: ttl
+            compression: gz
+            status: pending
