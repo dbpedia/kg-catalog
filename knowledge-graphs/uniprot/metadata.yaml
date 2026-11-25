@@ -1,6 +1,6 @@
 databus-account: knowledge-graph-catalog
 id: uniprot
-title: UniProt — Reviewed Protein Knowledge Graph
+title: UniProt
 abstract: UniProt provides an RDF knowledge graph of proteins, organisms, proteomes, functional annotations,
   and associated relationships.
 description: UniProt is a curated protein resource maintained by the UniProt Consortium. This catalog
