@@ -105,5 +105,6 @@ artifacts:
           - file: https://zenodo.org/records/10424118/files/eventkg_v3_2_output.tar.gz?download=1
             format: tar
             compression: gz
+            sha256: 9c8b9929182f6e6026d4834d98cac8a0c2d8c39853811d578d7de900ffca6845
             size: 7807417165
             status: pending
