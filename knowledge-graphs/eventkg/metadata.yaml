@@ -1,110 +1,100 @@
 databus-account: knowledge-graph-catalog
 id: eventkg
 title: EventKG
-abstract: >-
-  EventKG is a multilingual RDF knowledge graph of events, times, locations
+abstract: EventKG is a multilingual RDF knowledge graph of events, times, locations
   and related entities.
-description: >-
-  EventKG integrates event-centered facts from Wikipedia, Wikidata, and other
-  sources. Version 3.2 provides RDF data about events, entities, temporal and
-  spatial relationships, and related resources. This record includes three
-  individually downloadable N-Quads components and the complete RDF release
-  as a gzip-compressed TAR archive.
-moss-publish: true
-databus-publish: true
+description: EventKG integrates event-centered facts from Wikipedia, Wikidata, and
+  other sources. Version 3.2 provides RDF data about events, entities, temporal and
+  spatial relationships, and related resources. This record includes three individually
+  downloadable N-Quads components and the complete RDF release as a gzip-compressed
+  TAR archive.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://eventkg.l3s.uni-hannover.de/
 domains:
-  - Cross-domain
+- Cross-domain
 keywords:
-  - events
-  - time
-  - locations
-  - multilingual
-  - event knowledge graph
-  - N-Quads
+- events
+- time
+- locations
+- multilingual
+- event knowledge graph
+- N-Quads
 artifacts:
-  - artifact: events
-    title: EventKG Events
+- artifact: events
+  title: EventKG Events
+  abstract: EventKG 3.2 event entities, including labels and descriptions.
+  description: Event entities in EventKG 3.2, including their labels and descriptions,
+    distributed as RDF N-Quads.
+  versions:
+  - version: '3.2'
+    title: EventKG Events 3.2
     abstract: EventKG 3.2 event entities, including labels and descriptions.
-    description: >-
-      Event entities in EventKG 3.2, including their labels and descriptions,
+    description: Event entities in EventKG 3.2, including their labels and descriptions,
       distributed as RDF N-Quads.
-    versions:
-      - version: '3.2'
-        title: EventKG Events 3.2
-        abstract: EventKG 3.2 event entities, including labels and descriptions.
-        description: >-
-          Event entities in EventKG 3.2, including their labels and descriptions,
-          distributed as RDF N-Quads.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/events.nq
-            format: nq
-            status: active
-            sha256: 754e1bb8ae41ae47be6ecef5333c39133462ebb6e8d87fe2a9605795b46604e3
-            size: 2002943869
-  - artifact: entities
-    title: EventKG Entities
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/events.nq
+      format: nq
+      status: active
+      sha256: 754e1bb8ae41ae47be6ecef5333c39133462ebb6e8d87fe2a9605795b46604e3
+      size: 2002943869
+- artifact: entities
+  title: EventKG Entities
+  abstract: EventKG 3.2 entities, including labels.
+  description: Entities referenced by EventKG 3.2, including their labels, distributed
+    as RDF N-Quads.
+  versions:
+  - version: '3.2'
+    title: EventKG Entities 3.2
     abstract: EventKG 3.2 entities, including labels.
-    description: >-
-      Entities referenced by EventKG 3.2, including their labels,
-      distributed as RDF N-Quads.
-    versions:
-      - version: '3.2'
-        title: EventKG Entities 3.2
-        abstract: EventKG 3.2 entities, including labels.
-        description: >-
-          Entities referenced by EventKG 3.2, including their labels,
-          distributed as RDF N-Quads.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/entities.nq
-            format: nq
-            status: active
-            sha256: dfecec9a2c1506c4ad414be8ac90dab2810606bf53c3ce0e2b371ab74e48003f
-            size: 30628616182
-  - artifact: relations_events_base
-    title: EventKG Event Relations (Base)
+    description: Entities referenced by EventKG 3.2, including their labels, distributed
+      as RDF N-Quads.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/entities.nq
+      format: nq
+      status: active
+      sha256: dfecec9a2c1506c4ad414be8ac90dab2810606bf53c3ce0e2b371ab74e48003f
+      size: 30628616182
+- artifact: relations_events_base
+  title: EventKG Event Relations (Base)
+  abstract: EventKG 3.2 event locations and temporal relations.
+  description: Base relations for events in EventKG 3.2, including their locations,
+    start times, and end times, distributed as RDF N-Quads.
+  versions:
+  - version: '3.2'
+    title: EventKG Event Relations (Base) 3.2
     abstract: EventKG 3.2 event locations and temporal relations.
-    description: >-
-      Base relations for events in EventKG 3.2, including their locations,
+    description: Base relations for events in EventKG 3.2, including their locations,
       start times, and end times, distributed as RDF N-Quads.
-    versions:
-      - version: '3.2'
-        title: EventKG Event Relations (Base) 3.2
-        abstract: EventKG 3.2 event locations and temporal relations.
-        description: >-
-          Base relations for events in EventKG 3.2, including their locations,
-          start times, and end times, distributed as RDF N-Quads.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/relations_events_base.nq
-            format: nq
-            status: active
-            sha256: f68a942b27911a654db7930de5ce515609f17fc2d807476c6c64eb821a2a9f2e
-            size: 2070257755
-  - artifact: complete
-    title: EventKG Complete Dataset
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://eventkg.l3s.uni-hannover.de/data/v3_2/output/relations_events_base.nq
+      format: nq
+      status: active
+      sha256: f68a942b27911a654db7930de5ce515609f17fc2d807476c6c64eb821a2a9f2e
+      size: 2070257755
+- artifact: complete
+  title: EventKG Complete Dataset
+  abstract: Complete EventKG 3.2 RDF release archive.
+  description: The complete EventKG 3.2 RDF release as a gzip-compressed TAR archive,
+    containing the dataset's event, entity, relationship, and related RDF components.
+    This archive includes content also available through the individually listed EventKG
+    artifacts.
+  versions:
+  - version: '3.2'
+    title: EventKG Complete Dataset 3.2
     abstract: Complete EventKG 3.2 RDF release archive.
-    description: >-
-      The complete EventKG 3.2 RDF release as a gzip-compressed TAR archive,
-      containing the dataset's event, entity, relationship, and related RDF
-      components. This archive includes content also available through the
-      individually listed EventKG artifacts.
-    versions:
-      - version: '3.2'
-        title: EventKG Complete Dataset 3.2
-        abstract: Complete EventKG 3.2 RDF release archive.
-        description: >-
-          The complete EventKG 3.2 RDF release provided as a gzip-compressed
-          TAR archive. This is an archive of RDF files, rather than a single
-          RDF serialization file.
-        license: https://creativecommons.org/licenses/by/4.0/
-        distributions:
-          - file: https://zenodo.org/records/10424118/files/eventkg_v3_2_output.tar.gz?download=1
-            format: tar
-            compression: gz
-            sha256: 9c8b9929182f6e6026d4834d98cac8a0c2d8c39853811d578d7de900ffca6845
-            size: 7807417165
-            status: pending
+    description: The complete EventKG 3.2 RDF release provided as a gzip-compressed
+      TAR archive. This is an archive of RDF files, rather than a single RDF serialization
+      file.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/10424118/files/eventkg_v3_2_output.tar.gz?download=1
+      format: tar
+      compression: gz
+      sha256: 9c8b9929182f6e6026d4834d98cac8a0c2d8c39853811d578d7de900ffca6845
+      size: 7807417165
+      status: active
