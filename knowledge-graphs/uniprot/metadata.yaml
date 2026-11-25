@@ -1,15 +1,16 @@
 databus-account: knowledge-graph-catalog
 id: uniprot
-title: UniProt — Reviewed Protein Knowledge Graph
-abstract: UniProt provides an RDF knowledge graph of proteins, organisms, proteomes, functional annotations,
-  and associated relationships.
-description: UniProt is a curated protein resource maintained by the UniProt Consortium. This catalog
-  entry covers the complete reviewed UniProtKB/Swiss-Prot RDF/XML taxonomic partitions together with UniProt
-  proteomes and taxonomy instance data (35 compressed RDF files). It excludes the much larger unreviewed
-  UniProtKB/TrEMBL, UniRef, and UniParc datasets. RDF files are downloaded from a publicly indexed mirror
-  of the UniProt current-release directory; content may change with each release.
-moss-publish: true
-databus-publish: true
+title: "UniProt \u2014 Reviewed Protein Knowledge Graph"
+abstract: UniProt provides an RDF knowledge graph of proteins, organisms, proteomes,
+  functional annotations, and associated relationships.
+description: UniProt is a curated protein resource maintained by the UniProt Consortium.
+  This catalog entry covers the complete reviewed UniProtKB/Swiss-Prot RDF/XML taxonomic
+  partitions together with UniProt proteomes and taxonomy instance data (35 compressed
+  RDF files). It excludes the much larger unreviewed UniProtKB/TrEMBL, UniRef, and
+  UniParc datasets. RDF files are downloaded from a publicly indexed mirror of the
+  UniProt current-release directory; content may change with each release.
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/licenses/by/4.0/
 homepage: https://www.uniprot.org/
 domains:
@@ -25,797 +26,973 @@ keywords:
 - RDF/XML
 artifacts:
 - artifact: reviewed-archea-environmental-samples-48510
-  title: UniProtKB Swiss-Prot — Archaea Environmental Samples
-  abstract: Reviewed UniProtKB protein records for Archaea Environmental Samples (NCBI taxon 48510) in
-    RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Environmental Samples taxonomic
-    partition (NCBI taxon 48510). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Archaea Environmental Samples"
+  abstract: Reviewed UniProtKB protein records for Archaea Environmental Samples (NCBI
+    taxon 48510) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Environmental
+    Samples taxonomic partition (NCBI taxon 48510). This RDF/XML partition includes
+    protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Archaea Environmental Samples (rolling)
-    abstract: Reviewed UniProtKB protein records for Archaea Environmental Samples (NCBI taxon 48510)
-      in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Environmental Samples taxonomic
-      partition (NCBI taxon 48510). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+    title: "UniProtKB Swiss-Prot \u2014 Archaea Environmental Samples (rolling)"
+    abstract: Reviewed UniProtKB protein records for Archaea Environmental Samples
+      (NCBI taxon 48510) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Environmental
+      Samples taxonomic partition (NCBI taxon 48510). This RDF/XML partition includes
+      protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
       may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_archea_environmental_samples_48510_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 5774f944eaa6368c41c78ea651a54e52ba56ad893e1bede9d43933e4058f5953
+      size: 17844
 - artifact: reviewed-archea-methanobacteriati-3366610
-  title: UniProtKB Swiss-Prot — Archaea Methanobacteriati
-  abstract: Reviewed UniProtKB protein records for Archaea Methanobacteriati (NCBI taxon 3366610) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Methanobacteriati taxonomic
-    partition (NCBI taxon 3366610). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Archaea Methanobacteriati"
+  abstract: Reviewed UniProtKB protein records for Archaea Methanobacteriati (NCBI
+    taxon 3366610) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Methanobacteriati
+    taxonomic partition (NCBI taxon 3366610). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Archaea Methanobacteriati (rolling)
-    abstract: Reviewed UniProtKB protein records for Archaea Methanobacteriati (NCBI taxon 3366610) in
-      RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Methanobacteriati taxonomic
-      partition (NCBI taxon 3366610). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Archaea Methanobacteriati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Archaea Methanobacteriati (NCBI
+      taxon 3366610) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Methanobacteriati
+      taxonomic partition (NCBI taxon 3366610). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_archea_methanobacteriati_3366610_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: f5ec2fec3498e6709a1c7c8df59ffb594c716d1fd8f55db930c1bf8a30ab9459
+      size: 22649104
 - artifact: reviewed-archea-nanobdellati-1783276
-  title: UniProtKB Swiss-Prot — Archaea Nanobdellati
-  abstract: Reviewed UniProtKB protein records for Archaea Nanobdellati (NCBI taxon 1783276) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Nanobdellati taxonomic partition
-    (NCBI taxon 1783276). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Archaea Nanobdellati"
+  abstract: Reviewed UniProtKB protein records for Archaea Nanobdellati (NCBI taxon
+    1783276) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Nanobdellati
+    taxonomic partition (NCBI taxon 1783276). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Archaea Nanobdellati (rolling)
-    abstract: Reviewed UniProtKB protein records for Archaea Nanobdellati (NCBI taxon 1783276) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Nanobdellati taxonomic
-      partition (NCBI taxon 1783276). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Archaea Nanobdellati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Archaea Nanobdellati (NCBI taxon
+      1783276) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Nanobdellati
+      taxonomic partition (NCBI taxon 1783276). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_archea_nanobdellati_1783276_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 9d8c0fb290cd258d88ff6e5ef100182a992d45683f11f5900ccfe339b757011a
+      size: 182996
 - artifact: reviewed-archea-promethearchaeati-1935183
-  title: UniProtKB Swiss-Prot — Archaea Promethearchaeati
-  abstract: Reviewed UniProtKB protein records for Archaea Promethearchaeati (NCBI taxon 1935183) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Promethearchaeati taxonomic
-    partition (NCBI taxon 1935183). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Archaea Promethearchaeati"
+  abstract: Reviewed UniProtKB protein records for Archaea Promethearchaeati (NCBI
+    taxon 1935183) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Promethearchaeati
+    taxonomic partition (NCBI taxon 1935183). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Archaea Promethearchaeati (rolling)
-    abstract: Reviewed UniProtKB protein records for Archaea Promethearchaeati (NCBI taxon 1935183) in
-      RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Promethearchaeati taxonomic
-      partition (NCBI taxon 1935183). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Archaea Promethearchaeati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Archaea Promethearchaeati (NCBI
+      taxon 1935183) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Promethearchaeati
+      taxonomic partition (NCBI taxon 1935183). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_archea_promethearchaeati_1935183_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 25b0c3622bf6eff096fcb174c8f65c2828a5195121f65d388584d114eabb573f
+      size: 13096
 - artifact: reviewed-archea-thermoproteati-1783275
-  title: UniProtKB Swiss-Prot — Archaea Thermoproteati
-  abstract: Reviewed UniProtKB protein records for Archaea Thermoproteati (NCBI taxon 1783275) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Thermoproteati taxonomic
-    partition (NCBI taxon 1783275). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Archaea Thermoproteati"
+  abstract: Reviewed UniProtKB protein records for Archaea Thermoproteati (NCBI taxon
+    1783275) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Thermoproteati
+    taxonomic partition (NCBI taxon 1783275). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Archaea Thermoproteati (rolling)
-    abstract: Reviewed UniProtKB protein records for Archaea Thermoproteati (NCBI taxon 1783275) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Thermoproteati taxonomic
-      partition (NCBI taxon 1783275). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Archaea Thermoproteati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Archaea Thermoproteati (NCBI
+      taxon 1783275) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Archaea Thermoproteati
+      taxonomic partition (NCBI taxon 1783275). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_archea_thermoproteati_1783275_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 285a1441460d21c46ed856888d6f55ba199df4c05e682ca1575ee32321668ffe
+      size: 7425596
 - artifact: reviewed-bacteria-bacillati-1783272
-  title: UniProtKB Swiss-Prot — Bacteria Bacillati
-  abstract: Reviewed UniProtKB protein records for Bacteria Bacillati (NCBI taxon 1783272) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacillati taxonomic partition
-    (NCBI taxon 1783272). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Bacillati"
+  abstract: Reviewed UniProtKB protein records for Bacteria Bacillati (NCBI taxon
+    1783272) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacillati
+    taxonomic partition (NCBI taxon 1783272). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Bacillati (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Bacillati (NCBI taxon 1783272) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacillati taxonomic partition
-      (NCBI taxon 1783272). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Bacillati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Bacillati (NCBI taxon
+      1783272) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacillati
+      taxonomic partition (NCBI taxon 1783272). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_bacillati_1783272_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: fdb82315b1538dc2f2e714a5767527fb4c692106398f878973c60538412f0eb0
+      size: 160003620
 - artifact: reviewed-bacteria-bacteria-incertae-sedis-2323
-  title: UniProtKB Swiss-Prot — Bacteria Bacteria Incertae Sedis
-  abstract: Reviewed UniProtKB protein records for Bacteria Bacteria Incertae Sedis (NCBI taxon 2323)
-    in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacteria Incertae Sedis
-    taxonomic partition (NCBI taxon 2323). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Bacteria Incertae Sedis"
+  abstract: Reviewed UniProtKB protein records for Bacteria Bacteria Incertae Sedis
+    (NCBI taxon 2323) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacteria
+    Incertae Sedis taxonomic partition (NCBI taxon 2323). This RDF/XML partition includes
+    protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Bacteria Incertae Sedis (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Bacteria Incertae Sedis (NCBI taxon 2323)
-      in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacteria Incertae Sedis
-      taxonomic partition (NCBI taxon 2323). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Bacteria Incertae Sedis (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Bacteria Incertae Sedis
+      (NCBI taxon 2323) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Bacteria
+      Incertae Sedis taxonomic partition (NCBI taxon 2323). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_bacteria_incertae_sedis_2323_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 6d81dce8e7800510dc17c2a348599b90b0d52184183b5d13a8ee0dc1758a8c0e
+      size: 9180
 - artifact: reviewed-bacteria-environmental-samples-48479
-  title: UniProtKB Swiss-Prot — Bacteria Environmental Samples
-  abstract: Reviewed UniProtKB protein records for Bacteria Environmental Samples (NCBI taxon 48479) in
-    RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Environmental Samples taxonomic
-    partition (NCBI taxon 48479). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Environmental Samples"
+  abstract: Reviewed UniProtKB protein records for Bacteria Environmental Samples
+    (NCBI taxon 48479) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Environmental
+    Samples taxonomic partition (NCBI taxon 48479). This RDF/XML partition includes
+    protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Environmental Samples (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Environmental Samples (NCBI taxon 48479)
-      in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Environmental Samples
-      taxonomic partition (NCBI taxon 48479). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Environmental Samples (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Environmental Samples
+      (NCBI taxon 48479) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Environmental
+      Samples taxonomic partition (NCBI taxon 48479). This RDF/XML partition includes
+      protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_environmental_samples_48479_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 8ae5a14d4d374dc555cf899411cbe53ca005d035071990284a1f574c99141695
+      size: 87484
 - artifact: reviewed-bacteria-fusobacteriati-3384189
-  title: UniProtKB Swiss-Prot — Bacteria Fusobacteriati
-  abstract: Reviewed UniProtKB protein records for Bacteria Fusobacteriati (NCBI taxon 3384189) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Fusobacteriati taxonomic
-    partition (NCBI taxon 3384189). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Fusobacteriati"
+  abstract: Reviewed UniProtKB protein records for Bacteria Fusobacteriati (NCBI taxon
+    3384189) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Fusobacteriati
+    taxonomic partition (NCBI taxon 3384189). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Fusobacteriati (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Fusobacteriati (NCBI taxon 3384189) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Fusobacteriati taxonomic
-      partition (NCBI taxon 3384189). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Fusobacteriati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Fusobacteriati (NCBI
+      taxon 3384189) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Fusobacteriati
+      taxonomic partition (NCBI taxon 3384189). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_fusobacteriati_3384189_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 72ea8c4e1214e981c198ff912ce35c3be17171ee379536d6a3f6be4360fa33c7
+      size: 857724
 - artifact: reviewed-bacteria-proteobacteria-acidithiobacillia-1807140
-  title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Acidithiobacillia
-  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Acidithiobacillia (NCBI taxon
-    1807140) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Acidithiobacillia
-    taxonomic partition (NCBI taxon 1807140). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Acidithiobacillia"
+  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Acidithiobacillia
+    (NCBI taxon 1807140) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+    Acidithiobacillia taxonomic partition (NCBI taxon 1807140). This RDF/XML partition
+    includes protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Acidithiobacillia (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Acidithiobacillia (NCBI taxon
-      1807140) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Acidithiobacillia
-      taxonomic partition (NCBI taxon 1807140). This RDF/XML partition includes protein instance data,
-      curated functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Acidithiobacillia\
+      \ (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Acidithiobacillia
+      (NCBI taxon 1807140) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+      Acidithiobacillia taxonomic partition (NCBI taxon 1807140). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_proteobacteria_acidithiobacillia_1807140_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 503042591de99f692467f7547ec2c9b43cf8cb897b77751760c7b766654e9c71
+      size: 739296
 - artifact: reviewed-bacteria-proteobacteria-alphaproteobacteria-28211
-  title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Alphaproteobacteria
-  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Alphaproteobacteria (NCBI taxon
-    28211) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Alphaproteobacteria
-    taxonomic partition (NCBI taxon 28211). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Alphaproteobacteria"
+  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Alphaproteobacteria
+    (NCBI taxon 28211) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+    Alphaproteobacteria taxonomic partition (NCBI taxon 28211). This RDF/XML partition
+    includes protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Alphaproteobacteria (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Alphaproteobacteria (NCBI
-      taxon 28211) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Alphaproteobacteria
-      taxonomic partition (NCBI taxon 28211). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Alphaproteobacteria\
+      \ (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Alphaproteobacteria
+      (NCBI taxon 28211) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+      Alphaproteobacteria taxonomic partition (NCBI taxon 28211). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_proteobacteria_alphaproteobacteria_28211_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 1cc4e39121be347244b972f7ca33d56fbff7abc57ed6a0cda565af4808d2597c
+      size: 46053196
 - artifact: reviewed-bacteria-proteobacteria-betaproteobacteria-28216
-  title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Betaproteobacteria
-  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Betaproteobacteria (NCBI taxon
-    28216) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Betaproteobacteria
-    taxonomic partition (NCBI taxon 28216). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Betaproteobacteria"
+  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Betaproteobacteria
+    (NCBI taxon 28216) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+    Betaproteobacteria taxonomic partition (NCBI taxon 28216). This RDF/XML partition
+    includes protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Betaproteobacteria (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Betaproteobacteria (NCBI
-      taxon 28216) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Betaproteobacteria
-      taxonomic partition (NCBI taxon 28216). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Betaproteobacteria\
+      \ (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Betaproteobacteria
+      (NCBI taxon 28216) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+      Betaproteobacteria taxonomic partition (NCBI taxon 28216). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_proteobacteria_betaproteobacteria_28216_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: f44b0dffde5a288b9f179fe069014caf98efa59eaaa9373a0744836f6900cc3b
+      size: 31474176
 - artifact: reviewed-bacteria-proteobacteria-gammaproteobacteria-1236
-  title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Gammaproteobacteria
-  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Gammaproteobacteria (NCBI taxon
-    1236) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Gammaproteobacteria
-    taxonomic partition (NCBI taxon 1236). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Gammaproteobacteria"
+  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Gammaproteobacteria
+    (NCBI taxon 1236) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+    Gammaproteobacteria taxonomic partition (NCBI taxon 1236). This RDF/XML partition
+    includes protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Gammaproteobacteria (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Gammaproteobacteria (NCBI
-      taxon 1236) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Gammaproteobacteria
-      taxonomic partition (NCBI taxon 1236). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Gammaproteobacteria\
+      \ (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Gammaproteobacteria
+      (NCBI taxon 1236) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+      Gammaproteobacteria taxonomic partition (NCBI taxon 1236). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_proteobacteria_gammaproteobacteria_1236_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 0257b8b1964b06eca339cde80e1eac197421497eb9674119eef7abcd4b076e9f
+      size: 168722900
 - artifact: reviewed-bacteria-proteobacteria-hydrogenophilia-2008785
-  title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Hydrogenophilia
-  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Hydrogenophilia (NCBI taxon
-    2008785) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Hydrogenophilia
-    taxonomic partition (NCBI taxon 2008785). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Hydrogenophilia"
+  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Hydrogenophilia
+    (NCBI taxon 2008785) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+    Hydrogenophilia taxonomic partition (NCBI taxon 2008785). This RDF/XML partition
+    includes protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Hydrogenophilia (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Hydrogenophilia (NCBI taxon
-      2008785) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Hydrogenophilia
-      taxonomic partition (NCBI taxon 2008785). This RDF/XML partition includes protein instance data,
-      curated functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Hydrogenophilia (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Hydrogenophilia
+      (NCBI taxon 2008785) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+      Hydrogenophilia taxonomic partition (NCBI taxon 2008785). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_proteobacteria_hydrogenophilia_2008785_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 0d5710db8f672d9a54991ffb7feb34590b32b4ac66a0d69402ea4e22b2d4b3f4
+      size: 17032
 - artifact: reviewed-bacteria-proteobacteria-magnetococcia-3118669
-  title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Magnetococcia
-  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Magnetococcia (NCBI taxon 3118669)
-    in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Magnetococcia
-    taxonomic partition (NCBI taxon 3118669). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Magnetococcia"
+  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Magnetococcia
+    (NCBI taxon 3118669) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+    Magnetococcia taxonomic partition (NCBI taxon 3118669). This RDF/XML partition
+    includes protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Magnetococcia (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Magnetococcia (NCBI taxon
-      3118669) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Magnetococcia
-      taxonomic partition (NCBI taxon 3118669). This RDF/XML partition includes protein instance data,
-      curated functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Magnetococcia (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Magnetococcia
+      (NCBI taxon 3118669) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+      Magnetococcia taxonomic partition (NCBI taxon 3118669). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_proteobacteria_magnetococcia_3118669_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: f1567d33d376cb23e9017759a71caa9f0065ed88f2cb176a7718b43ac4d472f2
+      size: 534164
 - artifact: reviewed-bacteria-proteobacteria-pseudomonadota-incertae-sedis-32045
-  title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Pseudomonadota Incertae Sedis
-  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Pseudomonadota Incertae Sedis
-    (NCBI taxon 32045) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Pseudomonadota
-    Incertae Sedis taxonomic partition (NCBI taxon 32045). This RDF/XML partition includes protein instance
-    data, curated functional annotations, literature references, and cross-references. It is one of the
-    taxonomic files that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Pseudomonadota Incertae\
+    \ Sedis"
+  abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Pseudomonadota
+    Incertae Sedis (NCBI taxon 32045) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+    Pseudomonadota Incertae Sedis taxonomic partition (NCBI taxon 32045). This RDF/XML
+    partition includes protein instance data, curated functional annotations, literature
+    references, and cross-references. It is one of the taxonomic files that collectively
+    cover the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Proteobacteria Pseudomonadota Incertae Sedis (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Pseudomonadota Incertae Sedis
-      (NCBI taxon 32045) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria Pseudomonadota
-      Incertae Sedis taxonomic partition (NCBI taxon 32045). This RDF/XML partition includes protein instance
-      data, curated functional annotations, literature references, and cross-references. It is one of
-      the taxonomic files that collectively cover the reviewed UniProtKB subset. Files from the UniProt
-      current_release RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Proteobacteria Pseudomonadota Incertae\
+      \ Sedis (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Proteobacteria Pseudomonadota
+      Incertae Sedis (NCBI taxon 32045) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Proteobacteria
+      Pseudomonadota Incertae Sedis taxonomic partition (NCBI taxon 32045). This RDF/XML
+      partition includes protein instance data, curated functional annotations, literature
+      references, and cross-references. It is one of the taxonomic files that collectively
+      cover the reviewed UniProtKB subset. Files from the UniProt current_release
+      RDF directory may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_proteobacteria_pseudomonadota_incertae_sedis_32045_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 07bafc9b87163b1bf992c287488c408e7a42aab14a224af4c160cfc25a5d8c7d
+      size: 192128
 - artifact: reviewed-bacteria-pseudomonadati-3379134
-  title: UniProtKB Swiss-Prot — Bacteria Pseudomonadati
-  abstract: Reviewed UniProtKB protein records for Bacteria Pseudomonadati (NCBI taxon 3379134) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Pseudomonadati taxonomic
-    partition (NCBI taxon 3379134). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Pseudomonadati"
+  abstract: Reviewed UniProtKB protein records for Bacteria Pseudomonadati (NCBI taxon
+    3379134) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Pseudomonadati
+    taxonomic partition (NCBI taxon 3379134). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Pseudomonadati (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Pseudomonadati (NCBI taxon 3379134) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Pseudomonadati taxonomic
-      partition (NCBI taxon 3379134). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Pseudomonadati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Pseudomonadati (NCBI
+      taxon 3379134) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Pseudomonadati
+      taxonomic partition (NCBI taxon 3379134). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_pseudomonadati_3379134_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 6fa87ab3c241429935a692089f37e2411cbf5bac4f54e0a232cf2c0d333ee52d
+      size: 293642320
 - artifact: reviewed-bacteria-thermotogati-3384194
-  title: UniProtKB Swiss-Prot — Bacteria Thermotogati
-  abstract: Reviewed UniProtKB protein records for Bacteria Thermotogati (NCBI taxon 3384194) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Thermotogati taxonomic partition
-    (NCBI taxon 3384194). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Thermotogati"
+  abstract: Reviewed UniProtKB protein records for Bacteria Thermotogati (NCBI taxon
+    3384194) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Thermotogati
+    taxonomic partition (NCBI taxon 3384194). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Thermotogati (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Thermotogati (NCBI taxon 3384194) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Thermotogati taxonomic
-      partition (NCBI taxon 3384194). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Thermotogati (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Thermotogati (NCBI taxon
+      3384194) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Thermotogati
+      taxonomic partition (NCBI taxon 3384194). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_thermotogati_3384194_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: ffee97212225b7d9a34bfc8e5644daa6d318d8ea3ea080499c22b1faf8382e31
+      size: 8542704
 - artifact: reviewed-bacteria-unclassified-bacteria-49928
-  title: UniProtKB Swiss-Prot — Bacteria Unclassified Bacteria
-  abstract: Reviewed UniProtKB protein records for Bacteria Unclassified Bacteria (NCBI taxon 49928) in
-    RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Unclassified Bacteria taxonomic
-    partition (NCBI taxon 49928). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Bacteria Unclassified Bacteria"
+  abstract: Reviewed UniProtKB protein records for Bacteria Unclassified Bacteria
+    (NCBI taxon 49928) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Unclassified
+    Bacteria taxonomic partition (NCBI taxon 49928). This RDF/XML partition includes
+    protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Bacteria Unclassified Bacteria (rolling)
-    abstract: Reviewed UniProtKB protein records for Bacteria Unclassified Bacteria (NCBI taxon 49928)
-      in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Unclassified Bacteria
-      taxonomic partition (NCBI taxon 49928). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Bacteria Unclassified Bacteria (rolling)"
+    abstract: Reviewed UniProtKB protein records for Bacteria Unclassified Bacteria
+      (NCBI taxon 49928) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Bacteria Unclassified
+      Bacteria taxonomic partition (NCBI taxon 49928). This RDF/XML partition includes
+      protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_bacteria_unclassified_bacteria_49928_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 914dc90b1e60b39915a80ec92f1e5f404ec106c1907b8520d6656c0e748b529c
+      size: 17068
 - artifact: reviewed-eukaryota-amoebozoa-554915
-  title: UniProtKB Swiss-Prot — Eukaryota Amoebozoa
-  abstract: Reviewed UniProtKB protein records for Eukaryota Amoebozoa (NCBI taxon 554915) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Amoebozoa taxonomic partition
-    (NCBI taxon 554915). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Amoebozoa"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Amoebozoa (NCBI taxon
+    554915) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Amoebozoa
+    taxonomic partition (NCBI taxon 554915). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Amoebozoa (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Amoebozoa (NCBI taxon 554915) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Amoebozoa taxonomic partition
-      (NCBI taxon 554915). This RDF/XML partition includes protein instance data, curated functional annotations,
-      literature references, and cross-references. It is one of the taxonomic files that collectively
-      cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory may change
-      with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Amoebozoa (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Amoebozoa (NCBI taxon
+      554915) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Amoebozoa
+      taxonomic partition (NCBI taxon 554915). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_amoebozoa_554915_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: d436177d52a84f4f71c55802f40a06fcc67acc3f1f7840d4b19742132c919fe7
+      size: 10030896
 - artifact: reviewed-eukaryota-cryptophyceae-3027
-  title: UniProtKB Swiss-Prot — Eukaryota Cryptophyceae
-  abstract: Reviewed UniProtKB protein records for Eukaryota Cryptophyceae (NCBI taxon 3027) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Cryptophyceae taxonomic
-    partition (NCBI taxon 3027). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Cryptophyceae"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Cryptophyceae (NCBI taxon
+    3027) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Cryptophyceae
+    taxonomic partition (NCBI taxon 3027). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Cryptophyceae (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Cryptophyceae (NCBI taxon 3027) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Cryptophyceae taxonomic
-      partition (NCBI taxon 3027). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Cryptophyceae (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Cryptophyceae (NCBI
+      taxon 3027) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Cryptophyceae
+      taxonomic partition (NCBI taxon 3027). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_cryptophyceae_3027_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 063c3a1aac7b3a50ddabbe9f3a048d787658a5384b4b911d970628d9392e933c
+      size: 338092
 - artifact: reviewed-eukaryota-discoba-2611352
-  title: UniProtKB Swiss-Prot — Eukaryota Discoba
-  abstract: Reviewed UniProtKB protein records for Eukaryota Discoba (NCBI taxon 2611352) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Discoba taxonomic partition
-    (NCBI taxon 2611352). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Discoba"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Discoba (NCBI taxon 2611352)
+    in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Discoba
+    taxonomic partition (NCBI taxon 2611352). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Discoba (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Discoba (NCBI taxon 2611352) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Discoba taxonomic partition
-      (NCBI taxon 2611352). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Discoba (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Discoba (NCBI taxon
+      2611352) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Discoba
+      taxonomic partition (NCBI taxon 2611352). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_discoba_2611352_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 60c204922539b031f2c069a4f490880cc3abb43abede6f68469dd9e492720d1d
+      size: 2357392
 - artifact: reviewed-eukaryota-glaucocystophyceae-38254
-  title: UniProtKB Swiss-Prot — Eukaryota Glaucocystophyceae
-  abstract: Reviewed UniProtKB protein records for Eukaryota Glaucocystophyceae (NCBI taxon 38254) in
-    RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Glaucocystophyceae taxonomic
-    partition (NCBI taxon 38254). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Glaucocystophyceae"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Glaucocystophyceae (NCBI
+    taxon 38254) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Glaucocystophyceae
+    taxonomic partition (NCBI taxon 38254). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Glaucocystophyceae (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Glaucocystophyceae (NCBI taxon 38254) in
-      RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Glaucocystophyceae taxonomic
-      partition (NCBI taxon 38254). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Glaucocystophyceae (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Glaucocystophyceae
+      (NCBI taxon 38254) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Glaucocystophyceae
+      taxonomic partition (NCBI taxon 38254). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_glaucocystophyceae_38254_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: ea8a7e30bc7fb8c211c21d2d2f178b137098982fd1a173d387591cf802c01506
+      size: 240312
 - artifact: reviewed-eukaryota-haptista-2608109
-  title: UniProtKB Swiss-Prot — Eukaryota Haptista
-  abstract: Reviewed UniProtKB protein records for Eukaryota Haptista (NCBI taxon 2608109) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Haptista taxonomic partition
-    (NCBI taxon 2608109). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Haptista"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Haptista (NCBI taxon
+    2608109) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Haptista
+    taxonomic partition (NCBI taxon 2608109). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Haptista (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Haptista (NCBI taxon 2608109) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Haptista taxonomic partition
-      (NCBI taxon 2608109). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Haptista (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Haptista (NCBI taxon
+      2608109) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Haptista
+      taxonomic partition (NCBI taxon 2608109). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_haptista_2608109_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: f244870f644c273dc685930f3e76fc8ca79622f53d38318d496ed61845bc31e0
+      size: 193544
 - artifact: reviewed-eukaryota-metamonada-2611341
-  title: UniProtKB Swiss-Prot — Eukaryota Metamonada
-  abstract: Reviewed UniProtKB protein records for Eukaryota Metamonada (NCBI taxon 2611341) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Metamonada taxonomic partition
-    (NCBI taxon 2611341). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Metamonada"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Metamonada (NCBI taxon
+    2611341) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Metamonada
+    taxonomic partition (NCBI taxon 2611341). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Metamonada (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Metamonada (NCBI taxon 2611341) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Metamonada taxonomic
-      partition (NCBI taxon 2611341). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Metamonada (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Metamonada (NCBI taxon
+      2611341) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Metamonada
+      taxonomic partition (NCBI taxon 2611341). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_metamonada_2611341_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: d64ba8f6935713d8d3d330614075b1eefbfb751b4924f18f62e45d9c026459b7
+      size: 359784
 - artifact: reviewed-eukaryota-opisthokonta-choanoflagellata-28009
-  title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Choanoflagellata
-  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Choanoflagellata (NCBI taxon
-    28009) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Choanoflagellata
-    taxonomic partition (NCBI taxon 28009). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Choanoflagellata"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Choanoflagellata
+    (NCBI taxon 28009) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+    Choanoflagellata taxonomic partition (NCBI taxon 28009). This RDF/XML partition
+    includes protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Choanoflagellata (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Choanoflagellata (NCBI taxon
-      28009) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Choanoflagellata
-      taxonomic partition (NCBI taxon 28009). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Choanoflagellata (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Choanoflagellata
+      (NCBI taxon 28009) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+      Choanoflagellata taxonomic partition (NCBI taxon 28009). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_opisthokonta_choanoflagellata_28009_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 78bca122f02c61b548d330755c843043130684ce2763b116fee626810a1813ea
+      size: 75892
 - artifact: reviewed-eukaryota-opisthokonta-filasterea-2687318
-  title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Filasterea
-  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Filasterea (NCBI taxon 2687318)
-    in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Filasterea
-    taxonomic partition (NCBI taxon 2687318). This RDF/XML partition includes protein instance data, curated
-    functional annotations, literature references, and cross-references. It is one of the taxonomic files
-    that collectively cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Filasterea"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Filasterea
+    (NCBI taxon 2687318) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+    Filasterea taxonomic partition (NCBI taxon 2687318). This RDF/XML partition includes
+    protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Filasterea (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Filasterea (NCBI taxon 2687318)
-      in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Filasterea
-      taxonomic partition (NCBI taxon 2687318). This RDF/XML partition includes protein instance data,
-      curated functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Filasterea (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Filasterea
+      (NCBI taxon 2687318) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+      Filasterea taxonomic partition (NCBI taxon 2687318). This RDF/XML partition
+      includes protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_opisthokonta_filasterea_2687318_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: ee6c40c6e3cb573ff24cc21e1412cecee1703b5a72a948479ef9ec9bb37243f0
+      size: 7372
 - artifact: reviewed-eukaryota-opisthokonta-fungi-4751
-  title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Fungi
-  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Fungi (NCBI taxon 4751) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Fungi taxonomic
-    partition (NCBI taxon 4751). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Fungi"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Fungi (NCBI
+    taxon 4751) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+    Fungi taxonomic partition (NCBI taxon 4751). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Fungi (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Fungi (NCBI taxon 4751) in
-      RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Fungi taxonomic
-      partition (NCBI taxon 4751). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Fungi (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Fungi
+      (NCBI taxon 4751) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+      Fungi taxonomic partition (NCBI taxon 4751). This RDF/XML partition includes
+      protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
       may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_opisthokonta_fungi_4751_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: fd127334f17d10dfc5cc5a0d5538c8aa91fb5b9cedf8fe9c94f8a2e0c161ea38
+      size: 94324348
 - artifact: reviewed-eukaryota-opisthokonta-metazoa-33208
-  title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Metazoa
-  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Metazoa (NCBI taxon 33208) in
-    RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Metazoa taxonomic
-    partition (NCBI taxon 33208). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Metazoa"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Metazoa
+    (NCBI taxon 33208) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+    Metazoa taxonomic partition (NCBI taxon 33208). This RDF/XML partition includes
+    protein instance data, curated functional annotations, literature references,
+    and cross-references. It is one of the taxonomic files that collectively cover
+    the reviewed UniProtKB subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Opisthokonta Metazoa (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Metazoa (NCBI taxon 33208)
-      in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta Metazoa
-      taxonomic partition (NCBI taxon 33208). This RDF/XML partition includes protein instance data, curated
-      functional annotations, literature references, and cross-references. It is one of the taxonomic
-      files that collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release
-      RDF directory may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Opisthokonta Metazoa (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Opisthokonta Metazoa
+      (NCBI taxon 33208) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Opisthokonta
+      Metazoa taxonomic partition (NCBI taxon 33208). This RDF/XML partition includes
+      protein instance data, curated functional annotations, literature references,
+      and cross-references. It is one of the taxonomic files that collectively cover
+      the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
+      may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_opisthokonta_metazoa_33208_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: fbe467cb9035a00e6f8e2cb10592dda07043a71482e53167b622e5a429c8650d
+      size: 425672892
 - artifact: reviewed-eukaryota-rhodophyta-2763
-  title: UniProtKB Swiss-Prot — Eukaryota Rhodophyta
-  abstract: Reviewed UniProtKB protein records for Eukaryota Rhodophyta (NCBI taxon 2763) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Rhodophyta taxonomic partition
-    (NCBI taxon 2763). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Rhodophyta"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Rhodophyta (NCBI taxon
+    2763) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Rhodophyta
+    taxonomic partition (NCBI taxon 2763). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Rhodophyta (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Rhodophyta (NCBI taxon 2763) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Rhodophyta taxonomic
-      partition (NCBI taxon 2763). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Rhodophyta (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Rhodophyta (NCBI taxon
+      2763) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Rhodophyta
+      taxonomic partition (NCBI taxon 2763). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_rhodophyta_2763_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 3ab5f15fcd59fee8248d77506efa2ee649b2f1c867174c5e95b05fe9a262b9ef
+      size: 1219676
 - artifact: reviewed-eukaryota-sar-2698737
-  title: UniProtKB Swiss-Prot — Eukaryota Sar
-  abstract: Reviewed UniProtKB protein records for Eukaryota Sar (NCBI taxon 2698737) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Sar taxonomic partition
-    (NCBI taxon 2698737). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Sar"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Sar (NCBI taxon 2698737)
+    in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Sar
+    taxonomic partition (NCBI taxon 2698737). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Sar (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Sar (NCBI taxon 2698737) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Sar taxonomic partition
-      (NCBI taxon 2698737). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Sar (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Sar (NCBI taxon 2698737)
+      in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Sar
+      taxonomic partition (NCBI taxon 2698737). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_sar_2698737_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 5500f08ed811ef99cda3f7b06961a3dbc4a88b7b19a3ddc62b0f3c0156e3c992
+      size: 6105752
 - artifact: reviewed-eukaryota-viridiplantae-33090
-  title: UniProtKB Swiss-Prot — Eukaryota Viridiplantae
-  abstract: Reviewed UniProtKB protein records for Eukaryota Viridiplantae (NCBI taxon 33090) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Viridiplantae taxonomic
-    partition (NCBI taxon 33090). This RDF/XML partition includes protein instance data, curated functional
-    annotations, literature references, and cross-references. It is one of the taxonomic files that collectively
-    cover the reviewed UniProtKB subset.
+  title: "UniProtKB Swiss-Prot \u2014 Eukaryota Viridiplantae"
+  abstract: Reviewed UniProtKB protein records for Eukaryota Viridiplantae (NCBI taxon
+    33090) in RDF/XML.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Viridiplantae
+    taxonomic partition (NCBI taxon 33090). This RDF/XML partition includes protein
+    instance data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Eukaryota Viridiplantae (rolling)
-    abstract: Reviewed UniProtKB protein records for Eukaryota Viridiplantae (NCBI taxon 33090) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Viridiplantae taxonomic
-      partition (NCBI taxon 33090). This RDF/XML partition includes protein instance data, curated functional
-      annotations, literature references, and cross-references. It is one of the taxonomic files that
-      collectively cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory
-      may change with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Eukaryota Viridiplantae (rolling)"
+    abstract: Reviewed UniProtKB protein records for Eukaryota Viridiplantae (NCBI
+      taxon 33090) in RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Eukaryota Viridiplantae
+      taxonomic partition (NCBI taxon 33090). This RDF/XML partition includes protein
+      instance data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_eukaryota_viridiplantae_33090_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 1fc650dab986aaa3f6fd88bf716f4fcfcd2118326456296bfbb53f041e60e4f3
+      size: 94326700
 - artifact: reviewed-viruses-10239
-  title: UniProtKB Swiss-Prot — Viruses
+  title: "UniProtKB Swiss-Prot \u2014 Viruses"
   abstract: Reviewed UniProtKB protein records for Viruses (NCBI taxon 10239) in RDF/XML.
-  description: UniProtKB/Swiss-Prot reviewed protein records for the Viruses taxonomic partition (NCBI
-    taxon 10239). This RDF/XML partition includes protein instance data, curated functional annotations,
-    literature references, and cross-references. It is one of the taxonomic files that collectively cover
-    the reviewed UniProtKB subset.
+  description: UniProtKB/Swiss-Prot reviewed protein records for the Viruses taxonomic
+    partition (NCBI taxon 10239). This RDF/XML partition includes protein instance
+    data, curated functional annotations, literature references, and cross-references.
+    It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+    subset.
   versions:
   - version: rolling
-    title: UniProtKB Swiss-Prot — Viruses (rolling)
-    abstract: Reviewed UniProtKB protein records for Viruses (NCBI taxon 10239) in RDF/XML.
-    description: UniProtKB/Swiss-Prot reviewed protein records for the Viruses taxonomic partition (NCBI
-      taxon 10239). This RDF/XML partition includes protein instance data, curated functional annotations,
-      literature references, and cross-references. It is one of the taxonomic files that collectively
-      cover the reviewed UniProtKB subset. Files from the UniProt current_release RDF directory may change
-      with each UniProt release.
+    title: "UniProtKB Swiss-Prot \u2014 Viruses (rolling)"
+    abstract: Reviewed UniProtKB protein records for Viruses (NCBI taxon 10239) in
+      RDF/XML.
+    description: UniProtKB/Swiss-Prot reviewed protein records for the Viruses taxonomic
+      partition (NCBI taxon 10239). This RDF/XML partition includes protein instance
+      data, curated functional annotations, literature references, and cross-references.
+      It is one of the taxonomic files that collectively cover the reviewed UniProtKB
+      subset. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/uniprotkb_reviewed_viruses_10239_0.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: fcb616b25de3a46cc0cd84e888c218c9e2d8a99252cb65d5b90e09d491be10d0
+      size: 35725468
 - artifact: proteomes
   title: UniProt Proteomes
   abstract: RDF/XML descriptions of UniProt proteomes.
-  description: UniProt RDF data describing proteome entities and their relationships to organisms and
-    protein records.
+  description: UniProt RDF data describing proteome entities and their relationships
+    to organisms and protein records.
   versions:
   - version: rolling
     title: UniProt Proteomes (rolling)
     abstract: RDF/XML descriptions of UniProt proteomes.
-    description: UniProt RDF data describing proteome entities and their relationships to organisms and
-      protein records. Files from the UniProt current_release RDF directory may change with each UniProt
-      release.
+    description: UniProt RDF data describing proteome entities and their relationships
+      to organisms and protein records. Files from the UniProt current_release RDF
+      directory may change with each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/proteomes.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: ba7b546346d773f49e71dd7cf19f58e131991fa191e414e6dbbc449fcef375e5
+      size: 219751360
 - artifact: taxonomy
   title: UniProt Taxonomy
   abstract: RDF/XML organism and taxonomy entity records used by UniProt.
-  description: UniProt taxonomy RDF data describing organisms, NCBI taxonomic entities, names, and links
-    to protein records; this is entity-level data, not an ontology-only export.
+  description: UniProt taxonomy RDF data describing organisms, NCBI taxonomic entities,
+    names, and links to protein records; this is entity-level data, not an ontology-only
+    export.
   versions:
   - version: rolling
     title: UniProt Taxonomy (rolling)
     abstract: RDF/XML organism and taxonomy entity records used by UniProt.
-    description: UniProt taxonomy RDF data describing organisms, NCBI taxonomic entities, names, and links
-      to protein records; this is entity-level data, not an ontology-only export. Files from the UniProt
-      current_release RDF directory may change with each UniProt release.
+    description: UniProt taxonomy RDF data describing organisms, NCBI taxonomic entities,
+      names, and links to protein records; this is entity-level data, not an ontology-only
+      export. Files from the UniProt current_release RDF directory may change with
+      each UniProt release.
     license: https://creativecommons.org/licenses/by/4.0/
     distributions:
     - file: https://ftp.funet.fi/pub/mirrors/ftp.ebi.ac.uk/pub/databases/uniprot/current_release/rdf/taxonomy.rdf.xz
       format: rdf
       compression: xz
-      status: pending
+      status: active
+      sha256: 06159b570321f1a9bf605a59edfafa0766fa18e714b48910d730b8ecd5d287f8
+      size: 57061312
