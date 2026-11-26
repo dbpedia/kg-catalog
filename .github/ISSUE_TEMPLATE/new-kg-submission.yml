@@ -125,6 +125,8 @@ body:
       Typically, an artifact corresponds to a partition of the KG (e.g., a specific dataset, module, language version, or data subset).
 
       - A **version** represents a specific release of an artifact at a particular point in time.
+      Version names must be at least 3 characters long and use only letters, digits, `_`, `.` and `-` (e.g., `2026.10.01`).
+      Put versions such as `2.10` in quotes (`"2.10"`), otherwise YAML reads them as the number `2.1`.
 
       - A **distribution** represents a single downloadable file belonging to a specific artifact version.
       Each distribution should provide the file URL and its format (and compression, if applicable).

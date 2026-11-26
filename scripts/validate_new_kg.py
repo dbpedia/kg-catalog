@@ -8,6 +8,34 @@ import yaml
 
 body = os.environ.get("ISSUE_BODY", "")
 
+# Databus only accepts version names of at least 3 characters made of
+# letters, digits, "_", "." and "-" (see the version SHACL shape in
+# https://github.com/dbpedia/databus/blob/main/server/app/common/res/shacl/version.shacl).
+VERSION_PATTERN = re.compile(r"^[A-Za-z0-9_.-]{3,}$")
+
+
+class RawFloat(float):
+    """
+    A float that remembers how it was written in the YAML,
+    so we can tell when YAML changed it (e.g. 2.10 -> 2.1).
+    """
+
+
+class VersionLoader(yaml.SafeLoader):
+    pass
+
+
+def construct_raw_float(loader, node):
+    value = RawFloat(loader.construct_yaml_float(node))
+    value.raw = node.value
+    return value
+
+
+VersionLoader.add_constructor(
+    "tag:yaml.org,2002:float",
+    construct_raw_float
+)
+
 errors = []
 warnings = []
 
@@ -82,6 +110,38 @@ def add_error(message):
 
 def add_warning(message):
     warnings.append(message)
+
+
+def check_version(prefix, value):
+    """
+    Check that a version name can be published on Databus.
+    """
+
+    if value is None or str(value).strip() == "":
+
+        add_error(
+            f"{prefix}: missing version."
+        )
+
+        return
+
+    if isinstance(value, RawFloat) and str(value) != value.raw:
+
+        add_error(
+            f"{prefix}: version {value.raw} is read by YAML as the number "
+            f"{value}, so it would be published as \"{value}\". "
+            f"Put it in quotes, for example version: \"{value.raw}\"."
+        )
+
+        return
+
+    if not VERSION_PATTERN.match(str(value)):
+
+        add_error(
+            f"{prefix}: version \"{value}\" is not allowed on Databus. "
+            "Use at least 3 characters made of letters, digits, "
+            "\"_\", \".\" or \"-\" (for example 2026.10.01 or 2.0)."
+        )
 
 
 def kg_id_exists(kg_id):
@@ -339,8 +399,9 @@ else:
             artifacts_text
         )
 
-        artifacts = yaml.safe_load(
-            artifacts_text
+        artifacts = yaml.load(
+            artifacts_text,
+            Loader=VersionLoader
         )
 
 
@@ -412,6 +473,13 @@ else:
 
                         add_error(
                             f"{vp}: missing version."
+                        )
+
+                    else:
+
+                        check_version(
+                            vp,
+                            version["version"]
                         )
 
 
