@@ -1,0 +1,84 @@
+databus-account: knowledge-graph-catalog
+id: iicongraph
+title: IICONGRAPH
+abstract: A knowledge graph of iconographic and iconological statements about cultural
+  heritage artifacts, re-engineered from ArCo and Wikidata following the ICON ontology.
+description: '**IICONGRAPH** is a knowledge graph of iconographic and iconological statements
+  about cultural heritage artifacts. It was created by re-engineering the iconographic and
+  iconological statements of ArCo (the Italian knowledge graph of cultural heritage) and
+  Wikidata following the ICON ontology, and enriching them with linked open data on cultural
+  symbolism from HyperReal.
+
+
+  The dump has three subsets: IICONGRAPHglobal (ArCo and Wikidata combined), IICONGRAPHarco
+  (ArCo only) and IICONGRAPHwikidata (Wikidata only).
+
+
+  Reference: Sartini, B. (2024). IICONGRAPH: improved Iconographic and Iconological Statements
+  in Knowledge Graphs. ESWC 2024. Data: https://doi.org/10.5281/zenodo.10294589'
+databus-publish: true
+moss-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://w3id.org/iicongraph/
+domains:
+- Media, Culture & Entertainment
+keywords:
+- iconography
+- iconology
+- cultural heritage
+- ICON ontology
+- ArCo
+- Wikidata
+sparql: []
+artifacts:
+- artifact: global
+  title: IICONGRAPHglobal
+  abstract: Iconographic and iconological statements from ArCo and Wikidata combined.
+  description: The IICONGRAPHglobal subset, which merges the re-engineered iconographic
+    and iconological statements of ArCo and Wikidata.
+  versions:
+  - version: '1.0'
+    title: IICONGRAPHglobal 1.0
+    description: Version 1.0 of IICONGRAPH (Zenodo record 10294589, published 2023-12-08).
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/10294589/files/iicongraphglobal.ttl
+      format: ttl
+      compression: none
+      status: pending
+      sha256: c375a2e571dc65fcd98814a797b064da7d3197a2a98fce669c57c19651dd2dd4
+      size: 1723271723
+- artifact: arco
+  title: IICONGRAPHarco
+  abstract: Iconographic and iconological statements re-engineered from ArCo.
+  description: The IICONGRAPHarco subset, limited to the statements that originate from
+    ArCo.
+  versions:
+  - version: '1.0'
+    title: IICONGRAPHarco 1.0
+    description: Version 1.0 of IICONGRAPH (Zenodo record 10294589, published 2023-12-08).
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/10294589/files/iicongraph-arco.ttl
+      format: ttl
+      compression: none
+      status: pending
+      sha256: dee9a616ea8e2dc19a6c6c4b1781124ee7066b04660681122c0912b03f6fe239
+      size: 27285981
+- artifact: wikidata
+  title: IICONGRAPHwikidata
+  abstract: Iconographic and iconological statements re-engineered from Wikidata.
+  description: The IICONGRAPHwikidata subset, limited to the statements that originate
+    from Wikidata.
+  versions:
+  - version: '1.0'
+    title: IICONGRAPHwikidata 1.0
+    description: Version 1.0 of IICONGRAPH (Zenodo record 10294589, published 2023-12-08).
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://zenodo.org/records/10294589/files/iicongraphwikidata.ttl
+      format: ttl
+      compression: none
+      status: pending
+      sha256: f8952d8ab29df8b987ee52c4200f0cd3c4c2d3335a44865767b1d6312a079f7c
+      size: 1331940021
