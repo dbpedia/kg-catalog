@@ -1,13 +1,13 @@
 databus-account: knowledge-graph-catalog
 id: mlsea-kg
 title: MLSea-KG
-abstract: MLSea-KG links machine learning experiments, datasets, models and related
-  research resources.
-description: MLSea-KG publishes machine-learning experiment and resource metadata
-  collected from platforms such as Kaggle and OpenML. Its RDF N-Triples releases are
-  split into compressed partitions.
+abstract: MLSea-KG links machine learning experiments, datasets, models and related research
+  resources.
+description: MLSea-KG publishes machine-learning experiment and resource metadata collected
+  from platforms such as Kaggle and OpenML. Its RDF N-Triples releases are split into compressed
+  partitions.
 moss-publish: false
-databus-publish: false
+databus-publish: true
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://zenodo.org/records/17954333
 domains:
@@ -105,3 +105,687 @@ artifacts:
       status: active
       sha256: bfb98da138476e72ae672f152130590147afc60ba7bb310e233951dc61107d9f
       size: 20576602
+- artifact: openml-flows-part-2
+  title: MLSea-KG OpenML Flows Part 2
+  abstract: Partition 2 of MLSea-KG OpenML implementation and flow metadata, distributed as
+    compressed RDF N-Triples.
+  description: Partition 2 of MLSea-KG OpenML implementation and flow metadata, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Flows Part 2 2.0
+    abstract: Partition 2 of MLSea-KG OpenML implementation and flow metadata, distributed as
+      compressed RDF N-Triples.
+    description: Partition 2 of MLSea-KG OpenML implementation and flow metadata, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_flows_2.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-1
+  title: MLSea-KG OpenML Runs Part 1
+  abstract: Partition 1 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 1 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 1 2.0
+    abstract: Partition 1 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 1 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_1.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-2
+  title: MLSea-KG OpenML Runs Part 2
+  abstract: Partition 2 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 2 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 2 2.0
+    abstract: Partition 2 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 2 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_2.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-3
+  title: MLSea-KG OpenML Runs Part 3
+  abstract: Partition 3 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 3 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 3 2.0
+    abstract: Partition 3 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 3 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_3.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-4
+  title: MLSea-KG OpenML Runs Part 4
+  abstract: Partition 4 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 4 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 4 2.0
+    abstract: Partition 4 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 4 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_4.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-5
+  title: MLSea-KG OpenML Runs Part 5
+  abstract: Partition 5 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 5 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 5 2.0
+    abstract: Partition 5 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 5 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_5.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-6
+  title: MLSea-KG OpenML Runs Part 6
+  abstract: Partition 6 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 6 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 6 2.0
+    abstract: Partition 6 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 6 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_6.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-7
+  title: MLSea-KG OpenML Runs Part 7
+  abstract: Partition 7 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 7 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 7 2.0
+    abstract: Partition 7 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 7 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_7.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-8
+  title: MLSea-KG OpenML Runs Part 8
+  abstract: Partition 8 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 8 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 8 2.0
+    abstract: Partition 8 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 8 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_8.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-9
+  title: MLSea-KG OpenML Runs Part 9
+  abstract: Partition 9 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 9 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 9 2.0
+    abstract: Partition 9 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 9 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_9.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-10
+  title: MLSea-KG OpenML Runs Part 10
+  abstract: Partition 10 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 10 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 10 2.0
+    abstract: Partition 10 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 10 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_10.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-11
+  title: MLSea-KG OpenML Runs Part 11
+  abstract: Partition 11 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 11 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 11 2.0
+    abstract: Partition 11 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 11 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_11.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-12
+  title: MLSea-KG OpenML Runs Part 12
+  abstract: Partition 12 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 12 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 12 2.0
+    abstract: Partition 12 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 12 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_12.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-13
+  title: MLSea-KG OpenML Runs Part 13
+  abstract: Partition 13 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 13 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 13 2.0
+    abstract: Partition 13 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 13 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_13.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-14
+  title: MLSea-KG OpenML Runs Part 14
+  abstract: Partition 14 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 14 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 14 2.0
+    abstract: Partition 14 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 14 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_14.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-15
+  title: MLSea-KG OpenML Runs Part 15
+  abstract: Partition 15 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 15 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 15 2.0
+    abstract: Partition 15 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 15 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_15.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-16
+  title: MLSea-KG OpenML Runs Part 16
+  abstract: Partition 16 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 16 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 16 2.0
+    abstract: Partition 16 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 16 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_16.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-17
+  title: MLSea-KG OpenML Runs Part 17
+  abstract: Partition 17 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 17 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 17 2.0
+    abstract: Partition 17 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 17 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_17.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-18
+  title: MLSea-KG OpenML Runs Part 18
+  abstract: Partition 18 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 18 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 18 2.0
+    abstract: Partition 18 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 18 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_18.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-19
+  title: MLSea-KG OpenML Runs Part 19
+  abstract: Partition 19 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 19 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 19 2.0
+    abstract: Partition 19 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 19 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_19.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-20
+  title: MLSea-KG OpenML Runs Part 20
+  abstract: Partition 20 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 20 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 20 2.0
+    abstract: Partition 20 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 20 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_20.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-21
+  title: MLSea-KG OpenML Runs Part 21
+  abstract: Partition 21 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 21 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 21 2.0
+    abstract: Partition 21 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 21 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_21.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-22
+  title: MLSea-KG OpenML Runs Part 22
+  abstract: Partition 22 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 22 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 22 2.0
+    abstract: Partition 22 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 22 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_22.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-23
+  title: MLSea-KG OpenML Runs Part 23
+  abstract: Partition 23 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 23 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 23 2.0
+    abstract: Partition 23 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 23 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_23.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-24
+  title: MLSea-KG OpenML Runs Part 24
+  abstract: Partition 24 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 24 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 24 2.0
+    abstract: Partition 24 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 24 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_24.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-25
+  title: MLSea-KG OpenML Runs Part 25
+  abstract: Partition 25 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 25 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 25 2.0
+    abstract: Partition 25 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 25 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_25.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-26
+  title: MLSea-KG OpenML Runs Part 26
+  abstract: Partition 26 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 26 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 26 2.0
+    abstract: Partition 26 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 26 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_26.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-27
+  title: MLSea-KG OpenML Runs Part 27
+  abstract: Partition 27 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 27 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 27 2.0
+    abstract: Partition 27 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 27 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_27.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-28
+  title: MLSea-KG OpenML Runs Part 28
+  abstract: Partition 28 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 28 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 28 2.0
+    abstract: Partition 28 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 28 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_28.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-29
+  title: MLSea-KG OpenML Runs Part 29
+  abstract: Partition 29 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 29 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 29 2.0
+    abstract: Partition 29 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 29 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_29.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-runs-part-30
+  title: MLSea-KG OpenML Runs Part 30
+  abstract: Partition 30 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  description: Partition 30 of MLSea-KG OpenML experiment run metadata and results, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Runs Part 30 2.0
+    abstract: Partition 30 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    description: Partition 30 of MLSea-KG OpenML experiment run metadata and results, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_runs_30.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-tasks-part-1
+  title: MLSea-KG OpenML Tasks Part 1
+  abstract: Partition 1 of MLSea-KG OpenML machine-learning task metadata, distributed as compressed
+    RDF N-Triples.
+  description: Partition 1 of MLSea-KG OpenML machine-learning task metadata, distributed as
+    compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Tasks Part 1 2.0
+    abstract: Partition 1 of MLSea-KG OpenML machine-learning task metadata, distributed as
+      compressed RDF N-Triples.
+    description: Partition 1 of MLSea-KG OpenML machine-learning task metadata, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_tasks_1.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: openml-tasks-part-2
+  title: MLSea-KG OpenML Tasks Part 2
+  abstract: Partition 2 of MLSea-KG OpenML machine-learning task metadata, distributed as compressed
+    RDF N-Triples.
+  description: Partition 2 of MLSea-KG OpenML machine-learning task metadata, distributed as
+    compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG OpenML Tasks Part 2 2.0
+    abstract: Partition 2 of MLSea-KG OpenML machine-learning task metadata, distributed as
+      compressed RDF N-Triples.
+    description: Partition 2 of MLSea-KG OpenML machine-learning task metadata, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/openml_tasks_2.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: pwc-part-1
+  title: MLSea-KG Papers with Code Part 1
+  abstract: Partition 1 of MLSea-KG Papers with Code research resource metadata, distributed
+    as compressed RDF N-Triples.
+  description: Partition 1 of MLSea-KG Papers with Code research resource metadata, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG Papers with Code Part 1 2.0
+    abstract: Partition 1 of MLSea-KG Papers with Code research resource metadata, distributed
+      as compressed RDF N-Triples.
+    description: Partition 1 of MLSea-KG Papers with Code research resource metadata, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/pwc_1.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: pwc-part-2
+  title: MLSea-KG Papers with Code Part 2
+  abstract: Partition 2 of MLSea-KG Papers with Code research resource metadata, distributed
+    as compressed RDF N-Triples.
+  description: Partition 2 of MLSea-KG Papers with Code research resource metadata, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG Papers with Code Part 2 2.0
+    abstract: Partition 2 of MLSea-KG Papers with Code research resource metadata, distributed
+      as compressed RDF N-Triples.
+    description: Partition 2 of MLSea-KG Papers with Code research resource metadata, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/pwc_2.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
+- artifact: pwc-part-3
+  title: MLSea-KG Papers with Code Part 3
+  abstract: Partition 3 of MLSea-KG Papers with Code research resource metadata, distributed
+    as compressed RDF N-Triples.
+  description: Partition 3 of MLSea-KG Papers with Code research resource metadata, distributed
+    as compressed RDF N-Triples.
+  versions:
+  - version: '2.0'
+    title: MLSea-KG Papers with Code Part 3 2.0
+    abstract: Partition 3 of MLSea-KG Papers with Code research resource metadata, distributed
+      as compressed RDF N-Triples.
+    description: Partition 3 of MLSea-KG Papers with Code research resource metadata, distributed
+      as compressed RDF N-Triples.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://zenodo.org/records/17954333/files/pwc_3.nt.gz?download=1
+      format: nt
+      compression: gz
+      status: pending
