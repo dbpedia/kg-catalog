@@ -1,0 +1,76 @@
+databus-account: knowledge-graph-catalog
+id: lila
+title: 'LiLa: Linking Latin'
+abstract: LiLa is a knowledge base of interoperable linguistic resources for Latin. Its
+  core, the Lemma Bank, is a collection of about 200,000 canonical forms of Latin words
+  that interlinks lexical resources and annotated corpora.
+description: '**LiLa: Linking Latin** is a knowledge base of linguistic resources for
+  Latin published as Linked Open Data.
+
+
+  Its core is the **Lemma Bank**, a collection of canonical forms (lemmas) of Latin words.
+  Entries of lexical resources and tokens of annotated corpora that share a lemma are
+  linked to the same Lemma Bank entry, which makes the resources interoperable. The data
+  is modelled with the OntoLex-Lemon vocabulary and the LiLa ontology.
+
+
+  LiLa was built by CIRCSE at the Università Cattolica del Sacro Cuore (Milan) in an ERC
+  project (2018–2023). Reference: Passarotti et al. (2020), Studi e Saggi Linguistici
+  58(1), 177–212, https://doi.org/10.4454/ssl.v58i1.277'
+databus-publish: true
+moss-publish: true
+license: https://creativecommons.org/licenses/by-sa/4.0/
+homepage: https://lila-erc.eu/
+domains:
+- Linguistics, Social & Digital Knowledge Systems
+keywords:
+- Latin
+- lemma bank
+- lexical resources
+- linguistic linked open data
+- OntoLex-Lemon
+sparql:
+- name: main
+  url: https://lila-erc.eu/sparql/lila_knowledge_base/sparql
+  ui: https://lila-erc.eu/sparql/
+artifacts:
+- artifact: lemma-bank
+  title: LiLa Lemma Bank
+  abstract: The collection of canonical forms of Latin words that interlinks the linguistic
+    resources in the LiLa Knowledge Base.
+  description: The LiLa Lemma Bank in RDF (Turtle), as published in the CIRCSE/LiLa_Lemma-Bank
+    GitHub repository (rdf/lemmaBank.ttl). Each version is a commit-pinned file.
+  versions:
+  - version: '2026.10.19'
+    title: LiLa Lemma Bank V1.3 (2026-10-19)
+    description: Release V1.3 of the Lemma Bank (data up to date as of October 2026).
+    license: https://creativecommons.org/licenses/by-sa/4.0/
+    distributions:
+    - file: https://raw.githubusercontent.com/CIRCSE/LiLa_Lemma-Bank/3f18a54fe5d7468f02d72fedb841b3cd0b97a531/rdf/lemmaBank.ttl
+      format: ttl
+      compression: none
+      status: pending
+      sha256: aea12a0652ae19089a5ae53d420b149dc5eabf98664d9cf4f8e6a8e1e5fcc548
+      size: 72584959
+  - version: '2025.09.08'
+    title: LiLa Lemma Bank (2025-09-08)
+    description: The 2025 version of the Lemma Bank.
+    license: https://creativecommons.org/licenses/by-sa/4.0/
+    distributions:
+    - file: https://raw.githubusercontent.com/CIRCSE/LiLa_Lemma-Bank/1f318732f76101742a98c6bc1314795c53d595a8/rdf/lemmaBank.ttl
+      format: ttl
+      compression: none
+      status: pending
+      sha256: 486cf963f911cb4b029b185f8c887d911856b8c1145e89c9f04b1f98a55ab54c
+      size: 84593534
+  - version: '2023.07.12'
+    title: LiLa Lemma Bank (2023-07-12)
+    description: The 2023 version of the Lemma Bank.
+    license: https://creativecommons.org/licenses/by-sa/4.0/
+    distributions:
+    - file: https://raw.githubusercontent.com/CIRCSE/LiLa_Lemma-Bank/2f227c3673f4b80a809ccc9783d8fdf2eed6a443/rdf/lemmaBank.ttl
+      format: ttl
+      compression: none
+      status: pending
+      sha256: 9a04c25e9cf8564d5ee102652bef53a58984dd739911ef8d7d15f8882511ca9d
+      size: 78591261
