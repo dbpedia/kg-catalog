@@ -93,7 +93,7 @@ def kg_id_exists(kg_id):
         return False
 
     metadata_file = (
-        Path("kgs")
+        Path("knowledge-graphs")
         / kg_id
         / "metadata.yaml"
     )
