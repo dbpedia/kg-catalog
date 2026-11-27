@@ -3,10 +3,11 @@ id: opencitations-meta
 title: OpenCitations Meta
 abstract: OpenCitations Meta publishes RDF metadata for scholarly publications and
   agents.
-description: OpenCitations Meta describes bibliographic resources, authors, venues
+ddescription: OpenCitations Meta describes bibliographic resources, authors, venues
   and associated provenance. The September 2026 RDF release (v9.2.1) is archived on
   Zenodo as five compressed 7z files containing JSON-LD RDF metadata and provenance.
-moss-publish: false
+  The official release is available on Zenodo at https://zenodo.org/records/23059736.
+moss-publish: true
 databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://opencitations.net/meta
