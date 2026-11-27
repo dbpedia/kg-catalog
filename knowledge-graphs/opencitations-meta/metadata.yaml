@@ -7,8 +7,8 @@ ddescription: OpenCitations Meta describes bibliographic resources, authors, ven
   and associated provenance. The September 2026 RDF release (v9.2.1) is archived on
   Zenodo as five compressed 7z files containing JSON-LD RDF metadata and provenance.
   The official release is available on Zenodo at https://zenodo.org/records/23059736.
-moss-publish: true
-databus-publish: true
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://opencitations.net/meta
 domains:
