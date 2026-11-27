@@ -911,3 +911,36 @@ artifacts:
       size: 155231657752
       sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
       status: active
+  - version: 2026-11-23
+    title: Wikidata Complete RDF Dump - Beta
+    abstract: Beta complete Wikidata RDF dumps containing all entity information representable
+      in RDF.
+    description: Beta complete Wikidata RDF dumps contain all entity information representable
+      in RDF, including statements, qualifiers, references, labels, descriptions,
+      aliases, and other RDF-representable data.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261123/wikidata-20261123-all-BETA.nt.bz2
+      format: nt
+      compression: bz2
+      size: 197596714414
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261123/wikidata-20261123-all-BETA.nt.gz
+      format: nt
+      compression: gz
+      size: 255768085731
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261123/wikidata-20261123-all-BETA.ttl.bz2
+      format: ttl
+      compression: bz2
+      size: 126681545521
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
+    - file: https://dumps.wikimedia.org/wikidatawiki/entities/20261123/wikidata-20261123-all-BETA.ttl.gz
+      format: ttl
+      compression: gz
+      size: 155473953150
+      sha256: abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+      status: pending
