@@ -1,16 +1,12 @@
 databus-account: knowledge-graph-catalog
 id: opencitations-index
 title: OpenCitations Index
-abstract: >-
-  OpenCitations Index is an open RDF knowledge graph representing citation
-  relationships between scholarly publications.
-  Official downloads: [https://download.opencitations.net/](https://download.opencitations.net/)
-description: >-
-  OpenCitations Index is an open RDF knowledge graph representing citation
-  relationships between scholarly publications.
-  Official downloads: [https://download.opencitations.net/](https://download.opencitations.net/)
-moss-publish: true
-databus-publish: true
+abstract: 'OpenCitations Index is an open RDF knowledge graph representing citation
+  relationships between scholarly publications. Official downloads: [https://download.opencitations.net/](https://download.opencitations.net/)'
+description: 'OpenCitations Index is an open RDF knowledge graph representing citation
+  relationships between scholarly publications. Official downloads: [https://download.opencitations.net/](https://download.opencitations.net/)'
+moss-publish: false
+databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://opencitations.net/index
 domains:
