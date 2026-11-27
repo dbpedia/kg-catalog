@@ -1,14 +1,18 @@
 databus-account: knowledge-graph-catalog
 id: opencitations-meta
 title: OpenCitations Meta
-abstract: 'OpenCitations Meta provides RDF metadata for scholarly publications, authors,
-  venues, identifiers and provenance. The September 2026 release (v9.2.1) contains
-  five JSON-LD archives. Official release: https://zenodo.org/records/23059736'
-description: 'OpenCitations Meta provides RDF metadata for scholarly publications,
-  authors, venues, identifiers and provenance. The September 2026 release (v9.2.1)
-  contains five JSON-LD archives. Official release: https://zenodo.org/records/23059736'
-moss-publish: false
-databus-publish: false
+abstract: >-
+  OpenCitations Meta provides RDF metadata for scholarly publications, authors,
+  venues, identifiers and provenance. The September 2026 release (v9.2.1)
+  contains five JSON-LD archives.
+  [Official release on Zenodo](https://zenodo.org/records/23059736)  
+description: >-
+  OpenCitations Meta provides RDF metadata for scholarly publications, authors,
+  venues, identifiers and provenance. The September 2026 release (v9.2.1)
+  contains five JSON-LD archives.
+  [Official release on Zenodo](https://zenodo.org/records/23059736)
+moss-publish: true
+databus-publish: true
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://opencitations.net/meta
 domains:
