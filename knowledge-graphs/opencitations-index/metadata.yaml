@@ -1,0 +1,68 @@
+# TEST ONLY: DO NOT PUBLISH unchanged; dummy SHA-256 values.
+# DRAFT: version-specific Figshare whole-article ZIP download endpoints.
+# Verify redirects, archive availability and contents before production publication.
+# The published sizes refer to the datasets, not verified HTTP archive byte lengths.
+databus-account: knowledge-graph-catalog
+id: opencitations-index
+title: OpenCitations Index
+abstract: OpenCitations Index publishes open RDF citation relationships between scholarly publications.
+description: OpenCitations Index is an open citation knowledge graph linking bibliographic resources
+  identified by OpenCitations Meta identifiers (OMIDs). The July 2026 release, published on
+  28 July 2026, contains 2,559,460,009 citations. This catalog record covers the citation data
+  and citation source information in N-Triples format, not the separate provenance dump or alternative
+  database and non-RDF exports.
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/publicdomain/zero/1.0/
+homepage: https://opencitations.net/index
+domains:
+- Publications, Education & Research
+keywords:
+- scholarly publications
+- citations
+- citation graph
+- bibliometrics
+- RDF
+- N-Triples
+- OpenCitations
+artifacts:
+- artifact: citation-data
+  title: OpenCitations Index Citation Data
+  abstract: RDF citation relationships between bibliographic resources.
+  description: The July 2026 N-Triples dump of the citation graph, linking citing and cited
+    bibliographic resources through their OpenCitations Meta identifiers.
+  versions:
+  - version: 2026-07
+    title: OpenCitations Index Citation Data 2026-07
+    abstract: RDF citation relationships between bibliographic resources.
+    description: The July 2026 N-Triples dump of the citation graph, linking citing and cited
+      bibliographic resources through their OpenCitations Meta identifiers.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://api.figshare.com/v2/articles/24369136/versions/8/download
+      format: nt
+      compression: zip
+      status: pending
+      # TEST ONLY: fictitious checksum and approximate size.
+      sha256: deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef00000001
+      size: 88000000000
+- artifact: citation-sources
+  title: OpenCitations Index Citation Sources
+  abstract: RDF information about the sources of citation relationships.
+  description: The July 2026 N-Triples dump describing the data source collections from which
+    the citation relationships were obtained.
+  versions:
+  - version: 2026-07
+    title: OpenCitations Index Citation Sources 2026-07
+    abstract: RDF information about the sources of citation relationships.
+    description: The July 2026 N-Triples dump describing the data source collections from which
+      the citation relationships were obtained.
+    license: https://creativecommons.org/publicdomain/zero/1.0/
+    distributions:
+    - file: https://api.figshare.com/v2/articles/24427051/versions/7/download
+      format: nt
+      compression: zip
+      status: pending
+      # TEST ONLY: fictitious checksum and approximate size.
+      sha256: deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef00000002
+      size: 29000000000
