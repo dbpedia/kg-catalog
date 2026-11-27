@@ -1,13 +1,16 @@
 databus-account: knowledge-graph-catalog
 id: opencitations-index
 title: OpenCitations Index
-abstract: OpenCitations Index publishes open RDF citation relationships between scholarly
-  publications.
-description: OpenCitations Index is an open citation knowledge graph linking bibliographic
-  resources identified by OpenCitations Meta identifiers (OMIDs). The July 2026 release,
-  published on 28 July 2026, contains 2,559,460,009 citations. This catalog record
-  covers the citation data and citation source information in N-Triples format, not
-  the separate provenance dump or alternative database and non-RDF exports.
+abstract: >-
+  OpenCitations Index is an open knowledge graph of citation relationships
+  between scholarly publications.
+  Citation data: [https://doi.org/10.6084/m9.figshare.24369136.v8](https://doi.org/10.6084/m9.figshare.24369136.v8)
+  Sources: [https://doi.org/10.6084/m9.figshare.24427051.v7](https://doi.org/10.6084/m9.figshare.24427051.v7)
+description: >-
+  OpenCitations Index is an open knowledge graph of citation relationships
+  between scholarly publications.
+  Citation data: [https://doi.org/10.6084/m9.figshare.24369136.v8](https://doi.org/10.6084/m9.figshare.24369136.v8)
+  Sources: [https://doi.org/10.6084/m9.figshare.24427051.v7](https://doi.org/10.6084/m9.figshare.24427051.v7)
 moss-publish: false
 databus-publish: false
 license: https://creativecommons.org/publicdomain/zero/1.0/
