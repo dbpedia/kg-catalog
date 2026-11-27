@@ -11,8 +11,8 @@ description: >-
   between scholarly publications.
   Citation data: [https://doi.org/10.6084/m9.figshare.24369136.v8](https://doi.org/10.6084/m9.figshare.24369136.v8)
   Sources: [https://doi.org/10.6084/m9.figshare.24427051.v7](https://doi.org/10.6084/m9.figshare.24427051.v7)
-moss-publish: false
-databus-publish: false
+moss-publish: true
+databus-publish: true
 license: https://creativecommons.org/publicdomain/zero/1.0/
 homepage: https://opencitations.net/index
 domains:
