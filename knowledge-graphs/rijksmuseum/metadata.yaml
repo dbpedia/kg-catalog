@@ -1,12 +1,13 @@
 databus-account: knowledge-graph-catalog
 id: rijksmuseum
 title: Rijksmuseum Knowledge Graph
-abstract: RDF knowledge about Rijksmuseum library resources, exhibitions, historical events, people, organisations
-  and places.
-description: 'Rijksmuseum publishes linked cultural heritage and bibliographic data using Linked Art, CIDOC CRM
-  and Schema.org. This entry covers selected current multi-domain RDF archives. Official downloads: [https://data.rijksmuseum.nl/docs/data-dumps/](https://data.rijksmuseum.nl/docs/data-dumps/)'
-moss-publish: true
-databus-publish: true
+abstract: RDF knowledge about Rijksmuseum library resources, exhibitions, historical
+  events, people, organisations and places.
+description: 'Rijksmuseum publishes linked cultural heritage and bibliographic data
+  using Linked Art, CIDOC CRM and Schema.org. This entry covers selected current multi-domain
+  RDF archives. Official downloads: [https://data.rijksmuseum.nl/docs/data-dumps/](https://data.rijksmuseum.nl/docs/data-dumps/)'
+moss-publish: false
+databus-publish: false
 license: https://data.rijksmuseum.nl/policy/
 homepage: https://data.rijksmuseum.nl/
 domains:
@@ -19,144 +20,156 @@ keywords:
 - CIDOC CRM
 - Schema.org
 - RDF
-# Version inferred from official archive paths, not a separately confirmed release date.
-# Archive-specific license not confirmed; the institutional data policy is referenced.
-# Signed download URLs expire on 2028-10-21 at 14:43 UTC.
-# TAR archives contain N-Triples; hashes and sizes are calculated by the publisher.
 artifacts:
 - artifact: person
   title: Rijksmuseum Persons
   abstract: Bibliographic persons described using Schema.org Person.
-  description: Bibliographic persons described using Schema.org Person. Distributed as a gzip-compressed TAR archive
-    containing N-Triples files.
+  description: Bibliographic persons described using Schema.org Person. Distributed
+    as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Persons 2024-11-07
     abstract: Bibliographic persons described using Schema.org Person.
-    description: Official multi-domain RDF archive containing 181,379 resource files, as listed by Rijksmuseum.
-      The version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 181,379 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/person.tar.gz?se=2028-10-21T14%3A43Z&sig=76O6ieiAvHXDGyT2QfwDsNTvKMof9csz4kgrw3TzSm4%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: ae6b21782612c9ede00ac4bdbd1c8028fc6b87d3a03d453159b85fb0e7b9effb
+      size: 12551850
 - artifact: organisation
   title: Rijksmuseum Organisations
   abstract: Bibliographic organisations described using Schema.org Organization.
-  description: Bibliographic organisations described using Schema.org Organization. Distributed as a gzip-compressed
-    TAR archive containing N-Triples files.
+  description: Bibliographic organisations described using Schema.org Organization.
+    Distributed as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Organisations 2024-11-07
     abstract: Bibliographic organisations described using Schema.org Organization.
-    description: Official multi-domain RDF archive containing 28,215 resource files, as listed by Rijksmuseum. The
-      version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 28,215 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/organisation.tar.gz?se=2028-10-21T14%3A43Z&sig=DcdcOZ8liE3nIiD4AoQ%2FlI43qM74NuwUVCMrP7qYV9s%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: 7766fad5c2d7bb80fc90b6133e3f058cd02513c2303f5ef7f439c5e83ca4b7e0
+      size: 1885934
 - artifact: place
   title: Rijksmuseum Places
   abstract: Geographic places represented using Linked Art and CIDOC CRM.
-  description: Geographic places represented using Linked Art and CIDOC CRM. Distributed as a gzip-compressed TAR
-    archive containing N-Triples files.
+  description: Geographic places represented using Linked Art and CIDOC CRM. Distributed
+    as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Places 2024-11-07
     abstract: Geographic places represented using Linked Art and CIDOC CRM.
-    description: Official multi-domain RDF archive containing 37,101 resource files, as listed by Rijksmuseum. The
-      version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 37,101 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/place.tar.gz?se=2028-10-21T14%3A43Z&sig=ueEeaKco4jzBPeUrRoIbOD%2FEvHQb9tj%2FTBjyGXcs0FY%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: 052e40e3015d82d8bf414be4b0218d290e93918f8cfa0e5cc309a06b97acf9f0
+      size: 5666172
 - artifact: event
   title: Rijksmuseum Events
   abstract: Historical events represented as Linked Art activities.
-  description: Historical events represented as Linked Art activities. Distributed as a gzip-compressed TAR archive
-    containing N-Triples files.
+  description: Historical events represented as Linked Art activities. Distributed
+    as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Events 2024-11-07
     abstract: Historical events represented as Linked Art activities.
-    description: Official multi-domain RDF archive containing 2,412 resource files, as listed by Rijksmuseum. The
-      version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 2,412 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/event.tar.gz?se=2028-10-21T14%3A43Z&sig=3nw8HhQZGvoTqdrywQoJuNwgj%2Bz1PDiSTtpBywyR9fI%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: e254388a96a9302177e1b593647d5a063d7045581f0b73aded1a9261845aaab2
+      size: 300200
 - artifact: exhibition
   title: Rijksmuseum Exhibitions
   abstract: Museum exhibitions represented as Linked Art activities.
-  description: Museum exhibitions represented as Linked Art activities. Distributed as a gzip-compressed TAR archive
-    containing N-Triples files.
+  description: Museum exhibitions represented as Linked Art activities. Distributed
+    as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Exhibitions 2024-11-07
     abstract: Museum exhibitions represented as Linked Art activities.
-    description: Official multi-domain RDF archive containing 870 resource files, as listed by Rijksmuseum. The
-      version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 870 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/exhibition.tar.gz?se=2028-10-21T14%3A43Z&sig=UFsLlD7VSJ%2FWb5deQdStjK6ECBMMWfdiZC9n6Nueo6A%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: 09c2ee1f3d42dc91f5e06dcb414e02f2f5b4336ff26aff5932270f684e0b4b39
+      size: 377716
 - artifact: work
   title: Rijksmuseum Works
   abstract: Bibliographic works represented using Schema.org CreativeWork.
-  description: Bibliographic works represented using Schema.org CreativeWork. Distributed as a gzip-compressed TAR
-    archive containing N-Triples files.
+  description: Bibliographic works represented using Schema.org CreativeWork. Distributed
+    as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Works 2024-11-07
     abstract: Bibliographic works represented using Schema.org CreativeWork.
-    description: Official multi-domain RDF archive containing 321,354 resource files, as listed by Rijksmuseum.
-      The version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 321,354 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/work.tar.gz?se=2028-10-21T14%3A43Z&sig=cvs2mhWcGCywokTEnNSyQzB4LjakGmUkf79f5NIYWyQ%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: d8b8f7c6b340b425e7f5032a3fae5b61bc285b2039e5cfaa1b726381934d5791
+      size: 134205412
 - artifact: instance
   title: Rijksmuseum Instances
   abstract: Bibliographic instances represented using Schema.org ProductModel.
-  description: Bibliographic instances represented using Schema.org ProductModel. Distributed as a gzip-compressed
-    TAR archive containing N-Triples files.
+  description: Bibliographic instances represented using Schema.org ProductModel.
+    Distributed as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Instances 2024-11-07
     abstract: Bibliographic instances represented using Schema.org ProductModel.
-    description: Official multi-domain RDF archive containing 321,354 resource files, as listed by Rijksmuseum.
-      The version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 321,354 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/instance.tar.gz?se=2028-10-21T14%3A43Z&sig=kg388MnNQHV4p9xLZOBz8921fhS1ieI7w%2Fz6bQ%2FcEr4%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: e5b871cec4ecd34013d72ec4179dc0dad03bcf5878c8c1b3d5083f1366b5f6b4
+      size: 180080078
 - artifact: item
   title: Rijksmuseum Items
   abstract: Bibliographic items represented using Schema.org IndividualProduct.
-  description: Bibliographic items represented using Schema.org IndividualProduct. Distributed as a gzip-compressed
-    TAR archive containing N-Triples files.
+  description: Bibliographic items represented using Schema.org IndividualProduct.
+    Distributed as a gzip-compressed TAR archive containing N-Triples files.
   versions:
   - version: '2024-11-07'
     title: Rijksmuseum Items 2024-11-07
     abstract: Bibliographic items represented using Schema.org IndividualProduct.
-    description: Official multi-domain RDF archive containing 381,376 resource files, as listed by Rijksmuseum.
-      The version date is inferred from the download URL.
+    description: Official multi-domain RDF archive containing 381,376 resource files,
+      as listed by Rijksmuseum. The version date is inferred from the download URL.
     license: https://data.rijksmuseum.nl/policy/
     distributions:
     - file: https://rijksintegrationlayeracc.file.core.windows.net/data-dumps/2024-11-07/item.tar.gz?se=2028-10-21T14%3A43Z&sig=vjN6pS4li2l%2FU3Sh%2Bmy1G5RiABCa%2BGoo2HmwH5dh8pI%3D&sp=r&spr=https&sr=f&sv=2026-04-06
       format: tar
       compression: gz
-      status: pending
+      status: active
+      sha256: 8716c2a684d99838cb52a9a03596cf1c5a8bde7970164aae10c1f47c0e484682
+      size: 51766271
