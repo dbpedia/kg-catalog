@@ -1,0 +1,37 @@
+databus-account: knowledge-graph-catalog
+id: cellosaurus
+title: Cellosaurus
+abstract: A curated knowledge graph of cell lines used in biomedical research.
+description: 'Cellosaurus describes cell lines, their origins, diseases, genetic characteristics, identifiers
+  and links to other biomedical resources. RDF downloads: [https://api.cellosaurus.org/rdf-downloads](https://api.cellosaurus.org/rdf-downloads)'
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://www.cellosaurus.org/
+domains:
+- Life Sciences & Health
+keywords:
+- cell lines
+- biomedicine
+- cell line authentication
+- genetics
+- RDF
+artifacts:
+- artifact: cellosaurus-rdf
+  title: Cellosaurus RDF
+  abstract: RDF data and ontology for the Cellosaurus cell line knowledge resource.
+  description: Gzip-compressed TAR archive containing Turtle data, ontology, metadata and query examples.
+    Optional materialized inference files are excluded.
+  versions:
+  - version: rolling
+    title: Cellosaurus RDF  (rolling)
+    abstract: RDF data and ontology for the Cellosaurus cell line knowledge resource.
+    description: Current Cellosaurus RDF archive served by the publisher. The upstream URL is updated
+      in place.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://api.cellosaurus.org/static/downloads/cellosaurus_ttl.tar.gz
+      format: tar
+      compression: gz
+      status: pending
+      # Exact archive size unavailable; allow roughly 100-300 MB as an unverified planning estimate. Archive members are Turtle; format tar and compression gz describe the actual outer file.

@@ -1,0 +1,36 @@
+databus-account: knowledge-graph-catalog
+id: lipid-maps
+title: LIPID MAPS Structure Database (LMSD)
+abstract: A curated knowledge graph of lipid structures, chemical identifiers and classifications.
+description: 'LIPID MAPS describes lipid structures, chemical identifiers, molecular formulas, masses
+  and lipid classifications for lipidomics research. RDF downloads: [https://lipidmaps.org/databases/lmsd/download](https://lipidmaps.org/databases/lmsd/download)'
+moss-publish: true
+databus-publish: true
+license: https://creativecommons.org/licenses/by/4.0/
+homepage: https://lipidmaps.org/
+domains:
+- Life Sciences & Health
+keywords:
+- lipids
+- lipidomics
+- chemical structures
+- InChIKey
+- RDF
+artifacts:
+- artifact: lmsd-rdf
+  title: LIPID MAPS Structure Database RDF
+  abstract: RDF export of lipid structures, annotations and classifications.
+  description: Turtle export of LMSD records, including names, formulas, InChI identifiers, monoisotopic
+    masses and lipid classifications.
+  versions:
+  - version: rolling
+    title: LIPID MAPS Structure Database RDF  (rolling)
+    abstract: RDF export of lipid structures, annotations and classifications.
+    description: Current RDF export of LMSD. The upstream download URL is updated in place.
+    license: https://creativecommons.org/licenses/by/4.0/
+    distributions:
+    - file: https://lipidmaps.org/download/files/sparql_lipids.ttl
+      format: ttl
+      compression: none
+      status: pending
+      # Publisher lists 35.53 MB; exact byte size and SHA-256 to be retrieved by the workflow.
